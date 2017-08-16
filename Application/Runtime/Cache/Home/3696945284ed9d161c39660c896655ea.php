@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?>东方故事电饭锅

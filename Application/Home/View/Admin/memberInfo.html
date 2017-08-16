@@ -1,0 +1,126 @@
+<layout name="Layout/layout_admin" />
+
+<section class="page-content">
+<div class="page-content-inner">
+
+    <!-- Basic Form Elements -->
+    <section class="panel">
+        <div class="panel-heading">
+            <h3>会员系统 会员详情</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="margin-bottom-50">
+                        <h4>会员详情说明</h4>
+                        <br />
+                        <h5>{{$ref}}</h5>
+                        <!-- Horizontal Form -->
+                        <form method="post" action="__MODULE__/Member/updateMember">
+                            <input type="text" name="id" value="{{$vo.id}}" style="display: none;">
+                            <div class="form-group row">
+                                <div class="col-md-3">
+                                    <label class="form-control-label" for="l0">会员名称</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="m_nickname" value='{{$vo.m_nickname}}' placeholder="会员名称">
+                                </div>
+                            </div>
+							<div class="form-group row">
+                                <div class="col-md-3">
+                                    <label class="form-control-label" for="l10">会员余额</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="m_num" value='{{$vo.m_num}}' placeholder="9993">
+                                </div>
+                            </div>
+							<div class="form-group row">
+                                <div class="col-md-3">
+                                    <label class="form-control-label" for="l0">会员卡号</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="m_card" value='{{$vo.m_card}}' placeholder="会员卡号">
+                                </div>
+                            </div>
+							<div class="form-group row">
+                                <div class="col-md-3">
+                                    <label class="form-control-label" for="l0">会员账号</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="m_username" value='{{$vo.m_username}}' placeholder="会员账号">
+                                </div>
+                            </div>
+							<div class="form-group row">
+                                <div class="col-md-3">
+                                    <label class="form-control-label" for="l9">会员密码</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="form-input-icon form-input-icon-right">
+                                        <i class="icmn-spinner11 util-spin"></i>
+                                        <input type="text" class="form-control" name="m_password" value='{{$vo.m_password}}' placeholder="Password">
+                                    </div>
+                                </div>
+                            </div>
+							<div class="form-group row">
+                                <div class="col-md-3">
+                                    <label class="form-control-label" for="l2">会员邮箱</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="icmn-mail2"></i>
+                                        </span>
+                                        <input type="email" class="form-control" name="m_email" value='{{$vo.m_email}}' placeholder="会员邮箱">
+                                    </div>
+                                </div>
+                            </div>
+							<div class="form-group row">
+                                <div class="col-md-3">
+                                    <label class="form-control-label" for="l1" >会员地址</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="m_address" value='{{$vo.m_address}}' placeholder="请输入会员地址">
+                                </div>
+                            </div>
+							<div class="form-group row">
+                                <div class="col-md-3">
+                                    <label class="form-control-label" for="l1">会员紧急联系人</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="m_phonenum" value='{{$vo.m_phonenum}}' placeholder="请输入紧急联系人姓名和电话" >
+                                </div>
+                            </div>
+							<div class="form-group row">
+                                <div class="col-md-3">
+                                    <label class="form-control-label" for="l16">身份证资料上传</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="file" id="l16">
+                                    <br />
+                                    <small>身份证资料正反面</small>
+                                </div>
+                            </div>
+							
+                            
+                            <div class="form-actions">
+                                <div class="form-group row">
+                                    <div class="col-md-9 col-md-offset-3">
+                                        <button type="submit" class="btn width-150 btn-primary">完成</button>
+                                        <button type="button" class="btn btn-default">返回首页</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- End Horizontal Form -->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- End -->
+
+</div>
+</section>
+

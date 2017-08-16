@@ -1,0 +1,76 @@
+<layout name="Layout/layout_admin" />
+
+<section class="page-content">
+<div class="page-content-inner">
+
+    <!-- Basic Form Elements -->
+    <section class="panel">
+        <div class="panel-heading">
+            <h3>会员系统 会员中心 资金操作</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="margin-bottom-50">
+                        <h4>资金操作文字说明</h4>
+                        <br />
+                        <!-- Horizontal Form -->
+                        <h4>{{$ref}}</h4>
+                        <form method="post" action="__MODULE__/admin/memberBC">
+                            <div class="form-group row">
+                                <div class="col-md-3">
+                                <input type="text" name="id" value="{{$vo.id}}" style="display: none;">
+                                    <label class="form-control-label" for="l0">会员名称</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" value="{{$vo.m_nickname}}" placeholder="会员名称">
+                                </div>
+                            </div>
+							<div class="form-group row">
+                                <div class="col-md-3">
+                                    <label class="form-control-label" for="l0">会员卡号</label>
+                                </div>
+                                <div class="col-md-9">
+                                   <input type="text" class="form-control" value='{{$vo.m_card}}' placeholder="会员卡号">
+                                </div>
+                            </div>
+							<div class="form-group row">
+                                <div class="col-md-3">
+                                    <label class="form-control-label" for="l10">现有余额</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control"  value='{{$vo.m_num}}' placeholder="666 元">
+                                </div>
+                            </div>
+							<div class="form-group row">
+                                <div class="col-md-3">
+                                    <label class="form-control-label" for="l0">充值资金</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="num" placeholder="充值资金金额">
+                                </div>
+                            </div>
+							
+                            
+                            <div class="form-actions">
+                                <div class="form-group row">
+                                    <div class="col-md-9 col-md-offset-3">
+                                        <button type="sublimt" class="btn width-150 btn-primary">编辑</button>
+                                        <button type="button" class="btn btn-default">返回</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- End Horizontal Form -->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- End -->
+
+</div>
+</section>
+

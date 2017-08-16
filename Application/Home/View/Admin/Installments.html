@@ -1,0 +1,106 @@
+<layout name="Layout/layout_admin" />
+
+<section class="page-content">
+<div class="page-content-inner">
+
+    <!-- Basic Form Elements -->
+    <section class="panel">
+        <div class="panel-heading">
+            <h3>会员系统 会员详情</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="margin-bottom-50">
+                        <h4>会员详情说明</h4>
+                        <br />
+                        <h4>{{$ref}}</h4>
+                        <!-- Horizontal Form -->
+                        <form method="post" action="__MODULE__/Admin/Sureupdate">
+                            <div class="form-group row">
+                                <div class="col-md-3">
+                                <input type="text" name="id" value="{{$vo.id}}" style="display: none;">
+                                    <label class="form-control-label" for="l0">会员名称</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="m_nickname" value='{{$vo.m_nickname}}' placeholder="会员名称">
+                                </div>
+                            </div>
+							<div class="form-group row">
+                                <div class="col-md-3">
+                                    <label class="form-control-label" for="l10">会员余额</label>
+                                </div>
+                                <div class="col-md-9">
+                                     <input type="text" class="form-control" name="m_num" value='{{$vo.m_num}}' placeholder="9993">
+                            </div>
+							<div class="form-group row">
+                                <div class="col-md-3">
+                                    <label class="form-control-label" for="l0">会员卡号</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="m_card" value='{{$vo.m_card}}' placeholder="会员卡号">
+                                </div>
+                            </div>
+							<div class="form-group row">
+                                <div class="col-md-3">
+                                    <label class="form-control-label" for="l0">会员账号</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="m_username" value='{{$vo.m_username}}' placeholder="会员账号">
+                                </div>
+                            </div>
+							
+							<div class="form-group row">
+                                <div class="col-md-3">
+                                    <label class="form-control-label" for="l0">分期总金额</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name='m_fenqi'  placeholder='最大金额为：{{$vo.m_num}}' id="m_fenqi">
+                                </div>
+                            </div>
+							<div class="form-group row">
+                                <div class="col-md-3">
+                                    <label class="form-control-label" for="l0">分期时间</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="m_day" id="m_day" value="{{$vo.m_day}}" placeholder="365 天">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-3">
+                                    <label class="form-control-label" for="l0">每日限制使用（计算结果）</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="m_limit" name="m_limit" placeholder="10 元/天">
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <div class="form-group row">
+                                    <div class="col-md-9 col-md-offset-3">
+                                        <button type="submit" class="btn width-150 btn-primary">完成</button>
+                                        <button type="button" class="btn btn-default">返回首页</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- End Horizontal Form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<script type="text/javascript">
+    $("#m_day").on('change',function(){
+        if($("#m_fenqi").val()!=""){
+            var rel = $("#m_fenqi").val()/$("#m_day").val();
+            $("#m_limit")[0].value=rel;
+        }else{
+            alert('请先输入分期金额！');
+        }
+    })
+       
+</script>
+    <!-- End -->
+
+</div>
+</section>
