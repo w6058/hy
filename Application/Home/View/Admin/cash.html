@@ -15,7 +15,7 @@
                         <h4>{{$shop.0.s_name}} 积分管理</h4>
                         <br />
                         <!-- Horizontal Form -->
-                        <form method="post" action="/home/admin/updatecash">
+                        <form method="post" action="__MODULE__/admin/updatecash">
                             <input type="text" style="display: none" name="id" value="{{$shop[0]['id']}}">
                             <div class="form-group row">
                                 <h3 style="color: red; text-align: center;margin-left: -25px;">{{$error}}</h3>

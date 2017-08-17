@@ -25,6 +25,9 @@
             if (count($arr)){
                 $this->assign('vo',session('member'));
                 $this->memberCenter();
+            }else{
+                $this->assign('error','登录失败,用户名或密码不正确!');
+                $this->display('memberLogin');
             }
         }
         function memberCenter (){ //会员中心页面数据查询

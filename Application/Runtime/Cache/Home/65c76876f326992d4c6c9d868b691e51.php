@@ -7,11 +7,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>商户中心-TK会员系统</title>
 
-    <link href="/hy/Public/assets/common/img/favicon.144x144.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
-    <link href="/hy/Public/assets/common/img/favicon.114x114.png" rel="apple-touch-icon" type="image/png" sizes="114x114">
-    <link href="/hy/Public/assets/common/img/favicon.72x72.png" rel="apple-touch-icon" type="image/png" sizes="72x72">
-    <link href="/hy/Public/assets/common/img/favicon.57x57.png" rel="apple-touch-icon" type="image/png">
-    <link href="/hy/Public/assets/common/img/favicon.png" rel="icon" type="image/png">
+    <link href="/Public/assets/common/img/favicon.144x144.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
+    <link href="/Public/assets/common/img/favicon.114x114.png" rel="apple-touch-icon" type="image/png" sizes="114x114">
+    <link href="/Public/assets/common/img/favicon.72x72.png" rel="apple-touch-icon" type="image/png" sizes="72x72">
+    <link href="/Public/assets/common/img/favicon.57x57.png" rel="apple-touch-icon" type="image/png">
+    <link href="/Public/assets/common/img/favicon.png" rel="icon" type="image/png">
     <link href="favicon.ico" rel="shortcut icon">
 
     <!-- HTML5 shim and Respond.js for < IE9 support of HTML5 elements and media queries -->
@@ -22,95 +22,19 @@
 
     <!-- Vendors Styles -->
     <!-- v1.0.0 -->
-    <link rel="stylesheet" type="text/css" href="/hy/Public/assets/vendors/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/hy/Public/assets/vendors/jscrollpane/style/jquery.jscrollpane.css">
-    <link rel="stylesheet" type="text/css" href="/hy/Public/assets/vendors/ladda/dist/ladda-themeless.min.css">
-    <link rel="stylesheet" type="text/css" href="/hy/Public/assets/vendors/select2/dist/css/select2.min.css">
-    <link rel="stylesheet" type="text/css" href="/hy/Public/assets/vendors/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
-    <link rel="stylesheet" type="text/css" href="/hy/Public/assets/vendors/fullcalendar/dist/fullcalendar.min.css">
-    <link rel="stylesheet" type="text/css" href="/hy/Public/assets/vendors/cleanhtmlaudioplayer/src/player.css">
-    <link rel="stylesheet" type="text/css" href="/hy/Public/assets/vendors/cleanhtmlvideoplayer/src/player.css">
-    <link rel="stylesheet" type="text/css" href="/hy/Public/assets/vendors/bootstrap-sweetalert/dist/sweetalert.css">
-    <link rel="stylesheet" type="text/css" href="/hy/Public/assets/vendors/summernote/dist/summernote.css">
-    <link rel="stylesheet" type="text/css" href="/hy/Public/assets/vendors/owl.carousel/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="/hy/Public/assets/vendors/ionrangeslider/css/ion.rangeSlider.css">
-    <link rel="stylesheet" type="text/css" href="/hy/Public/assets/vendors/datatables/media/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="/hy/Public/assets/vendors/c3/c3.min.css">
-    <link rel="stylesheet" type="text/css" href="/hy/Public/assets/vendors/chartist/dist/chartist.min.css">
-    <!-- v1.4.0 -->
-    <link rel="stylesheet" type="text/css" href="/hy/Public/assets/vendors/nprogress/nprogress.css">
-    <link rel="stylesheet" type="text/css" href="/hy/Public/assets/vendors/jquery-steps/demo/css/jquery.steps.css">
-    <!-- v1.4.2 -->
-    <link rel="stylesheet" type="text/css" href="/hy/Public/assets/vendors/bootstrap-select/dist/css/bootstrap-select.min.css">
-    <!-- v1.7.0 -->
-    <link rel="stylesheet" type="text/css" href="/hy/Public/assets/vendors/dropify/dist/css/dropify.min.css">
-
+    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/bootstrap.min.css">
     <!-- Clean UI Styles -->
-    <link rel="stylesheet" type="text/css" href="/hy/Public/assets/common/css/source/main.css">
-
-    <!-- Vendors Scripts -->
+    <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/source/main.css">
     <!-- v1.0.0 -->
-    <script src="/hy/Public/assets/vendors/jquery/jquery.min.js"></script>
-    <script src="/hy/Public/assets/vendors/tether/dist/js/tether.min.js"></script>
-    <script src="/hy/Public/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="/hy/Public/assets/vendors/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-    <script src="/hy/Public/assets/vendors/jscrollpane/script/jquery.jscrollpane.min.js"></script>
-    <script src="/hy/Public/assets/vendors/spin.js/spin.js"></script>
-    <script src="/hy/Public/assets/vendors/ladda/dist/ladda.min.js"></script>
-    <script src="/hy/Public/assets/vendors/select2/dist/js/select2.full.min.js"></script>
-    <script src="/hy/Public/assets/vendors/html5-form-validation/dist/jquery.validation.min.js"></script>
-    <script src="/hy/Public/assets/vendors/jquery-typeahead/dist/jquery.typeahead.min.js"></script>
-    <script src="/hy/Public/assets/vendors/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
-    <script src="/hy/Public/assets/vendors/autosize/dist/autosize.min.js"></script>
-    <script src="/hy/Public/assets/vendors/bootstrap-show-password/bootstrap-show-password.min.js"></script>
-    <script src="/hy/Public/assets/vendors/moment/min/moment.min.js"></script>
-    <script src="/hy/Public/assets/vendors/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-    <script src="/hy/Public/assets/vendors/fullcalendar/dist/fullcalendar.min.js"></script>
-    <script src="/hy/Public/assets/vendors/cleanhtmlaudioplayer/src/jquery.cleanaudioplayer.js"></script>
-    <script src="/hy/Public/assets/vendors/cleanhtmlvideoplayer/src/jquery.cleanvideoplayer.js"></script>
-    <script src="/hy/Public/assets/vendors/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
-    <script src="/hy/Public/assets/vendors/remarkable-bootstrap-notify/dist/bootstrap-notify.min.js"></script>
-    <script src="/hy/Public/assets/vendors/summernote/dist/summernote.min.js"></script>
-    <script src="/hy/Public/assets/vendors/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="/hy/Public/assets/vendors/ionrangeslider/js/ion.rangeSlider.min.js"></script>
-    <script src="/hy/Public/assets/vendors/nestable/jquery.nestable.js"></script>
-    <script src="/hy/Public/assets/vendors/datatables/media/js/jquery.dataTables.min.js"></script>
-    <script src="/hy/Public/assets/vendors/datatables/media/js/dataTables.bootstrap4.min.js"></script>
-    <script src="/hy/Public/assets/vendors/datatables-fixedcolumns/js/dataTables.fixedColumns.js"></script>
-    <script src="/hy/Public/assets/vendors/datatables-responsive/js/dataTables.responsive.js"></script>
-    <script src="/hy/Public/assets/vendors/editable-table/mindmup-editabletable.js"></script>
-    <script src="/hy/Public/assets/vendors/d3/d3.min.js"></script>
-    <script src="/hy/Public/assets/vendors/c3/c3.min.js"></script>
-    <script src="/hy/Public/assets/vendors/chartist/dist/chartist.min.js"></script>
-    <script src="/hy/Public/assets/vendors/peity/jquery.peity.min.js"></script>
-    <!-- v1.0.1 -->
-    <script src="/hy/Public/assets/vendors/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
-    <!-- v1.1.1 -->
-    <script src="/hy/Public/assets/vendors/gsap/src/minified/TweenMax.min.js"></script>
-    <script src="/hy/Public/assets/vendors/hackertyper/hackertyper.js"></script>
-    <script src="/hy/Public/assets/vendors/jquery-countTo/jquery.countTo.js"></script>
-    <!-- v1.4.0 -->
-    <script src="/hy/Public/assets/vendors/nprogress/nprogress.js"></script>
-    <script src="/hy/Public/assets/vendors/jquery-steps/build/jquery.steps.min.js"></script>
-    <!-- v1.4.2 -->
-    <script src="/hy/Public/assets/vendors/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-    <script src="/hy/Public/assets/vendors/chart.js/src/Chart.bundle.min.js"></script>
-    <!-- v1.7.0 -->
-    <script src="/hy/Public/assets/vendors/dropify/dist/js/dropify.min.js"></script>
+    <script src="/Public/assets/vendors/jquery.min.js"></script>
 
-    <!-- Clean UI Scripts -->
-    <script src="/hy/Public/assets/common/js/common.js"></script>
-    <script src="/hy/Public/assets/common/js/demo.temp.js"></script>
-
-    <!-- 语音播报 -->
-    <script src="/hy/Public/assets/common/js/jQuery.speech.min.js"></script>
 </head>
 <body class="theme-default">
 <nav class="left-menu" left-menu>
     <div class="logo-container">
-        <a href="/hy/index.php/Home/shop/show" class="logo">
-            <img src="/hy/Public/assets/common/img/logo.png" alt="Clean UI Admin Template" />
-            <img class="logo-inverse" src="/hy/Public/assets/common/img/logo-inverse.png" alt="Clean UI Admin Template" />
+        <a href="/index.php/Home/shop/show" class="logo">
+            <img src="/Public/assets/common/img/logo.png" alt="Clean UI Admin Template" />
+            <img class="logo-inverse" src="/Public/assets/common/img/logo-inverse.png" alt="Clean UI Admin Template" />
         </a>
     </div>
     <div class="left-menu-inner scroll-pane">
@@ -274,17 +198,17 @@
                 </a>
                 <ul class="left-menu-list list-unstyled">
                     <li>
-                        <a class="left-menu-link" href="/hy/index.php/Home/shop/maddcash">
+                        <a class="left-menu-link" href="/index.php/Home/shop/maddcash">
                             充值日志
                         </a>
                     </li>
                     <li>
-                        <a class="left-menu-link" href="/hy/index.php/Home/shop/addcard">
+                        <a class="left-menu-link" href="/index.php/Home/shop/addcard">
                             办卡日志
                         </a>
                     </li>
                     <li>
-                        <a class="left-menu-link" href="/hy/index.php/Home/shop/usecash">
+                        <a class="left-menu-link" href="/index.php/Home/shop/usecash">
                             消费日志
                         </a>
                     </li>
@@ -303,7 +227,7 @@
                 </a>
                 <ul class="left-menu-list list-unstyled">
                     <li>
-                        <a class="left-menu-link" href="/hy/index.php/Home/shop/members">
+                        <a class="left-menu-link" href="/index.php/Home/shop/members">
                             会员列表
                         </a>
                     </li>
@@ -396,7 +320,7 @@
                     <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 电话<?php echo session('shop.s_phone');?></a>
                     <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 邮箱<?php echo session('shop.s_email');?></a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/hy/index.php/Home/shop/logout"><i class="dropdown-icon icmn-exit"></i> 退出</a>
+                    <a class="dropdown-item" href="/index.php/Home/shop/logout"><i class="dropdown-icon icmn-exit"></i> 退出</a>
                 </ul>
             </div>
         </div>
@@ -405,7 +329,7 @@
             <div class="left">
                 <div class="header-buttons">
                     <div class="dropdown">
-                        <a href="/hy/index.php/Home/shop/usemember" class="dropdown-toggle dropdown-inline-button"  aria-expanded="false">
+                        <a href="/index.php/Home/shop/usemember" class="dropdown-toggle dropdown-inline-button"  aria-expanded="false">
                             <i class="dropdown-inline-button-icon icmn-folder-open"></i>
                             <span class="hidden-lg-down">收银台</span>
 
@@ -413,7 +337,7 @@
 
                     </div>
                     <div class="dropdown">
-                        <a href="/hy/index.php/Home/shop/addmember" class="dropdown-toggle dropdown-inline-button"  aria-expanded="false">
+                        <a href="/index.php/Home/shop/addmember" class="dropdown-toggle dropdown-inline-button"  aria-expanded="false">
                             <i class="dropdown-inline-button-icon icmn-database"></i>
                             <span class="hidden-lg-down">新增会员</span>
 
@@ -421,7 +345,7 @@
 
                     </div>
                     <div class="dropdown">
-                        <a href="/hy/index.php/Home/shop/memberadd" class="dropdown-toggle dropdown-inline-button" aria-expanded="false">
+                        <a href="/index.php/Home/shop/memberadd" class="dropdown-toggle dropdown-inline-button" aria-expanded="false">
                             <i class="dropdown-inline-button-icon icmn-database"></i>
                             <span class="hidden-lg-down">会员充值</span>
                         </a>
@@ -633,7 +557,7 @@
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-sm-6 col-xs-12">
-                <div class="widget widget-seven background-info" style="background-image: url(/hy/Public/assets/common/img/temp/photos/9.jpeg)">
+                <div class="widget widget-seven background-info" style="background-image: url(/Public/assets/common/img/temp/photos/9.jpeg)">
                     <div class="carousel-widget-2 carousel slide" data-ride="carousel">
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
@@ -863,7 +787,7 @@
             </div>
             <div class="col-md-8">
                 <div class="cwt__footer__company">
-                    <img class="cwt__footer__company-logo" src="/hy/Public/assets/common/img/temp/mediatec.png" target="_blank" title="Mediatec Software">
+                    <img class="cwt__footer__company-logo" src="/Public/assets/common/img/temp/mediatec.png" target="_blank" title="Mediatec Software">
                     <span>
                         © 2017 <a href="javascript:void(0)" class="cwt__footer__link" target="_blank">TK会员系统</a>
                         <br>
@@ -875,7 +799,27 @@
     </div>
 </div>
 </div>
-<div class="main-backdrop"><!-- --></div>
+
+
+
+<script src="/Public/assets/vendors/tether.min.js"></script>
+<script src="/Public/assets/vendors/bootstrap.min.js"></script>
+<script src="/Public/assets/vendors/jquery.jscrollpane.min.js"></script>
+<script src="/Public/assets/vendors/autosize.min.js"></script>
+<script src="/Public/assets/vendors/moment.min.js"></script>
+<script src="/Public/assets/vendors/fullcalendar.min.js"></script>
+<script src="/Public/assets/vendors/jquery.cleanaudioplayer.js"></script>
+<script src="/Public/assets/vendors/jquery.dataTables.min.js"></script>
+<script src="/Public/assets/vendors/chartist.min.js"></script>
+<script src="/Public/assets/vendors/jquery.peity.min.js"></script>
+<!-- v1.0.1 -->
+<script src="/Public/assets/vendors/chartist-plugin-tooltip.min.js"></script>
+<!-- v1.1.1 -->
+<script src="/Public/assets/vendors/jquery.countTo.js"></script>
+<!-- Clean UI Scripts -->
+<script src="/Public/assets/common/js/common.js"></script>
+<script src="/Public/assets/common/js/demo.temp.js"></script>
+
 
 </body>
 </html>

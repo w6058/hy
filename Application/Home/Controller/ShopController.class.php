@@ -31,7 +31,8 @@
                 // 实例化user对象
                 $shop = D('shop');
                 if (empty(I('post.s_username'))||empty(I('post.s_password'))){
-                    $this->error('登录失败,账号或密码不能为空');
+                    $this->assign('error','登录失败,账号或密码不能为空!');
+                    $this->display('Shop/login');
                 }else{
                     // 组合查询条件
                     $result = $shop->where(array('s_username'=>I('post.s_username')))->select();
@@ -48,7 +49,8 @@
                         session('shop', $data);
                         $this->show();
                     }else {
-                        $this->error('登录失败,用户名或密码不正确!');
+                        $this->assign('error','登录失败,用户名或密码不正确!');
+                        $this->display('Shop/login');
                     }
                 }
             } else {

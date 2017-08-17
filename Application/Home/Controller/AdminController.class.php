@@ -36,7 +36,8 @@
                 // 实例化user对象
                 $admin = D('admin');
                 if (empty(I('post.a_username'))||empty(I('post.password'))){
-                    $this->error('登录失败,账号或密码不能为空');
+                    $this->assign('error','登录失败,账号或密码不能为空!');
+                    $this->display('Shop/login');
                 }else{
                     // 组合查询条件
                     $result = $admin->where(array('a_username'=>I('post.a_username')))->select();
@@ -52,7 +53,8 @@
                         session('admin', $data);
                         $this->show();
                     }else {
-                        $this->error('登录失败,用户名或密码不正确!');
+                        $this->assign('error','登录失败,用户名或密码不正确!');
+                        $this->display('index/index');
                     }
                 }
             } else {
