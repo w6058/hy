@@ -1,0 +1,747 @@
+[ 2017-08-11T15:26:19+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-08-11T16:46:47+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-08-11T16:48:12+08:00 ] ::1 /admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+ERR: 无法加载模块:Admin
+
+[ 2017-08-11T16:48:15+08:00 ] ::1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+ERR: 无法加载模块:Admin
+
+[ 2017-08-11T16:48:25+08:00 ] ::1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+ERR: 无法加载模块:Admin
+
+[ 2017-08-11T16:48:40+08:00 ] ::1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+ERR: 无法加载模块:Admin
+
+[ 2017-08-11T16:50:31+08:00 ] ::1 /thinkphp_3.2.3_full/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+ERR: 无法加载模块:Admin
+
+[ 2017-08-11T17:02:26+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-08-11T17:02:38+08:00 ] ::1 /index.php/assets/vendors/bootstrap/dist/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:38+08:00 ] ::1 /index.php/assets/vendors/ladda/dist/ladda-themeless.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001105s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:38+08:00 ] ::1 /index.php/assets/vendors/select2/dist/css/select2.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002965s ]
+ERR: 无法加载模块:Assets
+
+02750s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:38+08:00 ] ::1 /index.php/assets/vendors/jscrollpane/style/jquery.jscrollpane.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001348s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:38+08:00 ] ::1 /index.php/assets/vendors/cleanhtmlaudioplayer/src/player.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/fullcalendar/dist/fullcalendar.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/bootstrap-sweetalert/dist/sweetalert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/ionrangeslider/css/ion.rangeSlider.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/cleanhtmlvideoplayer/src/player.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/summernote/dist/summernote.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001105s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/datatables/media/css/dataTables.bootstrap4.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/chartist/dist/chartist.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/jquery-steps/demo/css/jquery.steps.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/bootstrap-select/dist/css/bootstrap-select.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/dropify/dist/css/dropify.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/common/css/source/main.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/nprogress/nprogress.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/jquery/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/tether/dist/js/tether.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/bootstrap/dist/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/jquery-mousewheel/jquery.mousewheel.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/c3/c3.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/jscrollpane/script/jquery.jscrollpane.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/ladda/dist/ladda.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/spin.js/spin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/select2/dist/js/select2.full.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001032s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/html5-form-validation/dist/jquery.validation.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/jquery-typeahead/dist/jquery.typeahead.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/jquery-mask-plugin/dist/jquery.mask.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000124s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001223s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/moment/min/moment.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/fullcalendar/dist/fullcalendar.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/autosize/dist/autosize.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/cleanhtmlaudioplayer/src/jquery.cleanaudioplayer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/cleanhtmlvideoplayer/src/jquery.cleanvideoplayer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/bootstrap-sweetalert/dist/sweetalert.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/bootstrap-show-password/bootstrap-show-password.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/remarkable-bootstrap-notify/dist/bootstrap-notify.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001217s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/summernote/dist/summernote.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001091s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/ionrangeslider/js/ion.rangeSlider.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/datatables/media/js/jquery.dataTables.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/nestable/jquery.nestable.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/owl.carousel/dist/assets/owl.carousel.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001243s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/datatables/media/js/dataTables.bootstrap4.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/editable-table/mindmup-editabletable.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/datatables-fixedcolumns/js/dataTables.fixedColumns.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000979s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/datatables-responsive/js/dataTables.responsive.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007262s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/d3/d3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001922s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/c3/c3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001398s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/chartist/dist/chartist.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/gsap/src/minified/TweenMax.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/peity/jquery.peity.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002865s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/hackertyper/hackertyper.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/jquery-steps/build/jquery.steps.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/nprogress/nprogress.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001558s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/jquery-countTo/jquery.countTo.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000943s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/chart.js/src/Chart.bundle.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/dropify/dist/js/dropify.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/common/js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/common/js/demo.temp.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/tether/dist/js/tether.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/bootstrap-select/dist/js/bootstrap-select.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/owl.carousel/dist/owl.carousel.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001252s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/bootstrap/dist/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/common/img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/jquery-mousewheel/jquery.mousewheel.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/jscrollpane/script/jquery.jscrollpane.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/spin.js/spin.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/ladda/dist/ladda.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/select2/dist/js/select2.full.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/html5-form-validation/dist/jquery.validation.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/jquery-typeahead/dist/jquery.typeahead.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/jquery-mask-plugin/dist/jquery.mask.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/autosize/dist/autosize.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/bootstrap-show-password/bootstrap-show-password.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/moment/min/moment.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/fullcalendar/dist/fullcalendar.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/cleanhtmlaudioplayer/src/jquery.cleanaudioplayer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/cleanhtmlvideoplayer/src/jquery.cleanvideoplayer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/bootstrap-sweetalert/dist/sweetalert.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/remarkable-bootstrap-notify/dist/bootstrap-notify.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/summernote/dist/summernote.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/owl.carousel/dist/owl.carousel.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/ionrangeslider/js/ion.rangeSlider.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/nestable/jquery.nestable.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/datatables/media/js/jquery.dataTables.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/datatables/media/js/dataTables.bootstrap4.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/datatables-fixedcolumns/js/dataTables.fixedColumns.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/datatables-responsive/js/dataTables.responsive.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/editable-table/mindmup-editabletable.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/d3/d3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/c3/c3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/chartist/dist/chartist.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:39+08:00 ] ::1 /index.php/assets/vendors/peity/jquery.peity.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:40+08:00 ] ::1 /index.php/assets/vendors/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:40+08:00 ] ::1 /index.php/assets/vendors/gsap/src/minified/TweenMax.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:40+08:00 ] ::1 /index.php/assets/vendors/hackertyper/hackertyper.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:40+08:00 ] ::1 /index.php/assets/vendors/jquery-countTo/jquery.countTo.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:40+08:00 ] ::1 /index.php/assets/vendors/nprogress/nprogress.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:40+08:00 ] ::1 /index.php/assets/vendors/jquery-steps/build/jquery.steps.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:40+08:00 ] ::1 /index.php/assets/vendors/bootstrap-select/dist/js/bootstrap-select.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:40+08:00 ] ::1 /index.php/assets/vendors/chart.js/src/Chart.bundle.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:40+08:00 ] ::1 /index.php/assets/vendors/dropify/dist/js/dropify.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:40+08:00 ] ::1 /index.php/assets/common/js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:40+08:00 ] ::1 /index.php/assets/common/js/demo.temp.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:40+08:00 ] ::1 /index.php/assets/common/img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:40+08:00 ] ::1 /index.php/assets/common/img/temp/login/4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:02:40+08:00 ] ::1 /index.php/assets/common/img/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002319s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-11T17:04:32+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000884s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-08-11T17:12:37+08:00 ] ::1 /__MOUDLE__/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+ERR: 无法加载模块:__MOUDLE__
+
+[ 2017-08-11T17:12:54+08:00 ] ::1 /__MOUDLE__/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+ERR: 无法加载模块:__MOUDLE__
+
+[ 2017-08-11T17:13:04+08:00 ] ::1 /__MOUDLE__/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+ERR: 无法加载模块:__MOUDLE__
+
+[ 2017-08-11T17:13:19+08:00 ] ::1 /__MOUDLE__/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+ERR: 无法加载模块:__MOUDLE__
+
+[ 2017-08-11T20:49:03+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
+ERR: 无法加载模块:Favicon
+

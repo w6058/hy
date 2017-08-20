@@ -1,0 +1,88 @@
+<layout name="Layout/layout_admin" />
+
+<section class="page-content">
+<div class="page-content-inner">
+
+    <!-- Basic Tables -->
+    <section class="panel">
+        <div class="panel-heading">
+            <h3>会员中心 会员列表</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>会员列表说明</h4>
+                    <!--<p>Element: <code>div.table-responsive</code></p>-->
+                    <br />
+                    <div class="table-responsive margin-bottom-50">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>姓名</th>
+                                    <th>卡号</th>
+                                    <th>联系方式</th>
+                                    <th>会员等级</th>
+                                    <th>会员余额</th>
+                                    <th>资金记录</th>
+                                    <th>会员详情</th>
+                                    <th>余额编辑</th>
+                                    <th>分期编辑</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <foreach name='list' item='vo'>
+                                    <tr>
+                                        <td>{{$vo.m_nickname}}</td>
+                                        <td>{{$vo.m_card}}</td>
+                                        <td>{{$vo.m_phone}}</td>
+                                        <td>{{$vo.m_level}}</td>
+                                        <td>{{$vo.m_num}}</td>
+                                        <td>
+                                            <a href="__MODULE__/Admin/moneyRecord?id={{$vo.id}}">
+                                                <span class="label label-primary">  资金记录</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="__MODULE__/Admin/memberInfo?id={{$vo.id}}">
+                                                <span class="label label-primary">  会员详情</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="__MODULE__/Admin/member?id={{$vo.id}}">
+                                                <span class="label label-primary">  余额编辑</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="__MODULE__/Admin/memberF?id={{$vo.id}}">
+                                                <span class="label label-primary">  分期编辑</span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </foreach>
+                                <tr>
+                                    <td colspan="9" style="text-align: right;">{{$page}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- End Basic Tables  -->
+
+</div>
+
+<!-- Page Scripts -->
+<script>
+
+    $(function () {
+
+        $("[data-toggle=tooltip]").tooltip();
+
+    });
+
+</script>
+<!-- End Page Scripts -->
+</section>

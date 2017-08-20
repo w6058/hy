@@ -1,0 +1,1765 @@
+[ 2017-08-19T09:12:22+08:00 ] ::1 /hy2/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.104501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.047321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.047865s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.039637s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.040131s ]
+NOTIC: [8] Undefined variable: error F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.564960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.565473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.035089s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.038843s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.075015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.022155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022633s ]
+
+[ 2017-08-19T09:12:29+08:00 ] ::1 /hy2/index.php/Home/admin/shop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002155s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 730 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000384s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000854s ]
+NOTIC: [8] Undefined variable: error F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\02797d5de6aa6233935f85aeacb49ee9.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.129478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001091s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001722s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003719s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003528s ]
+
+[ 2017-08-19T09:12:29+08:00 ] ::1 /hy2/index.php/Home/admin/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001993s ]
+
+[ 2017-08-19T09:12:40+08:00 ] ::1 /hy2/index.php/Home/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002477s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 730 行.
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.1249s ]
+SQL: SELECT * FROM `t_admin` WHERE `a_username` = 'admin'  [ RunTime:0.0383s ]
+NOTIC: [8] Undefined index: a_phone F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 48 行.
+NOTIC: [8] Undefined index: a_email F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0561s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0450s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0361s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` WHERE `create_at` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0015s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `t_admin_shop` [ RunTime:0.0770s ]
+SQL: SELECT `s_id`,sum(num) as num FROM `t_admin_shop` GROUP BY s_id  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0391s ]
+SQL: SELECT `s_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY s_id  [ RunTime:0.0011s ]
+SQL: SELECT `s_name` FROM `t_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'N' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant logined - assumed 'logined' F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003940s ]
+NOTIC: [8] Undefined variable: maxShop F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 548 行.
+NOTIC: [8] Undefined variable: maxShop F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 550 行.
+NOTIC: [8] Undefined variable: maxMemberXf F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 592 行.
+NOTIC: [8] Undefined variable: maxMemberXf F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 594 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.544741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.547760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001451s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003937s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003200s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003874s ]
+
+[ 2017-08-19T09:12:58+08:00 ] ::1 /hy2/index.php/Home/admin/memberClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002829s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 730 行.
+SQL: SHOW COLUMNS FROM `t_member_level` [ RunTime:0.1072s ]
+SQL: SELECT * FROM `t_member_level`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000935s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001494s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.298054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.298577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002681s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004405s ]
+
+[ 2017-08-19T09:13:03+08:00 ] ::1 /hy2/index.php/Home/admin/deleMemberClass?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001987s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 730 行.
+SQL: SHOW COLUMNS FROM `t_member_level` [ RunTime:0.0022s ]
+SQL: DELETE FROM `t_member_level` WHERE `id` = 1 [ RunTime:0.0260s ]
+SQL: SELECT * FROM `t_member_level`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000994s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001622s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.138059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.138586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007394s ]
+
+[ 2017-08-19T09:13:04+08:00 ] ::1 /hy2/index.php/Home/admin/deleMemberClass?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001748s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 730 行.
+SQL: SHOW COLUMNS FROM `t_member_level` [ RunTime:0.0121s ]
+SQL: DELETE FROM `t_member_level` WHERE `id` = 2 [ RunTime:0.0011s ]
+SQL: SELECT * FROM `t_member_level`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001344s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.145060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.145562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001982s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003495s ]
+
+[ 2017-08-19T09:13:05+08:00 ] ::1 /hy2/index.php/Home/admin/deleMemberClass?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001897s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 730 行.
+SQL: SHOW COLUMNS FROM `t_member_level` [ RunTime:0.0134s ]
+SQL: DELETE FROM `t_member_level` WHERE `id` = 3 [ RunTime:0.0012s ]
+SQL: SELECT * FROM `t_member_level`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001870s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.143144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.143695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001331s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001756s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002805s ]
+
+[ 2017-08-19T09:13:06+08:00 ] ::1 /hy2/index.php/Home/admin/deleMemberClass?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002655s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 730 行.
+SQL: SHOW COLUMNS FROM `t_member_level` [ RunTime:0.0159s ]
+SQL: DELETE FROM `t_member_level` WHERE `id` = 4 [ RunTime:0.0011s ]
+SQL: SELECT * FROM `t_member_level`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001371s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.142348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.142854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001952s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002433s ]
+
+[ 2017-08-19T09:13:07+08:00 ] ::1 /hy2/index.php/Home/Admin/addMemberClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000126s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001961s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 730 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000964s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001805s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.209364s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.209859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002377s ]
+
+[ 2017-08-19T09:13:08+08:00 ] ::1 /hy2/index.php/Home/Admin/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001362s ]
+
+[ 2017-08-19T10:07:31+08:00 ] ::1 /hy2/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.044570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.045080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000457s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001046s ]
+NOTIC: [8] Undefined variable: error F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.401788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.402293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.054817s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.037427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.092988s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021601s ]
+
+[ 2017-08-19T10:07:45+08:00 ] ::1 /hy2/index.php/Home/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001898s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `t_admin` WHERE `a_username` = 'admin'  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: a_phone F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 48 行.
+NOTIC: [8] Undefined index: a_email F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0119s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0126s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` WHERE `create_at` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0013s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_admin_shop` [ RunTime:0.0027s ]
+SQL: SELECT `s_id`,sum(num) as num FROM `t_admin_shop` GROUP BY s_id  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0139s ]
+SQL: SELECT `s_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY s_id  [ RunTime:0.0013s ]
+SQL: SELECT `s_name` FROM `t_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0012s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'N' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant logined - assumed 'logined' F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001366s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001966s ]
+NOTIC: [8] Undefined variable: maxShop F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 548 行.
+NOTIC: [8] Undefined variable: maxShop F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 550 行.
+NOTIC: [8] Undefined variable: maxMemberXf F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 592 行.
+NOTIC: [8] Undefined variable: maxMemberXf F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 594 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.411187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.411693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003165s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008956s ]
+
+[ 2017-08-19T10:07:46+08:00 ] ::1 /hy2/index.php/Home/admin/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002251s ]
+
+[ 2017-08-19T10:08:04+08:00 ] ::1 /hy2/index.php/Home/admin/shop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002052s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 729 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000374s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000871s ]
+NOTIC: [8] Undefined variable: error F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\02797d5de6aa6233935f85aeacb49ee9.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002303s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005819s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002232s ]
+
+[ 2017-08-19T10:08:11+08:00 ] ::1 /hy2/index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002023s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'shop'  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0020s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0357s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.1453s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0015s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001727s ]
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 437 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 451 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 465 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 479 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 498 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 509 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 527 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 529 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 539 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 541 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 559 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 561 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 571 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.333001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.333781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001779s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005617s ]
+
+[ 2017-08-19T10:08:11+08:00 ] ::1 /hy2/index.php/Home/shop/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001630s ]
+
+[ 2017-08-19T10:08:17+08:00 ] ::1 /hy2/index.php/Home/shop/addcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001813s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_shop_member` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop_member` WHERE `s_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `t_shop_member` INNER JOIN t_member on t_shop_member.m_id = t_member.id  WHERE `s_id` = '1' ORDER BY t_shop_member.create_at desc LIMIT 0,25   [ RunTime:0.0298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000908s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001563s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.234180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.234682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001639s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003539s ]
+
+[ 2017-08-19T10:08:25+08:00 ] ::1 /hy2/index.php/Home/shop/addcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001749s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_shop_member` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop_member` WHERE `s_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_shop_member` INNER JOIN t_member on t_shop_member.m_id = t_member.id  WHERE `s_id` = '1' ORDER BY t_shop_member.create_at desc LIMIT 0,25   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000995s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001610s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.151668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.152180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001288s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008067s ]
+
+[ 2017-08-19T10:09:50+08:00 ] ::1 /hy2/index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000157s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007780s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'shop'  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0041s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0017s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001751s ]
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 437 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 451 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 465 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 479 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 498 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 509 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 527 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 529 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 539 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 541 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 559 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 561 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 571 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.218955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.219475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005211s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.006758s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012856s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013139s ]
+
+[ 2017-08-19T10:09:51+08:00 ] ::1 /hy2/index.php/Home/shop/memberadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000135s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005994s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001812s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002429s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.391777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.392276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005325s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.005412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005865s ]
+
+[ 2017-08-19T10:09:55+08:00 ] ::1 /hy2/index.php/Home/shop/addmember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004057s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000957s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001589s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.416956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.417487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001683s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001912s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005653s ]
+
+[ 2017-08-19T10:09:58+08:00 ] ::1 /hy2/index.php/Home/shop/findmember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004164s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `t_member` WHERE `m_card` = '1'  [ RunTime:0.0014s ]
+
+[ 2017-08-19T10:10:00+08:00 ] ::1 /hy2/index.php/Home/shop/findmember2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001988s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002344s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `t_member` WHERE `m_phone` = '1'  [ RunTime:0.0010s ]
+
+[ 2017-08-19T10:10:01+08:00 ] ::1 /hy2/index.php/Home/shop/addmember2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000135s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002540s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0044s ]
+SQL: INSERT INTO `t_member` (`m_card`,`m_nickname`,`m_username`,`m_phone`,`m_idcard`,`m_status`,`create_at`) VALUES ('1','1','1','1','1','1','2017-08-19 10:10:01') [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `t_shop_member` [ RunTime:0.0028s ]
+SQL: INSERT INTO `t_shop_member` (`m_id`,`s_id`,`num`,`create_at`) VALUES ('1','1','0','2017-08-19 10:10:01') [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `t_member_limit` [ RunTime:0.0027s ]
+SQL: INSERT INTO `t_member_limit` (`s_id`,`m_id`,`create_at`) VALUES ('1','1','2017-08-19 10:10:01') [ RunTime:0.0009s ]
+
+[ 2017-08-19T10:10:06+08:00 ] ::1 /hy2/index.php/Home/shop/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001945s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005439s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0040s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0302s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0023s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001666s ]
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 437 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 451 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 465 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 479 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 498 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 509 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 527 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 529 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 539 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 541 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 559 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 561 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 571 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.223069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.223638s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001669s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001863s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005390s ]
+
+[ 2017-08-19T10:10:13+08:00 ] ::1 /hy2/index.php/Home/shop/addcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003702s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_shop_member` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop_member` WHERE `s_id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `t_shop_member` INNER JOIN t_member on t_shop_member.m_id = t_member.id  WHERE `s_id` = '1' ORDER BY t_shop_member.create_at desc LIMIT 0,25   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000867s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001415s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.146600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.147148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002259s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006706s ]
+
+[ 2017-08-19T10:10:17+08:00 ] ::1 /hy2/index.php/Home/shop/maddcash
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000120s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003056s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_record` WHERE `s_id` = 1 AND ( gradetype = 'Y' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_record` INNER JOIN t_member on t_record.m_id = t_member.id  WHERE `s_id` = '1' AND ( gradetype = 'Y' ) ORDER BY t_record.gradetime desc LIMIT 0,25   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000762s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.248165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.248925s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001653s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001822s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006225s ]
+
+[ 2017-08-19T10:10:22+08:00 ] ::1 /hy2/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000120s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002783s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000370s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000841s ]
+NOTIC: [8] Undefined variable: error F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002025s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002630s ]
+
+[ 2017-08-19T10:10:33+08:00 ] ::1 /hy2/index.php/Home/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000122s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002942s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `t_admin` WHERE `a_username` = 'admin'  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: a_phone F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 48 行.
+NOTIC: [8] Undefined index: a_email F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0023s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` WHERE `create_at` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `t_admin_shop` [ RunTime:0.0026s ]
+SQL: SELECT `s_id`,sum(num) as num FROM `t_admin_shop` GROUP BY s_id  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0023s ]
+SQL: SELECT `s_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY s_id  [ RunTime:0.0012s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'N' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant logined - assumed 'logined' F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001362s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001881s ]
+NOTIC: [8] Undefined variable: maxShop F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 548 行.
+NOTIC: [8] Undefined variable: maxShop F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 550 行.
+NOTIC: [8] Undefined variable: recordMax F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 560 行.
+NOTIC: [8] Undefined variable: recordMax F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 562 行.
+NOTIC: [8] Undefined variable: maxShopXf F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 580 行.
+NOTIC: [8] Undefined variable: maxShopXf F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 582 行.
+NOTIC: [8] Undefined variable: maxMemberXf F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 592 行.
+NOTIC: [8] Undefined variable: maxMemberXf F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 594 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.145663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.146195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001617s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001853s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008636s ]
+
+[ 2017-08-19T10:10:40+08:00 ] ::1 /hy2/index.php/Home/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002452s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_member` INNER JOIN t_member_level on t_member.l_id = t_member_level.id  LIMIT 1   [ RunTime:0.0185s ]
+SQL: SELECT t_member.id,`m_nickname`,`m_card`,`m_phone`,`m_num`,`m_level` FROM `t_member` INNER JOIN t_member_level on t_member.l_id = t_member_level.id  ORDER BY create_at desc LIMIT 0,2   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000882s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001357s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.326490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.327089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001762s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004678s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005516s ]
+
+[ 2017-08-19T10:10:51+08:00 ] ::1 /hy2/index.php/Home/admin/addmember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002461s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `t_shop`  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000952s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001480s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.318780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.319376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002778s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001865s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004741s ]
+
+[ 2017-08-19T10:10:55+08:00 ] ::1 /hy2/index.php/Home/admin/findmember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002719s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `t_member` WHERE `m_card` = '1'  [ RunTime:0.0020s ]
+
+[ 2017-08-19T10:11:07+08:00 ] ::1 /hy2/index.php/Home/admin/findmember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003020s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `t_member` WHERE `m_card` = '12'  [ RunTime:0.0010s ]
+
+[ 2017-08-19T10:11:12+08:00 ] ::1 /hy2/index.php/Home/admin/findmember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000179s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004966s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `t_member` WHERE `m_phone` = '12'  [ RunTime:0.0012s ]
+
+[ 2017-08-19T10:11:13+08:00 ] ::1 /hy2/index.php/Home/admin/sureAddMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002693s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0040s ]
+SQL: INSERT INTO `t_member` (`m_nickname`,`m_card`,`m_username`,`m_password`,`m_email`,`m_idcard`,`m_address`,`m_phone`) VALUES ('1','12','1','1','1@1','1','1','12') [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `t_shop_member` [ RunTime:0.0025s ]
+SQL: INSERT INTO `t_shop_member` (`m_id`,`s_id`,`num`) VALUES ('2','2','0') [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `t_member_limit` [ RunTime:0.0126s ]
+SQL: INSERT INTO `t_member_limit` (`s_id`,`m_id`) VALUES ('2','2') [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000273s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000829s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115903s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001941s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005626s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003098s ]
+
+[ 2017-08-19T10:11:14+08:00 ] ::1 /hy2/index.php/Home/admin/addmember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002557s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `t_shop`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000952s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001437s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.133550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.134095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001652s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002855s ]
+
+[ 2017-08-19T10:11:18+08:00 ] ::1 /hy2/index.php/Home/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001949s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002809s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0125s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_member` INNER JOIN t_member_level on t_member.l_id = t_member_level.id  LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT t_member.id,`m_nickname`,`m_card`,`m_phone`,`m_num`,`m_level` FROM `t_member` INNER JOIN t_member_level on t_member.l_id = t_member_level.id  ORDER BY create_at desc LIMIT 0,2   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000864s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001396s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.152416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.153340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002143s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005818s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006947s ]
+
+[ 2017-08-19T10:11:34+08:00 ] ::1 /hy2/index.php/Home/admin/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002986s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0025s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` WHERE `create_at` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_admin_shop` [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,sum(num) as num FROM `t_admin_shop` GROUP BY s_id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0016s ]
+SQL: SELECT `s_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY s_id  [ RunTime:0.0009s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'N' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant logined - assumed 'logined' F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001463s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002021s ]
+NOTIC: [8] Undefined variable: maxShop F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 548 行.
+NOTIC: [8] Undefined variable: maxShop F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 550 行.
+NOTIC: [8] Undefined variable: recordMax F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 560 行.
+NOTIC: [8] Undefined variable: recordMax F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 562 行.
+NOTIC: [8] Undefined variable: maxShopXf F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 580 行.
+NOTIC: [8] Undefined variable: maxShopXf F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 582 行.
+NOTIC: [8] Undefined variable: maxMemberXf F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 592 行.
+NOTIC: [8] Undefined variable: maxMemberXf F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 594 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.159654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.160242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002604s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001932s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005549s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005645s ]
+
+[ 2017-08-19T10:11:41+08:00 ] ::1 /hy2/index.php/Home/admin/addmember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002673s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `t_shop`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000965s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001456s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.139829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002791s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001865s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006638s ]
+
+[ 2017-08-19T10:11:45+08:00 ] ::1 /hy2/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002455s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000370s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000849s ]
+NOTIC: [8] Undefined variable: error F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002050s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001726s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003305s ]
+
+[ 2017-08-19T10:11:47+08:00 ] ::1 /hy2/index.php/Home/admin/shop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002507s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 729 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000361s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000838s ]
+NOTIC: [8] Undefined variable: error F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\02797d5de6aa6233935f85aeacb49ee9.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025542s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001998s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003068s ]
+
+[ 2017-08-19T10:11:55+08:00 ] ::1 /hy2/index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001910s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002770s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'shop'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0021s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0102s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0017s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001008s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001486s ]
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 437 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 451 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 465 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 479 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 498 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 509 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 527 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 529 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 539 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 541 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 559 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 561 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 571 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.185993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.186470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001731s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001889s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007206s ]
+
+[ 2017-08-19T10:37:29+08:00 ] ::1 /hy2/index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.041315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.052290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.053411s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'shop'  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0020s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0219s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0017s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001725s ]
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 437 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 451 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 465 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 479 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 498 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 509 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 527 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 529 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 539 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 541 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 559 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 561 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 571 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.909632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.910143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.037639s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.049398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.087787s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.035095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.035853s ]
+
+[ 2017-08-19T10:46:31+08:00 ] ::1 /hy2/index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004505s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'shop'  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0021s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0017s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001540s ]
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 437 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 451 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 465 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 479 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 498 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 509 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 527 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 529 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 539 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 541 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 559 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 561 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 571 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.210339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.210945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001663s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001988s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003318s ]
+
+[ 2017-08-19T10:46:34+08:00 ] ::1 /hy2/index.php/Home/shop/addcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002641s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_shop_member` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop_member` WHERE `s_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_shop_member` INNER JOIN t_member on t_shop_member.m_id = t_member.id  WHERE `s_id` = '1' ORDER BY t_shop_member.create_at desc LIMIT 0,25   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000857s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001442s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.330065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.330623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001873s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001873s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005003s ]
+
+[ 2017-08-19T10:46:59+08:00 ] ::1 /hy2/index.php/Home/shop/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002994s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0026s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0018s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001552s ]
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 437 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 451 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 465 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 479 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 498 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 509 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 527 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 529 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 539 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 541 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 559 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 561 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 571 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.204257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.204882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001695s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004990s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008706s ]
+
+[ 2017-08-19T10:47:03+08:00 ] ::1 /hy2/index.php/Home/shop/memberadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003742s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000882s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001410s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.495027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.495614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002739s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007177s ]
+
+[ 2017-08-19T10:47:08+08:00 ] ::1 /hy2/index.php/Home/shop/addcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000189s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003286s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_shop_member` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop_member` WHERE `s_id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `t_shop_member` INNER JOIN t_member on t_shop_member.m_id = t_member.id  WHERE `s_id` = '1' ORDER BY t_shop_member.create_at desc LIMIT 0,25   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000948s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001521s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.212035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.212707s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001843s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004916s ]
+
+[ 2017-08-19T10:47:11+08:00 ] ::1 /hy2/index.php/Home/shop/memberadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003368s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000837s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001310s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.151190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.151960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001667s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004992s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006985s ]
+
+[ 2017-08-19T10:47:13+08:00 ] ::1 /hy2/index.php/Home/shop/findmember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000125s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002807s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `t_member` WHERE `m_card` = '1'  [ RunTime:0.0014s ]
+
+[ 2017-08-19T10:47:15+08:00 ] ::1 /hy2/index.php/Home/shop/memberadd2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003079s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `t_member` WHERE `m_card` = '1'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0028s ]
+SQL: INSERT INTO `t_record` (`s_id`,`m_id`,`grade`,`gradetype`,`gradetime`) VALUES ('1','1','111','Y','2017-08-19 10:47:15') [ RunTime:0.0010s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_member_level` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `t_member_level` WHERE ( term <= 111 ) ORDER BY term desc LIMIT 1   [ RunTime:0.0079s ]
+SQL: UPDATE `t_member` SET `m_card`='1',`m_nickname`='1',`m_username`='1',`m_password`='111111',`m_idcard`='1',`m_phone`='1',`m_phonenum`=NULL,`m_address`=NULL,`m_email`=NULL,`m_num`='0',`m_fenqi`=NULL,`m_day`=NULL,`m_status`='1',`create_at`='2017-08-19 10:10:01',`l_id`='1' WHERE `id` = 1 [ RunTime:0.0243s ]
+SQL: UPDATE `t_shop` SET `s_num`='9999888' WHERE `id` = 1 [ RunTime:0.0011s ]
+SQL: UPDATE `t_member` SET `m_num`='111' WHERE `id` = 1 [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `t_shop_member` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `t_shop_member` WHERE `s_id` = 1 AND `m_id` = 1  [ RunTime:0.0105s ]
+SQL: UPDATE `t_shop_member` SET `num`='111' WHERE `s_id` = 1 AND `m_id` = 1 [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `t_member_limit` [ RunTime:0.0209s ]
+SQL: SELECT * FROM `t_member_limit` WHERE `s_id` = 1 AND `m_id` = 1  [ RunTime:0.0013s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE ( gradetype = 'N' ) AND `s_id` = 1 AND `m_id` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `t_shop_member` WHERE `s_id` = 1 AND `m_id` = 1  [ RunTime:0.0016s ]
+
+[ 2017-08-19T10:47:17+08:00 ] ::1 /hy2/index.php/Home/shop/usemember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003439s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005797s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.510854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.511745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009815s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.005120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016590s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.017775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018514s ]
+
+[ 2017-08-19T10:47:19+08:00 ] ::1 /hy2/index.php/Home/shop/findmember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003032s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `t_member` WHERE `m_card` = '1'  [ RunTime:0.0011s ]
+
+[ 2017-08-19T10:47:22+08:00 ] ::1 /hy2/index.php/Home/shop/usemember2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003885s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `t_member` WHERE `m_card` = '1'  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `t_shop_member` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `t_shop_member` WHERE `m_id` = 1 AND `s_id` = 1  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `t_member_limit` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `t_member_limit` WHERE `s_id` = 1 AND `m_id` = 1  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0136s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE ( gradetype = 'N' ) AND `s_id` = 1 AND `m_id` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: INSERT INTO `t_record` (`s_id`,`m_id`,`grade`,`gradetype`,`goods`,`gradetime`) VALUES ('1','1','1','N','
+                        11','2017-08-19 10:47:22') [ RunTime:0.0012s ]
+SQL: UPDATE `t_shop` SET `s_num`='9999889' WHERE `id` = 1 [ RunTime:0.0011s ]
+SQL: UPDATE `t_member` SET `m_num`='110' WHERE `id` = 1 [ RunTime:0.0009s ]
+SQL: SELECT * FROM `t_shop_member` WHERE `s_id` = 1 AND `m_id` = 1  [ RunTime:0.0012s ]
+SQL: UPDATE `t_shop_member` SET `num`='110' WHERE `s_id` = 1 AND `m_id` = 1 [ RunTime:0.0014s ]
+SQL: SELECT * FROM `t_member_limit` WHERE `s_id` = 1 AND `m_id` = 1  [ RunTime:0.0013s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE ( gradetype = 'N' ) AND `s_id` = 1 AND `m_id` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `t_shop_member` WHERE `s_id` = 1 AND `m_id` = 1  [ RunTime:0.0009s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0019s ]
+
+[ 2017-08-19T10:47:29+08:00 ] ::1 /hy2/index.php/Home/shop/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003479s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0020s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0029s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0013s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001844s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002651s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.269421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.270059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002280s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012796s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013458s ]
+
+[ 2017-08-19T10:49:00+08:00 ] ::1 /hy2/index.php/Home/shop/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003105s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0034s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0151s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0018s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001629s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002311s ]
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 437 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 451 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 465 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 479 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 498 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 509 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 527 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 529 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 539 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 541 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 559 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 561 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 571 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.225357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.225952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001720s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001913s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007210s ]
+
+[ 2017-08-19T10:49:03+08:00 ] ::1 /hy2/index.php/Home/shop/addmember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003858s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001616s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.318428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.320017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001804s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004868s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005563s ]
+
+[ 2017-08-19T10:49:04+08:00 ] ::1 /hy2/index.php/Home/shop/findmember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002829s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `t_member` WHERE `m_card` = '1'  [ RunTime:0.0009s ]
+
+[ 2017-08-19T10:49:05+08:00 ] ::1 /hy2/index.php/Home/shop/findmember2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003142s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `t_member` WHERE `m_phone` = '1'  [ RunTime:0.0008s ]
+
+[ 2017-08-19T10:49:07+08:00 ] ::1 /hy2/index.php/Home/shop/addmember2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001995s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003509s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0032s ]
+SQL: INSERT INTO `t_member` (`m_card`,`m_nickname`,`m_username`,`m_phone`,`m_idcard`,`m_status`,`create_at`) VALUES ('1','1','1','1','1','1','2017-08-19 10:49:07') [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `t_shop_member` [ RunTime:0.0023s ]
+SQL: INSERT INTO `t_shop_member` (`m_id`,`s_id`,`num`,`create_at`) VALUES ('1','1','0','2017-08-19 10:49:07') [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `t_member_limit` [ RunTime:0.0037s ]
+SQL: INSERT INTO `t_member_limit` (`s_id`,`m_id`,`create_at`) VALUES ('1','1','2017-08-19 10:49:07') [ RunTime:0.0014s ]
+
+[ 2017-08-19T10:49:10+08:00 ] ::1 /hy2/index.php/Home/shop/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000125s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006666s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0027s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0274s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0020s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001631s ]
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 437 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 451 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 465 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 479 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 498 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 509 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 527 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 529 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 539 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 541 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 559 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 561 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 571 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.238293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.238854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001713s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004921s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007628s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005174s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005781s ]
+
+[ 2017-08-19T10:54:45+08:00 ] ::1 /hy2/index.php/Home/shop/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002712s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0036s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0018s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001524s ]
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 437 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 451 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 465 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 479 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 498 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 509 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 527 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 529 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 539 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 541 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 559 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 561 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 571 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.210709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.211254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001435s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007281s ]
+
+[ 2017-08-19T11:00:03+08:00 ] ::1 /hy2/index.php/Home/shop/addcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007469s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_shop_member` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop_member` WHERE `s_id` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `t_shop_member` INNER JOIN t_member on t_shop_member.m_id = t_member.id  WHERE `s_id` = '1' ORDER BY t_shop_member.create_at desc LIMIT 0,25   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001710s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.189269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.189829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002207s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001987s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013189s ]
+
+[ 2017-08-19T11:00:33+08:00 ] ::1 /hy2/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000126s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002861s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000368s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000848s ]
+NOTIC: [8] Undefined variable: error F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002795s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002290s ]
+
+[ 2017-08-19T11:00:35+08:00 ] ::1 /hy2/index.php/Home/admin/shop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002843s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\AdminController.class.php 第 729 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000480s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001196s ]
+NOTIC: [8] Undefined variable: error F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\02797d5de6aa6233935f85aeacb49ee9.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002286s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002404s ]
+
+[ 2017-08-19T11:00:43+08:00 ] ::1 /hy2/index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002267s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\server\wamp64\www\hy2\Application\Home\Controller\ShopController.class.php 第 598 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'shop'  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0023s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-19%' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0015s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001346s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001999s ]
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 437 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 451 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 465 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 479 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 498 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 509 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 527 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 529 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 539 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 541 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 559 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 561 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 571 行.
+NOTIC: [8] Undefined variable: list F:\server\wamp64\www\hy2\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.196739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.197370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001747s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006207s ]
+

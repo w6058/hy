@@ -1,0 +1,36 @@
+<nav class="top-menu">
+    <div class="menu-icon-container hidden-md-up">
+        <div class="animate-menu-button left-menu-toggle">
+            <div><!-- --></div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu-user-block">
+            <div class="dropdown dropdown-avatar">
+                <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <span class="avatar" href="javascript:void(0);">
+                        <img src="__PUBLIC__/assets/common/img/temp/avatars/1.jpg" alt="Alternative text to the image">
+                    </span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i> 会员信息</a>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-header">资料</div>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 姓名:{{$vo.m_nickname}}</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 电话:{{$vo.m_phone}}</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 邮箱:{{$vo.m_email}}</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="__MODULE__/member/index"><i class="dropdown-icon icmn-exit"></i> 退出</a>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="menu-info-block">
+            <div class="left">
+              <div class="dropdown">
+                <h4 style="margin-bottom:10px;margin-top:8px;">TK会员中心</h4>
+              </div>
+            </div>
+        </div>
+    </div>
+</nav>

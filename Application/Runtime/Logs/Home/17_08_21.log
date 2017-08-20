@@ -1,0 +1,1853 @@
+[ 2017-08-21T00:00:00+08:00 ] ::1 /index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 600 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'shop'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0006s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0006s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+NOTIC: [8] Undefined variable: nsumeMin D:\PHP\hy\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013115s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000972s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000828s ]
+
+[ 2017-08-21T00:00:30+08:00 ] ::1 /index.php/Home/shop/memberadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 600 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001033s ]
+
+[ 2017-08-21T00:00:33+08:00 ] ::1 /index.php/Home/shop/findmember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 600 行.
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `t_member` INNER JOIN t_shop_member on t_member.id = t_shop_member.m_id  WHERE t_shop_member.s_id = '1' AND t_member.m_card = '222'  [ RunTime:0.0006s ]
+
+[ 2017-08-21T00:00:35+08:00 ] ::1 /index.php/Home/shop/memberadd2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 600 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `t_member` WHERE `m_card` = '222'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0006s ]
+SQL: INSERT INTO `t_record` (`s_id`,`m_id`,`grade`,`gradetype`,`gradetime`) VALUES ('1','2','1212','Y','2017-08-21 00:00:35') [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `m_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_member_level` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_member_level` WHERE ( term <= 2668 ) ORDER BY term desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `t_member` SET `m_card`='222',`m_nickname`='222',`m_username`='222',`m_password`='111111',`m_idcard`='',`m_phone`='111',`m_phonenum`=NULL,`m_address`=NULL,`m_email`=NULL,`m_num`='1412',`m_fenqi`=NULL,`m_day`=NULL,`m_status`='1',`create_at`='2017-08-20 16:18:41',`l_id`='3' WHERE `id` = 2 [ RunTime:0.0020s ]
+SQL: UPDATE `t_shop` SET `s_num`='9996487' WHERE `id` = 1 [ RunTime:0.0006s ]
+SQL: UPDATE `t_member` SET `m_num`='2624' WHERE `id` = 2 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_shop_member` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_shop_member` WHERE `s_id` = 1 AND `m_id` = 2  [ RunTime:0.0004s ]
+SQL: UPDATE `t_shop_member` SET `num`='2402' WHERE `s_id` = 1 AND `m_id` = 2 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_member_limit` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_member_limit` WHERE `s_id` = 1 AND `m_id` = 2  [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE ( gradetype = 'N' ) AND `s_id` = 1 AND `m_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_shop_member` WHERE `s_id` = 1 AND `m_id` = 2  [ RunTime:0.0003s ]
+
+[ 2017-08-21T00:00:38+08:00 ] ::1 /index.php/Home/shop/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 600 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0006s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0007s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+NOTIC: [8] Undefined variable: nsumeMin D:\PHP\hy\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002337s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002695s ]
+
+[ 2017-08-21T00:00:41+08:00 ] ::1 /index.php/Home/shop/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 600 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0007s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0007s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+NOTIC: [8] Undefined variable: nsumeMin D:\PHP\hy\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001249s ]
+
+[ 2017-08-21T00:01:25+08:00 ] ::1 /index.php/Home/shop/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001766s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 600 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001079s ]
+NOTIC: [8] Undefined variable: error D:\PHP\hy\Application\Runtime\Cache\Home\02797d5de6aa6233935f85aeacb49ee9.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001425s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2017-08-21T00:01:27+08:00 ] ::1 /index.php/Home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] Undefined variable: error D:\PHP\hy\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006893s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001585s ]
+
+[ 2017-08-21T00:01:27+08:00 ] ::1 /index.php/Home/index/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /index.php/Home/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_admin` WHERE `a_username` = 'admin'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: a_phone D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 48 行.
+NOTIC: [8] Undefined index: a_email D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0006s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` WHERE `create_at` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_admin_shop` [ RunTime:0.0007s ]
+SQL: SELECT `s_id`,sum(num) as num FROM `t_admin_shop` GROUP BY s_id  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0006s ]
+SQL: SELECT `s_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY s_id  [ RunTime:0.0004s ]
+SQL: SELECT `s_name` FROM `t_shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'N' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant logined - assumed 'logined' D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000380s ]
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 549 行.
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 551 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000985s ]
+
+[ 2017-08-21T00:02:19+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+NOTIC: [8] Undefined variable: error D:\PHP\hy\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002974s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003798s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2017-08-21T00:02:21+08:00 ] ::1 /index.php/Home/admin/shop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002614s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Undefined variable: error D:\PHP\hy\Application\Runtime\Cache\Home\02797d5de6aa6233935f85aeacb49ee9.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000556s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001851s ]
+
+[ 2017-08-21T00:02:23+08:00 ] ::1 /index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 600 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'shop'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0006s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0007s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+NOTIC: [8] Undefined variable: nsumeMin D:\PHP\hy\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2017-08-21T00:02:50+08:00 ] ::1 /index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 600 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'shop'  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0006s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0006s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0009s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000378s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8] Undefined variable: nsumeMin D:\PHP\hy\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014215s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000823s ]
+
+[ 2017-08-21T00:03:38+08:00 ] ::1 /index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 600 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'shop'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0031s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0007s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0008s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000262s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000374s ]
+NOTIC: [8] Undefined variable: nsumeMin D:\PHP\hy\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000609s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001196s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001446s ]
+
+[ 2017-08-21T00:03:45+08:00 ] ::1 /index.php/Home/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `t_admin` WHERE `a_username` = 'admin'  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: a_phone D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 48 行.
+NOTIC: [8] Undefined index: a_email D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0007s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` WHERE `create_at` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_admin_shop` [ RunTime:0.0006s ]
+SQL: SELECT `s_id`,sum(num) as num FROM `t_admin_shop` GROUP BY s_id  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0006s ]
+SQL: SELECT `s_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY s_id  [ RunTime:0.0004s ]
+SQL: SELECT `s_name` FROM `t_shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0013s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'N' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant logined - assumed 'logined' D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000596s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000772s ]
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 549 行.
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 551 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2017-08-21T00:04:27+08:00 ] ::1 /index.php/Home/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001407s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `t_admin` WHERE `a_username` = 'admin'  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: a_phone D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 48 行.
+NOTIC: [8] Undefined index: a_email D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0012s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` WHERE `create_at` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_admin_shop` [ RunTime:0.0006s ]
+SQL: SELECT `s_id`,sum(num) as num FROM `t_admin_shop` GROUP BY s_id  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0009s ]
+SQL: SELECT `s_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY s_id  [ RunTime:0.0011s ]
+SQL: SELECT `s_name` FROM `t_shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0006s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'N' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant logined - assumed 'logined' D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000349s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000454s ]
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 549 行.
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 551 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000820s ]
+
+[ 2017-08-21T00:04:34+08:00 ] ::1 /index.php/Home/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_admin` WHERE `a_username` = 'admin'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: a_phone D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 48 行.
+NOTIC: [8] Undefined index: a_email D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0007s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` WHERE `create_at` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_admin_shop` [ RunTime:0.0006s ]
+SQL: SELECT `s_id`,sum(num) as num FROM `t_admin_shop` GROUP BY s_id  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0006s ]
+SQL: SELECT `s_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY s_id  [ RunTime:0.0011s ]
+SQL: SELECT `s_name` FROM `t_shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0009s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'N' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant logined - assumed 'logined' D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000348s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000461s ]
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 549 行.
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 551 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2017-08-21T00:04:40+08:00 ] ::1 /index.php/Home/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001291s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_admin` WHERE `a_username` = 'admin'  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: a_phone D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 48 行.
+NOTIC: [8] Undefined index: a_email D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0011s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` WHERE `create_at` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0007s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_admin_shop` [ RunTime:0.0009s ]
+SQL: SELECT `s_id`,sum(num) as num FROM `t_admin_shop` GROUP BY s_id  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0008s ]
+SQL: SELECT `s_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY s_id  [ RunTime:0.0004s ]
+SQL: SELECT `s_name` FROM `t_shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'N' LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant logined - assumed 'logined' D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000293s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000399s ]
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 549 行.
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 551 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000536s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2017-08-21T00:04:48+08:00 ] ::1 /index.php/Home/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_admin` WHERE `a_username` = 'admin'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: a_phone D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 48 行.
+NOTIC: [8] Undefined index: a_email D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0007s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` WHERE `create_at` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_admin_shop` [ RunTime:0.0006s ]
+SQL: SELECT `s_id`,sum(num) as num FROM `t_admin_shop` GROUP BY s_id  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0009s ]
+SQL: SELECT `s_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY s_id  [ RunTime:0.0005s ]
+SQL: SELECT `s_name` FROM `t_shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'N' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0019s ]
+NOTIC: [8] Use of undefined constant logined - assumed 'logined' D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000324s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000454s ]
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 549 行.
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 551 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000517s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001070s ]
+
+[ 2017-08-21T00:08:27+08:00 ] ::1 /index.php/Home/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `t_admin` WHERE `a_username` = 'admin'  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: a_phone D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 48 行.
+NOTIC: [8] Undefined index: a_email D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0010s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` WHERE `create_at` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0023s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `t_admin_shop` [ RunTime:0.0011s ]
+SQL: SELECT `s_id`,sum(num) as num FROM `t_admin_shop` GROUP BY s_id  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0007s ]
+SQL: SELECT `s_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY s_id  [ RunTime:0.0007s ]
+SQL: SELECT `s_name` FROM `t_shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'N' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant logined - assumed 'logined' D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000467s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000782s ]
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 549 行.
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 551 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020923s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2017-08-21T00:12:31+08:00 ] ::1 /index.php/Home/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_admin` WHERE `a_username` = 'admin'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: a_phone D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 48 行.
+NOTIC: [8] Undefined index: a_email D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0006s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` WHERE `create_at` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_admin_shop` [ RunTime:0.0007s ]
+SQL: SELECT `s_id`,sum(num) as num FROM `t_admin_shop` GROUP BY s_id  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0006s ]
+SQL: SELECT `s_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY s_id  [ RunTime:0.0004s ]
+SQL: SELECT `s_name` FROM `t_shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0023s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'N' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant logined - assumed 'logined' D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000445s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000625s ]
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 551 行.
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 553 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019754s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000840s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000957s ]
+
+[ 2017-08-21T00:13:14+08:00 ] ::1 /index.php/Home/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002011s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `t_admin` WHERE `a_username` = 'admin'  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: a_phone D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 48 行.
+NOTIC: [8] Undefined index: a_email D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0007s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` WHERE `create_at` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0007s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_admin_shop` [ RunTime:0.0007s ]
+SQL: SELECT `s_id`,sum(num) as num FROM `t_admin_shop` GROUP BY s_id  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0007s ]
+SQL: SELECT `s_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY s_id  [ RunTime:0.0004s ]
+SQL: SELECT `s_name` FROM `t_shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'N' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant logined - assumed 'logined' D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000410s ]
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 549 行.
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 551 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019950s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2017-08-21T00:13:17+08:00 ] ::1 /index.php/Home/admin/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0010s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` WHERE `create_at` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_admin_shop` [ RunTime:0.0006s ]
+SQL: SELECT `s_id`,sum(num) as num FROM `t_admin_shop` GROUP BY s_id  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0007s ]
+SQL: SELECT `s_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY s_id  [ RunTime:0.0005s ]
+SQL: SELECT `s_name` FROM `t_shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'N' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant logined - assumed 'logined' D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000419s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000607s ]
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 549 行.
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 551 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016460s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000871s ]
+
+[ 2017-08-21T00:13:35+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined variable: error D:\PHP\hy\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000951s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000680s ]
+
+[ 2017-08-21T00:13:36+08:00 ] ::1 /index.php/Home/admin/shop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001516s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined variable: error D:\PHP\hy\Application\Runtime\Cache\Home\02797d5de6aa6233935f85aeacb49ee9.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001797s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000736s ]
+
+[ 2017-08-21T00:13:42+08:00 ] ::1 /index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000205s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002433s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 600 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'shop'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0006s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0007s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000330s ]
+NOTIC: [8] Undefined variable: nsumeMin D:\PHP\hy\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 574 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
+
+[ 2017-08-21T00:13:55+08:00 ] ::1 /index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002787s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 600 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'shop'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0019s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0008s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000374s ]
+NOTIC: [8] Undefined variable: nsumeMin D:\PHP\hy\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000925s ]
+
+[ 2017-08-21T00:13:56+08:00 ] ::1 /index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 600 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'shop'  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0006s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0009s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000249s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000347s ]
+NOTIC: [8] Undefined variable: nsumeMin D:\PHP\hy\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000479s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003004s ]
+
+[ 2017-08-21T00:14:49+08:00 ] ::1 /index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 600 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'shop'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0007s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0012s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000365s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000564s ]
+NOTIC: [8] Undefined variable: nsumeMin D:\PHP\hy\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000932s ]
+
+[ 2017-08-21T00:14:52+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+NOTIC: [8] Undefined variable: error D:\PHP\hy\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000981s ]
+
+[ 2017-08-21T00:14:59+08:00 ] ::1 /index.php/Home/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_admin` WHERE `a_username` = 'admin'  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: a_phone D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 48 行.
+NOTIC: [8] Undefined index: a_email D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0007s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` WHERE `create_at` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_admin_shop` [ RunTime:0.0006s ]
+SQL: SELECT `s_id`,sum(num) as num FROM `t_admin_shop` GROUP BY s_id  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY s_id  [ RunTime:0.0005s ]
+SQL: SELECT `s_name` FROM `t_shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'N' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant logined - assumed 'logined' D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000348s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000467s ]
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 549 行.
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 551 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017170s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000635s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001020s ]
+
+[ 2017-08-21T00:15:11+08:00 ] ::1 /index.php/Home/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_admin` WHERE `a_username` = 'admin'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: a_phone D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 48 行.
+NOTIC: [8] Undefined index: a_email D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0006s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` WHERE `create_at` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_admin_shop` [ RunTime:0.0018s ]
+SQL: SELECT `s_id`,sum(num) as num FROM `t_admin_shop` GROUP BY s_id  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0008s ]
+SQL: SELECT `s_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY s_id  [ RunTime:0.0006s ]
+SQL: SELECT `s_name` FROM `t_shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'N' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant logined - assumed 'logined' D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000308s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000410s ]
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 549 行.
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 551 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2017-08-21T00:15:15+08:00 ] ::1 /index.php/Home/admin/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `t_shop` ORDER BY create_at asc LIMIT 0,25   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000259s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000388s ]
+NOTIC: [8] Undefined variable: val D:\PHP\hy\Application\Runtime\Cache\Home\d1ceaccfb7d73dd25cb8e9baf73ec609.php 第 480 行.
+NOTIC: [8] Undefined variable: val D:\PHP\hy\Application\Runtime\Cache\Home\d1ceaccfb7d73dd25cb8e9baf73ec609.php 第 480 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014147s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001122s ]
+
+[ 2017-08-21T00:15:23+08:00 ] ::1 /index.php/Home/admin/addshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000367s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013492s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001002s ]
+
+[ 2017-08-21T00:15:25+08:00 ] ::1 /index.php/Home/admin/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `t_shop` ORDER BY create_at asc LIMIT 0,25   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000363s ]
+NOTIC: [8] Undefined variable: val D:\PHP\hy\Application\Runtime\Cache\Home\d1ceaccfb7d73dd25cb8e9baf73ec609.php 第 480 行.
+NOTIC: [8] Undefined variable: val D:\PHP\hy\Application\Runtime\Cache\Home\d1ceaccfb7d73dd25cb8e9baf73ec609.php 第 480 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001443s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000790s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002788s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002300s ]
+
+[ 2017-08-21T00:15:28+08:00 ] ::1 /index.php/Home/admin/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0006s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` WHERE `create_at` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_admin_shop` [ RunTime:0.0007s ]
+SQL: SELECT `s_id`,sum(num) as num FROM `t_admin_shop` GROUP BY s_id  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0017s ]
+SQL: SELECT `s_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY s_id  [ RunTime:0.0009s ]
+SQL: SELECT `s_name` FROM `t_shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'N' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant logined - assumed 'logined' D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000342s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000479s ]
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 549 行.
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 551 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018453s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2017-08-21T00:16:14+08:00 ] ::1 /index.php/Home/admin/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0006s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` WHERE `create_at` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_admin_shop` [ RunTime:0.0006s ]
+SQL: SELECT `s_id`,sum(num) as num FROM `t_admin_shop` GROUP BY s_id  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0006s ]
+SQL: SELECT `s_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY s_id  [ RunTime:0.0004s ]
+SQL: SELECT `s_name` FROM `t_shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'N' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant logined - assumed 'logined' D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000294s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000404s ]
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 549 行.
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 551 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000604s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2017-08-21T00:16:23+08:00 ] ::1 /index.php/Home/admin/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0009s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_member` WHERE `create_at` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0006s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_admin_shop` [ RunTime:0.0011s ]
+SQL: SELECT `s_id`,sum(num) as num FROM `t_admin_shop` GROUP BY s_id  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0006s ]
+SQL: SELECT `s_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'Y' GROUP BY s_id  [ RunTime:0.0004s ]
+SQL: SELECT `s_name` FROM `t_shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_record` WHERE `gradetype` = 'N' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant logined - assumed 'logined' D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000381s ]
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 549 行.
+NOTIC: [8] Undefined variable: maxShop D:\PHP\hy\Application\Runtime\Cache\Home\6235d477ae823382f2c707cc8d0152c2.php 第 551 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001332s ]
+
+[ 2017-08-21T00:16:43+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: error D:\PHP\hy\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000525s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000830s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000971s ]
+
+[ 2017-08-21T00:16:45+08:00 ] ::1 /index.php/Home/admin/shop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] Undefined variable: error D:\PHP\hy\Application\Runtime\Cache\Home\02797d5de6aa6233935f85aeacb49ee9.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2017-08-21T00:16:45+08:00 ] ::1 /index.php/Home/admin/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+
+[ 2017-08-21T00:24:19+08:00 ] 127.0.0.1 www.jetbrains.com:443
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Undefined variable: error D:\PHP\hy\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000832s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001809s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001203s ]
+
+[ 2017-08-21T00:24:24+08:00 ] 127.0.0.1 plugins.jetbrains.com:443
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001900s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000388s ]
+NOTIC: [8] Undefined variable: error D:\PHP\hy\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.167359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.170684s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.057397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.059953s ]
+
+[ 2017-08-21T00:27:50+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Undefined variable: error D:\PHP\hy\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000809s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000950s ]
+
+[ 2017-08-21T00:27:52+08:00 ] ::1 /index.php/Home/admin/shop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined variable: error D:\PHP\hy\Application\Runtime\Cache\Home\02797d5de6aa6233935f85aeacb49ee9.php 第 65 行.
+NOTIC: [8] Undefined variable: success D:\PHP\hy\Application\Runtime\Cache\Home\02797d5de6aa6233935f85aeacb49ee9.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001791s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005735s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001100s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001278s ]
+
+[ 2017-08-21T00:27:52+08:00 ] ::1 /index.php/Home/admin/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+
+[ 2017-08-21T00:27:57+08:00 ] ::1 /index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 601 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'shop'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0006s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0007s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000277s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8] Undefined variable: nsumeMin D:\PHP\hy\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000993s ]
+
+[ 2017-08-21T00:27:58+08:00 ] ::1 /index.php/Home/shop/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+
+[ 2017-08-21T00:28:00+08:00 ] ::1 /index.php/Home/shop/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 601 行.
+ERR: Think\Controller:assing方法不存在！
+
+[ 2017-08-21T00:28:14+08:00 ] ::1 /index.php/Home/shop/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 601 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+NOTIC: [8] Undefined variable: error D:\PHP\hy\Application\Runtime\Cache\Home\02797d5de6aa6233935f85aeacb49ee9.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2017-08-21T00:28:25+08:00 ] ::1 /index.php/Home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] Undefined variable: error D:\PHP\hy\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001219s ]
+
+[ 2017-08-21T00:28:25+08:00 ] ::1 /index.php/Home/index/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000836s ]
+
+[ 2017-08-21T00:28:26+08:00 ] ::1 /index.php/Home/admin/shop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\AdminController.class.php 第 729 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Undefined variable: error D:\PHP\hy\Application\Runtime\Cache\Home\02797d5de6aa6233935f85aeacb49ee9.php 第 65 行.
+NOTIC: [8] Undefined variable: success D:\PHP\hy\Application\Runtime\Cache\Home\02797d5de6aa6233935f85aeacb49ee9.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008216s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2017-08-21T00:28:33+08:00 ] ::1 /index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 601 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'shop'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0006s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-08-21%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0007s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0004s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8] Undefined variable: nsumeMin D:\PHP\hy\Application\Runtime\Cache\Home\65c76876f326992d4c6c9d868b691e51.php 第 573 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-08-21T00:28:35+08:00 ] ::1 /index.php/Home/shop/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002644s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 601 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined variable: error D:\PHP\hy\Application\Runtime\Cache\Home\02797d5de6aa6233935f85aeacb49ee9.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001103s ]
+
+[ 2017-08-21T00:30:57+08:00 ] ::1 /index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 602 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'admin'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000733s ]
+
+[ 2017-08-21T00:31:04+08:00 ] ::1 /index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 602 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'admin'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000632s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001122s ]
+
+[ 2017-08-21T00:32:08+08:00 ] ::1 /index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 601 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'admin'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000834s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000884s ]
+
+[ 2017-08-21T00:32:09+08:00 ] ::1 /index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 601 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'admin'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+
+[ 2017-08-21T00:32:13+08:00 ] ::1 /index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 601 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2017-08-21T00:32:18+08:00 ] ::1 /index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 601 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000515s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+

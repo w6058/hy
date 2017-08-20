@@ -1,0 +1,174 @@
+[ 2017-08-21T00:00:30+08:00 ] ::1 /assets/vendors/hackertyper/kernel.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/tether.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/fullcalendar.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/autosize.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/jquery.jscrollpane.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/jquery.cleanaudioplayer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001088s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/jquery.peity.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/chartist.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000998s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/jquery.dataTables.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/chartist-plugin-tooltip.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001373s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/moment.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000957s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/jquery.countTo.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/tether.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001366s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/jquery.jscrollpane.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000348s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001481s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/autosize.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/moment.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/fullcalendar.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/jquery.cleanaudioplayer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/jquery.dataTables.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/chartist.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/jquery.peity.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/chartist-plugin-tooltip.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:01:30+08:00 ] ::1 /Public/assets/vendors/jquery.countTo.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-21T00:16:44+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-08-21T00:17:34+08:00 ] 127.0.0.1 http://idea.imsxm.com//rpc/releaseTicket.action?buildNumber=2016.2.1+Build+PS-162.1889.1&clientVersion=2&hostName=DESKTOP-47330T4&machineId=3c7ade1a-e001-4f8e-a2df-66b433a171a4&productCode=0d85f2cc-b84f-44c7-b319-93997d080ac9&productFamilyId=0d85f2cc-b84f-44c7-b319-93997d080ac9&salt=1503245854249&secure=false&ticketId=1&userName=%E7%8E%8B%E5%B4%87
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+ERR: 无法加载模块:Rpc
+
+[ 2017-08-21T00:27:51+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-08-21T00:35:18+08:00 ] 127.0.0.1 http://idea.imsxm.com//rpc/releaseTicket.action?buildNumber=2016.2.1+Build+PS-162.1889.1&clientVersion=2&hostName=DESKTOP-47330T4&machineId=3c7ade1a-e001-4f8e-a2df-66b433a171a4&productCode=0d85f2cc-b84f-44c7-b319-93997d080ac9&productFamilyId=0d85f2cc-b84f-44c7-b319-93997d080ac9&salt=1503246918897&secure=false&ticketId=1&userName=%E7%8E%8B%E5%B4%87
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+ERR: 无法加载模块:Rpc
+
