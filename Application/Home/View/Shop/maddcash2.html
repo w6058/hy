@@ -25,7 +25,9 @@
                             <tr>
                                 <th>序号</th>
                                 <th>充值金额</th>
+                                <th>充值项目</th>
                                 <th>充值日期</th>
+                                <th>经手人</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -33,16 +35,17 @@
                                 <tr>
                                     <td>{{$key+1}}</td>
                                     <td>{{$list.grade}}</td>
+                                    <td>{{$list.goods}}</td>
                                     <td>{{$list.gradetime}}</td>
+                                    <td>{{$list.0.s_name}}</td>
                                 </tr>
                             </foreach>
-                            <tr><td colspan="3" style="text-align: right;font-size: 15px;">{{$page}}</td></tr>
+                            <tr><td colspan="5" style="text-align: right;font-size: 15px;">{{$page}}</td></tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
     <!-- End Basic Tables  -->

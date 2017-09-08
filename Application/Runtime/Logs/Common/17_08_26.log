@@ -1,0 +1,24 @@
+[ 2017-08-26T19:48:22+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000791s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-08-26T19:49:23+08:00 ] ::1 /assets/vendors/hackertyper/kernel.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-26T19:50:46+08:00 ] ::1 /assets/vendors/hackertyper/kernel.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+ERR: 无法加载模块:Assets
+
+[ 2017-08-26T20:16:53+08:00 ] 127.0.0.1 http://idea.imsxm.com//rpc/releaseTicket.action?buildNumber=2016.2.1+Build+PS-162.1889.1&clientVersion=2&hostName=DESKTOP-47330T4&machineId=3c7ade1a-e001-4f8e-a2df-66b433a171a4&productCode=0d85f2cc-b84f-44c7-b319-93997d080ac9&productFamilyId=0d85f2cc-b84f-44c7-b319-93997d080ac9&salt=1503749812769&secure=false&ticketId=1&userName=%E7%8E%8B%E5%B4%87
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010972s ]
+ERR: 无法加载模块:Rpc
+

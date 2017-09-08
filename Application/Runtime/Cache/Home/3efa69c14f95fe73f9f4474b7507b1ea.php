@@ -24,7 +24,6 @@
     <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/bootstrap/dist/css/bootstrap.min.css">
     <!-- Clean UI Styles -->
     <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/main.min.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/source/helpers/fonts">
     <!-- Vendors Scripts -->
     <script src="/Public/assets/vendors/jquery/jquery.min.js"></script>
     <!-- v1.0.0 -->
@@ -40,14 +39,16 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="logo">
-                    <a href="/index.php/Home/index/index">
+                    <a href="/index.php/Home/admin/home">
                         <img src="/Public/assets/common/img/logo-inverse.png" alt="Clean UI Admin Template" />
                     </a>
                 </div>
             </div>
             <div class="col-lg-8">
                 <div class="single-page-block-header-menu">
+
                     <ul class="list-unstyled list-inline">
+                        <li><a href="/Public/video.html" target="_blank">视频教程</a></li>
                         <li><a href="/Public/guide.html" target="_blank">使用手册</a></li>
                     </ul>
                 </div>
@@ -63,7 +64,7 @@
                             商户中心 登录
                             <span class="small">欢迎您!</span>
                             <h6 style="color:red;"><?php echo ($error); ?></h6>
-
+                            <h6 style="color:red;"><?php echo ($success); ?></h6>
                         </h3>
                         <br />
                         <form action="/index.php/Home/shop/index" id="form-validation" name="form-validation" method="POST">
@@ -85,18 +86,23 @@
                                        placeholder="输入您的密码">
                             </div>
                             <div class="form-group">
-                                <a href="javascript: void(0);" class="pull-right link-blue link-underlined">忘记密码请联系管理员</a>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="example6" checked>
-                                        记住我
-                                    </label>
-                                </div>
+                                <label class="form-label">验证码</label>
+                                <p>
+                                    <img width="30%" class="" height="50" alt="验证码" src="<?php echo U('Home/Index/verify_c',array());?>" title="点击刷新">
+                                </p>
+                                    <input id=""
+                                           class="form-control password"
+                                           name="verify"
+                                           placeholder="输入您的验证码">
                             </div>
+                            <div class="form-group">
+                                <a href="/index.php/Home/reg/index" class="pull-left link-blue ">新商户注册</a>
+                                <a href="javascript: void(0);" class="pull-right link-blue ">忘记密码请联系管理员</a>
+                            </div>
+                            <br>
                             <div class="form-actions">
                                 <button type="submit" class="btn btn-primary width-150 margin-inline">登录</button>
                             </div>
-
                         </form>
                     </div>
                     <div class="single-page-block-sidebar" style="background-image: url(/Public/assets/common/img/temp/login/7.jpg)">
@@ -137,25 +143,16 @@
 
         // Add class to body for change layout settings
         $('body').addClass('single-page');
-
-//        // Form Validation
-//        $('#form-validation').validate({
-//            submit: {
-//                settings: {
-//                    inputContainer: '.form-group',
-//                    errorListClass: 'form-control-error',
-//                    errorClass: 'has-danger'
-//                }
-//            }
-//        });
-//
-//        // Show/Hide Password
-//        $('.password').password({
-//            eyeClass: '',
-//            eyeOpenClass: 'icmn-eye',
-//            eyeCloseClass: 'icmn-eye-blocked'
-//        });
-
+        var captcha_img = $('.form-group').find('img');
+        var verifyimg = captcha_img.attr("src");
+        captcha_img.attr('title', '点击刷新');
+        captcha_img.click(function(){
+            if( verifyimg.indexOf('?')>0){
+                $(this).attr("src", verifyimg+'&random='+Math.random());
+            }else{
+                $(this).attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
+            }
+        });
     });
 </script>
 <!-- End Page Scripts -->

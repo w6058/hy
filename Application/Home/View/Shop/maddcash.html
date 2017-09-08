@@ -24,8 +24,10 @@
                                 <th>会员名</th>
                                 <th>会员账户</th>
                                 <th>联系方式</th>
+                                <th>充值项目</th>
                                 <th>充值金额</th>
                                 <th>充值日期</th>
+                                <th>经手人</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -36,11 +38,13 @@
                                     <td>{{$list.m_nickname}}</td>
                                     <td>{{$list.m_username}}</td>
                                     <td>{{$list.m_phone}}</td>
+                                    <td>{{$list.goods}}</td>
                                     <td>{{$list.grade}}</td>
                                     <td>{{$list.gradetime}}</td>
+                                    <td>{{$list.0.s_name}}</td>
                                 </tr>
                             </foreach>
-                            <tr><td colspan="7" style="text-align: right;font-size: 15px;">{{$page}}</td></tr>
+                            <tr><td colspan="9" style="text-align: right;font-size: 15px;">{{$page}}</td></tr>
                             </tbody>
                         </table>
                     </div>

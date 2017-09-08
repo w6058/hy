@@ -24,20 +24,20 @@
                             <thead>
                             <tr>
                                 <th>序号</th>
-                                <th>商铺名</th>
                                 <th>消费内容</th>
                                 <th>消费金额</th>
                                 <th>消费日期</th>
+                                <th>经手人</th>
                             </tr>
                             </thead>
                             <tbody>
                             <foreach name="lists" item="list" key="key">
                                 <tr>
                                     <td>{{$key+1}}</td>
-                                    <td>{{$list.s_name}}</td>
                                     <td>{{$list.goods}}</td>
                                     <td>{{$list.grade}}</td>
                                     <td>{{$list.gradetime}}</td>
+                                    <td>{{$list.0.s_name}}</td>
                                 </tr>
                             </foreach>
                             <tr><td colspan="5" style="text-align: right;font-size: 15px">{{$page}}</td></tr>

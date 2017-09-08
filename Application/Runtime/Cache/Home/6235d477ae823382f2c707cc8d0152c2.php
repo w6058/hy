@@ -25,7 +25,6 @@
     <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/chartist/dist/chartist.min.css">
     <!-- Clean UI Styles -->
     <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/main.min.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/source/helpers/fonts">
     <script src="/Public/assets/vendors/jquery/jquery.min.js"></script>
 </head>
 <body class="theme-default">
@@ -41,7 +40,7 @@
             <li class="left-menu-list-submenu">
                 <a class="left-menu-link" href="javascript: void(0);">
                     <i class="left-menu-link-icon icmn-cog util-spin-delayed-pseudo"><!-- --></i>
-                    <span class="menu-top-hidden">主题</span> 设置
+                    <span class="menu-top-hidden">主题</span>
                 </a>
                 <ul class="left-menu-list list-unstyled">
                     <li>
@@ -181,89 +180,106 @@
                     </li>
                 </ul>
             </li>
-            <li>
-                <a class="left-menu-link" href="javascript: void(0);">
-                    <i class="left-menu-link-icon icmn-books"><!-- --></i>
-                    预留菜单位置
-                </a>
-            </li>
+
             <li class="left-menu-list-separator "><!-- --></li>
             <li class="left-menu-list-active">
-                <a class="left-menu-link" href="javascript: void(0);">
+                <a class="left-menu-link" href="/index.php/Home/admin/show">
                     <i class="left-menu-link-icon icmn-home2"><!-- --></i>
                     <span class="menu-top-hidden">控制面板</span>
                 </a>
             </li>
 			<li class="left-menu-list-separator"><!-- --></li>
-            <li class="left-menu-list-submenu">
-                <a class="left-menu-link" href="javascript: void(0);">
-                    <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
-                    商户中心
-                </a>
-                <ul class="left-menu-list list-unstyled">
-                    <li>
-                        <a class="left-menu-link" href="/index.php/Home/admin/shoplist">
-                            商户列表
+            <!-- <script>
+                var a = "<?php echo session('adminQX');?>";
+                var x = a.indexOf("最高权限");
+                console.log(x);
+            </script> -->
+
+            <?php if((session('adminQX0') == 商户中心) or (session('adminQX1') == 商户中心) or (session('adminQX2') == 商户中心) or (session('adminQX3') == 商户中心) or (session('adminQX4') == 商户中心) or (session('adminQX5') == 商户中心)): ?><li class="left-menu-list-submenu">
+                    <a class="left-menu-link" href="javascript: void(0);">
+                        <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
+                        商户中心
+                    </a>
+                    <ul class="left-menu-list list-unstyled">
+                        <li>
+                            <a class="left-menu-link" href="/index.php/Home/admin/shoplist">
+                                商户列表
+                            </a>
+                        </li>
+                        <li>
+                            <a class="left-menu-link" href="/index.php/Home/admin/addshop">
+                                添加商户
+                            </a>
+                        </li>
+                        <li>
+                            <a class="left-menu-link" href="/index.php/Home/admin/validate">
+                                商户验证
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="left-menu-list-separator"><!-- --></li><?php endif; ?>
+            <?php if((session('adminQX0') == 会员中心) or (session('adminQX1') == 会员中心) or (session('adminQX2') == 会员中心) or (session('adminQX3') == 会员中心) or (session('adminQX4') == 会员中心) or (session('adminQX5') == 会员中心)): ?><li class="left-menu-list-submenu">
+                    <a class="left-menu-link" href="javascript: void(0);">
+                        <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
+                        会员中心
+                    </a>
+                    <ul class="left-menu-list list-unstyled">
+                        <li>
+                            <a class="left-menu-link" href="/index.php/Home/admin/memberClass">
+                                会员分类
+                            </a>
+                        </li>
+                        <li>
+                            <a class="left-menu-link" href="/index.php/Home/admin/index">
+                                会员列表
+                            </a>
+                        </li>
+                        <li>
+                            <a class="left-menu-link" href="/index.php/Home/admin/addmember">
+                                新增会员
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="left-menu-list-separator"><!-- --></li><?php endif; ?>
+            <?php if((session('adminQX0') == 资金中心) or (session('adminQX1') == 资金中心) or (session('adminQX2') == 资金中心) or (session('adminQX3') == 资金中心) or (session('adminQX4') == 资金中心) or (session('adminQX5') == 资金中心)): ?><li class="left-menu-list-submenu">
+                    <a class="left-menu-link" href="javascript: void(0);">
+                        <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
+                        资金中心
+                    </a>
+                    <ul class="left-menu-list list-unstyled">
+                        <li>
+                            <a class="left-menu-link" href="/index.php/Home/admin/queryRecord">
+                                充值记录
+                            </a>
+                        </li>
+                        <li>
+                            <a class="left-menu-link" href="/index.php/Home/admin/queryRecordN">
+                                消费记录
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="left-menu-list-separator"><!-- --></li><?php endif; ?>
+            <?php if(session('admin.id') == 1): ?><li class="left-menu-list-submenu">
+                        <a class="left-menu-link" href="javascript:void(0);">
+                            <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
+                            添加管理员
                         </a>
-                    </li>
-                    <li>
-                        <a class="left-menu-link" href="/index.php/Home/admin/addshop">
-                            添加商户
-                        </a>
-                    </li>
-                </ul>
-            </li>
-			<li class="left-menu-list-separator"><!-- --></li>
-            <li class="left-menu-list-submenu">
-                <a class="left-menu-link" href="javascript: void(0);">
-                    <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
-                    会员中心
-                </a>
-                <ul class="left-menu-list list-unstyled">
-                    <li>
-                        <a class="left-menu-link" href="/index.php/Home/admin/memberClass">
-                            会员分类
-                        </a>
-                    </li>
-                    <li>
-                        <a class="left-menu-link" href="/index.php/Home/admin/index">
-                            会员列表
-                        </a>
-                    </li>
-                    <li>
-                        <a class="left-menu-link" href="/index.php/Home/admin/addmember">
-                            新增会员
-                        </a>
-                    </li>
-                </ul>
-            </li>
-			<li class="left-menu-list-separator"><!-- --></li>
-            <li class="left-menu-list-submenu">
-                <a class="left-menu-link" href="javascript: void(0);">
-                    <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
-                    资金中心
-                </a>
-                <ul class="left-menu-list list-unstyled">
-                    <li>
-                        <a class="left-menu-link" href="/index.php/Home/admin/queryRecord">
-                            充值记录
-                        </a>
-                    </li>
-                    <li>
-                        <a class="left-menu-link" href="/index.php/Home/admin/queryRecordN">
-                            消费记录
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="left-menu-list-separator"><!-- --></li>
-			
-            <li class="left-menu-list-separator"></li>
-            <li class="menu-top-hidden no-colorful-menu">
-                <div class="left-menu-item">
-                    预留菜单位置
-                </div>
-            </li>
+                        <ul class="left-menu-list list-unstyled">
+                            <li>
+                                <a class="left-menu-link" href="/index.php/Home/admin/adminlist">
+                                    管理员列表
+                                </a>
+                            </li>
+                            <li>
+                                <a class="left-menu-link" href="/index.php/Home/admin/position">
+                                    职位列表
+                                </a>
+                            </li>
+                        </ul>
+                    </li><?php endif; ?>
             <li class="menu-top-hidden no-colorful-menu">
                 <div class="example-left-menu-chart chartist-animated chartist-theme-dark"></div>
                 <script>
@@ -300,7 +316,7 @@
                     });
                 </script>
             </li>
-            <li class="menu-top-hidden no-colorful-menu">
+            <!-- <li class="menu-top-hidden no-colorful-menu">
                 <div class="left-menu-item">
                     预留菜单位置
                 </div>
@@ -319,7 +335,7 @@
                 <div class="left-menu-item">
                     <span class="donut donut-danger"></span> 预留菜单位置
                 </div>
-            </li>
+            </li> -->
         </ul>
     </div>
 </nav>
@@ -333,14 +349,14 @@
         <div class="menu-user-block">
             <div class="dropdown dropdown-avatar">
                 <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <?php echo session('admin.a_username');?>
+                    <?php echo session('admin.a_name');?>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
-                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i> 管理员信息</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i> 用户信息</a>
                     <div class="dropdown-divider"></div>
                     <div class="dropdown-header">资料</div>
-                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 姓名:<?php echo session('admin.a_username');?></a>
-                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 电话:<?php echo session('admin.a_email');?></a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 职位:<?php echo session('admin.a_position');?></a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 电话:<?php echo session('admin.a_phone');?></a>
                     <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 邮箱:<?php echo session('admin.a_email');?></a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="/index.php/Home/admin/logout"><i class="dropdown-icon icmn-exit"></i> 退出</a>
@@ -354,43 +370,43 @@
                     <div class="dropdown">
                         <a href="javascript: void(0);" class="dropdown-toggle dropdown-inline-button" data-toggle="dropdown" aria-expanded="false">
                             <i class="dropdown-inline-button-icon icmn-folder-open"></i>
-                            <span class="hidden-lg-down">预留菜单</span>
+                            <span class="hidden-lg-down">快速导航</span>
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="" role="menu">
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <div class="dropdown-divider"></div>
-                            <div class="dropdown-header">预留菜单</div>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-checkmark"></i> 预留菜单...</a>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-checkmark"></i> 预留菜单...</a>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-clock"></i> 预留菜单...</a>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单...</a>
-                            <div class="dropdown-divider"></div>
-                            <div class="dropdown-header">预留菜单</div>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-cog"></i> 预留菜单</a>
+                            <?php if((session('adminQX0') == 商户中心) or (session('adminQX1') == 商户中心) or (session('adminQX2') == 商户中心) or (session('adminQX3') == 商户中心) or (session('adminQX4') == 商户中心) or (session('adminQX5') == 商户中心)): ?><div class="dropdown-divider"></div>
+                                <div class="dropdown-header">商户中心</div>
+                                <a class="dropdown-item" href="/index.php/Home/admin/shoplist"><i class="dropdown-icon icmn-checkmark"></i> 商户列表</a>
+                                <a class="dropdown-item" href="/index.php/Home/admin/addshop"><i class="dropdown-icon icmn-checkmark"></i> 添加商户</a>
+                                <a class="dropdown-item" href="/index.php/Home/admin/validate"><i class="dropdown-icon icmn-checkmark"></i> 商户验证</a><?php endif; ?>
+                            <?php if((session('adminQX0') == 会员中心) or (session('adminQX1') == 会员中心) or (session('adminQX2') == 会员中心) or (session('adminQX3') == 会员中心) or (session('adminQX4') == 会员中心) or (session('adminQX5') == 会员中心)): ?><div class="dropdown-divider"></div>
+                                <div class="dropdown-header">会员中心</div>
+                                <a class="dropdown-item" href="/index.php/Home/admin/shoplist"><i class="dropdown-icon icmn-checkmark"></i> 会员分类</a>
+                                <a class="dropdown-item" href="/index.php/Home/admin/index"><i class="dropdown-icon icmn-checkmark"></i> 会员列表</a>
+                                <a class="dropdown-item" href="/index.php/Home/admin/addmember"><i class="dropdown-icon icmn-checkmark"></i> 新增会员</a><?php endif; ?>
+                            <?php if((session('adminQX0') == 资金中心) or (session('adminQX1') == 资金中心) or (session('adminQX2') == 资金中心) or (session('adminQX3') == 资金中心) or (session('adminQX4') == 资金中心) or (session('adminQX5') == 资金中心)): ?><div class="dropdown-divider"></div>
+                                <div class="dropdown-header">资金中心</div>
+                                <a class="dropdown-item" href="/index.php/Home/admin/queryRecord"><i class="dropdown-icon icmn-checkmark"></i> 充值记录</a>
+                                <a class="dropdown-item" href="/index.php/Home/admin/queryRecordN"><i class="dropdown-icon icmn-checkmark"></i> 消费记录</a><?php endif; ?>
+                            <?php if((session('adminQX0') != 资金中心) and (session('adminQX1') != 资金中心) and (session('adminQX2') != 资金中心) and (session('adminQX3') != 资金中心) and (session('adminQX4') != 资金中心) and (session('adminQX5') != 资金中心) and (session('adminQX0') != 会员中心) and (session('adminQX1') != 会员中心) and (session('adminQX2') != 会员中心) and (session('adminQX3') != 会员中心) and (session('adminQX4') != 会员中心) and (session('adminQX5') != 会员中心) and (session('adminQX0') != 商户中心) and (session('adminQX1') != 商户中心) and (session('adminQX2') != 商户中心) and (session('adminQX3') != 商户中心) and (session('adminQX4') != 商户中心) and (session('adminQX5') != 商户中心)): ?><div class="dropdown-divider"></div>
+                                <div class="dropdown-header">暂无权限</div><?php endif; ?>
                         </ul>
                     </div>
                     <div class="dropdown">
                         <a href="javascript: void(0);" class="dropdown-toggle dropdown-inline-button" data-toggle="dropdown" aria-expanded="false">
                             <i class="dropdown-inline-button-icon icmn-database"></i>
-                            <span class="hidden-lg-down">预留菜单</span>
+                            <span class="hidden-lg-down">消息中心</span>
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="" role="menu">
-                            <div class="dropdown-header">预留菜单</div>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <div class="dropdown-header">预留菜单</div>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-cog"></i> 预留菜单</a>
+                            <?php if((session('adminQX0') == 消息推送) or (session('adminQX1') == 消息推送) or (session('adminQX2') == 消息推送) or (session('adminQX3') == 消息推送) or (session('adminQX4') == 消息推送) or (session('adminQX5') == 消息推送)): ?><div class="dropdown-header">消息推送</div>
+                                <a class="dropdown-item" href="/index.php/Home/admin/messagelist"><i class="dropdown-icon icmn-checkmark"></i> 消息列表</a>
+                                <a class="dropdown-item" href="/index.php/Home/admin/message"><i class="dropdown-icon icmn-checkmark"></i> 新消息推送</a><?php endif; ?>
+                            <?php if((session('adminQX0') == 工单系统) or (session('adminQX1') == 工单系统) or (session('adminQX2') == 工单系统) or (session('adminQX3') == 工单系统) or (session('adminQX4') == 工单系统) or (session('adminQX5') == 工单系统)): ?><div class="dropdown-divider"></div>
+                                <div class="dropdown-header">工单系统</div>
+                                <a class="dropdown-item" href="">工单</a><?php endif; ?>
+                            <?php if((session('adminQX0') != 工单系统) and (session('adminQX1') != 工单系统) and (session('adminQX2') != 工单系统) and (session('adminQX3') != 工单系统) and (session('adminQX4') != 工单系统) and (session('adminQX5') != 工单系统) and (session('adminQX0') != 消息推送) and (session('adminQX1') != 消息推送) and (session('adminQX2') != 消息推送) and (session('adminQX3') != 消息推送) and (session('adminQX4') != 消息推送) and (session('adminQX5') != 消息推送)): ?><div class="dropdown-divider"></div>
+                                <div class="dropdown-header">暂无权限</div><?php endif; ?>
                         </ul>
                     </div>
                 </div>
@@ -433,11 +449,11 @@
                     </div>
                 </div>
             </div>
-            <div class="right example-buy-btn hidden-xs-down">
+            <!-- <div class="right example-buy-btn hidden-xs-down">
                 <a href="javascript:void(0)" target="_blank" class="btn btn-success-outline btn-rounded">
                     预留菜单
                 </a>
-            </div>
+            </div> -->
         </div>
     </div>
 </nav>
@@ -543,7 +559,7 @@
                             <div class="carousel-item active">
                                 <a href="javascript: void(0);" class="widget-body">
                                     <h2>
-                                        <i class="icmn-database"></i> 最大充值商户
+                                        <i class="icmn-database"></i>最大充值商户
                                     </h2>
                                     <p>
                                         名称: <?php echo ($maxShop["s_name"]); ?>
@@ -555,7 +571,7 @@
                             <div class="carousel-item">
                                 <a href="javascript: void(0);" class="widget-body">
                                     <h2>
-                                        <i class="icmn-users"></i> 最大充值会员
+                                        <i class="icmn-users"></i>最大充值会员
                                     </h2>
                                     <p>
                                         名称: <?php echo ($recordMax["m_nickname"]); ?>
@@ -575,7 +591,7 @@
                             <div class="carousel-item active">
                                 <a href="javascript: void(0);" class="widget-body">
                                     <h2>
-                                        <i class="icmn-books"></i> 最大消费商户
+                                        <i class="icmn-books"></i>最大消费商户
                                     </h2>
                                     <p>
                                         名称: <?php echo ($maxShopXf["s_name"]); ?>
@@ -587,7 +603,7 @@
                             <div class="carousel-item">
                                 <a href="javascript: void(0);" class="widget-body">
                                     <h2>
-                                        <i class="icmn-download"></i> 最大消费会员
+                                        <i class="icmn-download"></i>最大消费会员
                                     </h2>
                                     <p>
                                         名称: <?php echo ($maxMemberXf["m_nickname"]); ?>
@@ -928,24 +944,12 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="cwt__footer__title cwt__footer__title--light">
-                    底部菜单说明
+                    会员系统 控制中心 祝您开开心心每一天
                 </div>
-                <!-- <div class="row">
-                    <div class="col-lg-6">
-                        <ul class="list-unstyled">
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                            </ul>
-                    </div>
-                    <div class="col-lg-6">
-                        <ul class="list-unstyled">
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                           </ul>
-                    </div>
-                </div> -->
             </div>
             <div class="col-lg-6">
                 <div class="cwt__footer__title">
-                    TK会员系统说明
+                    电脑使用 按F11可以全屏哦
                 </div>
                 <div class="cwt__footer__description">
 
@@ -957,7 +961,7 @@
         <div class="row">
             <div class="col-md-4">
                 <a href="javascript:void(0)" target="_blank" class="btn btn-primary">
-                    预留文字标题
+                    记得每天笑一笑
                 </a>
             </div>
             <div class="col-md-8">

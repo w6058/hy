@@ -8,14 +8,14 @@
         <div class="menu-user-block">
             <div class="dropdown dropdown-avatar">
                 <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    {{:session('admin.a_username')}}
+                    {{:session('admin.a_name')}}
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
-                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i> 管理员信息</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i> 用户信息</a>
                     <div class="dropdown-divider"></div>
                     <div class="dropdown-header">资料</div>
-                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 姓名:{{:session('admin.a_username')}}</a>
-                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 电话:{{:session('admin.a_email')}}</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 职位:{{:session('admin.a_position')}}</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 电话:{{:session('admin.a_phone')}}</a>
                     <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 邮箱:{{:session('admin.a_email')}}</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="__MODULE__/admin/logout"><i class="dropdown-icon icmn-exit"></i> 退出</a>
@@ -29,43 +29,58 @@
                     <div class="dropdown">
                         <a href="javascript: void(0);" class="dropdown-toggle dropdown-inline-button" data-toggle="dropdown" aria-expanded="false">
                             <i class="dropdown-inline-button-icon icmn-folder-open"></i>
-                            <span class="hidden-lg-down">预留菜单</span>
+                            <span class="hidden-lg-down">快速导航</span>
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="" role="menu">
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <div class="dropdown-divider"></div>
-                            <div class="dropdown-header">预留菜单</div>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-checkmark"></i> 预留菜单...</a>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-checkmark"></i> 预留菜单...</a>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-clock"></i> 预留菜单...</a>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单...</a>
-                            <div class="dropdown-divider"></div>
-                            <div class="dropdown-header">预留菜单</div>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-cog"></i> 预留菜单</a>
+                            <if condition="(session('adminQX0') eq 商户中心) or (session('adminQX1') eq 商户中心) or (session('adminQX2') eq 商户中心) or (session('adminQX3') eq 商户中心) or (session('adminQX4') eq 商户中心) or (session('adminQX5') eq 商户中心)">
+                                <div class="dropdown-divider"></div>
+                                <div class="dropdown-header">商户中心</div>
+                                <a class="dropdown-item" href="__MODULE__/admin/shoplist"><i class="dropdown-icon icmn-checkmark"></i> 商户列表</a>
+                                <a class="dropdown-item" href="__MODULE__/admin/addshop"><i class="dropdown-icon icmn-checkmark"></i> 添加商户</a>
+                                <a class="dropdown-item" href="__MODULE__/admin/validate"><i class="dropdown-icon icmn-checkmark"></i> 商户验证</a>
+                            </if>
+                            <if condition="(session('adminQX0') eq 会员中心) or (session('adminQX1') eq 会员中心) or (session('adminQX2') eq 会员中心) or (session('adminQX3') eq 会员中心) or (session('adminQX4') eq 会员中心) or (session('adminQX5') eq 会员中心)">
+                                <div class="dropdown-divider"></div>
+                                <div class="dropdown-header">会员中心</div>
+                                <a class="dropdown-item" href="__MODULE__/admin/shoplist"><i class="dropdown-icon icmn-checkmark"></i> 会员分类</a>
+                                <a class="dropdown-item" href="__MODULE__/admin/index"><i class="dropdown-icon icmn-checkmark"></i> 会员列表</a>
+                                <a class="dropdown-item" href="__MODULE__/admin/addmember"><i class="dropdown-icon icmn-checkmark"></i> 新增会员</a>
+                            </if>
+                            <if condition="(session('adminQX0') eq 资金中心) or (session('adminQX1') eq 资金中心) or (session('adminQX2') eq 资金中心) or (session('adminQX3') eq 资金中心) or (session('adminQX4') eq 资金中心) or (session('adminQX5') eq 资金中心)">
+                                <div class="dropdown-divider"></div>
+                                <div class="dropdown-header">资金中心</div>
+                                <a class="dropdown-item" href="__MODULE__/admin/queryRecord"><i class="dropdown-icon icmn-checkmark"></i> 充值记录</a>
+                                <a class="dropdown-item" href="__MODULE__/admin/queryRecordN"><i class="dropdown-icon icmn-checkmark"></i> 消费记录</a>
+                            </if>
+                            <if condition="(session('adminQX0') neq 资金中心) and (session('adminQX1') neq 资金中心) and (session('adminQX2') neq 资金中心) and (session('adminQX3') neq 资金中心) and (session('adminQX4') neq 资金中心) and (session('adminQX5') neq 资金中心) and (session('adminQX0') neq 会员中心) and (session('adminQX1') neq 会员中心) and (session('adminQX2') neq 会员中心) and (session('adminQX3') neq 会员中心) and (session('adminQX4') neq 会员中心) and (session('adminQX5') neq 会员中心) and (session('adminQX0') neq 商户中心) and (session('adminQX1') neq 商户中心) and (session('adminQX2') neq 商户中心) and (session('adminQX3') neq 商户中心) and (session('adminQX4') neq 商户中心) and (session('adminQX5') neq 商户中心)">
+                                <div class="dropdown-divider"></div>
+                                <div class="dropdown-header">暂无权限</div>
+
+                            </if>
                         </ul>
                     </div>
                     <div class="dropdown">
                         <a href="javascript: void(0);" class="dropdown-toggle dropdown-inline-button" data-toggle="dropdown" aria-expanded="false">
                             <i class="dropdown-inline-button-icon icmn-database"></i>
-                            <span class="hidden-lg-down">预留菜单</span>
+                            <span class="hidden-lg-down">消息中心</span>
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="" role="menu">
-                            <div class="dropdown-header">预留菜单</div>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <div class="dropdown-header">预留菜单</div>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-cog"></i> 预留菜单</a>
+                            <if condition="(session('adminQX0') eq 消息推送) or (session('adminQX1') eq 消息推送) or (session('adminQX2') eq 消息推送) or (session('adminQX3') eq 消息推送) or (session('adminQX4') eq 消息推送) or (session('adminQX5') eq 消息推送)">
+                                <div class="dropdown-header">消息推送</div>
+                                <a class="dropdown-item" href="__MODULE__/admin/messagelist"><i class="dropdown-icon icmn-checkmark"></i> 消息列表</a>
+                                <a class="dropdown-item" href="__MODULE__/admin/message"><i class="dropdown-icon icmn-checkmark"></i> 新消息推送</a>
+                            </if>
+                            <if condition="(session('adminQX0') eq 工单系统) or (session('adminQX1') eq 工单系统) or (session('adminQX2') eq 工单系统) or (session('adminQX3') eq 工单系统) or (session('adminQX4') eq 工单系统) or (session('adminQX5') eq 工单系统)">
+                                <div class="dropdown-divider"></div>
+                                <div class="dropdown-header">工单系统</div>
+                                <a class="dropdown-item" href="">工单</a>
+                            </if>
+                            <if condition="(session('adminQX0') neq 工单系统) and (session('adminQX1') neq 工单系统) and (session('adminQX2') neq 工单系统) and (session('adminQX3') neq 工单系统) and (session('adminQX4') neq 工单系统) and (session('adminQX5') neq 工单系统) and (session('adminQX0') neq 消息推送) and (session('adminQX1') neq 消息推送) and (session('adminQX2') neq 消息推送) and (session('adminQX3') neq 消息推送) and (session('adminQX4') neq 消息推送) and (session('adminQX5') neq 消息推送)">
+                                <div class="dropdown-divider"></div>
+                                <div class="dropdown-header">暂无权限</div>
+                            </if>
                         </ul>
                     </div>
                 </div>
@@ -108,11 +123,11 @@
                     </div>
                 </div>
             </div>
-            <div class="right example-buy-btn hidden-xs-down">
+            <!-- <div class="right example-buy-btn hidden-xs-down">
                 <a href="javascript:void(0)" target="_blank" class="btn btn-success-outline btn-rounded">
                     预留菜单
                 </a>
-            </div>
+            </div> -->
         </div>
     </div>
 </nav>

@@ -24,7 +24,6 @@
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/vendors/chartist/dist/chartist.min.css">
     <!-- Clean UI Styles -->
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/common/css/main.min.css">
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/common/css/source/helpers/fonts">
     <script src="__PUBLIC__/assets/vendors/jquery/jquery.min.js"></script>
 </head>
 <body class="theme-default">
@@ -40,7 +39,7 @@
             <li class="left-menu-list-submenu">
                 <a class="left-menu-link" href="javascript: void(0);">
                     <i class="left-menu-link-icon icmn-cog util-spin-delayed-pseudo"><!-- --></i>
-                    <span class="menu-top-hidden">主题</span> 设置
+                    <span class="menu-top-hidden">主题</span>
                 </a>
                 <ul class="left-menu-list list-unstyled">
                     <li>
@@ -180,89 +179,114 @@
                     </li>
                 </ul>
             </li>
-            <li>
-                <a class="left-menu-link" href="javascript: void(0);">
-                    <i class="left-menu-link-icon icmn-books"><!-- --></i>
-                    预留菜单位置
-                </a>
-            </li>
+
             <li class="left-menu-list-separator "><!-- --></li>
             <li class="left-menu-list-active">
-                <a class="left-menu-link" href="javascript: void(0);">
+                <a class="left-menu-link" href="__MODULE__/admin/show">
                     <i class="left-menu-link-icon icmn-home2"><!-- --></i>
                     <span class="menu-top-hidden">控制面板</span>
                 </a>
             </li>
 			<li class="left-menu-list-separator"><!-- --></li>
-            <li class="left-menu-list-submenu">
-                <a class="left-menu-link" href="javascript: void(0);">
-                    <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
-                    商户中心
-                </a>
-                <ul class="left-menu-list list-unstyled">
-                    <li>
-                        <a class="left-menu-link" href="__MODULE__/admin/shoplist">
-                            商户列表
+            <!-- <script>
+                var a = "<?php echo session('adminQX');?>";
+                var x = a.indexOf("最高权限");
+                console.log(x);
+            </script> -->
+
+            <if condition="(session('adminQX0') eq 商户中心) or (session('adminQX1') eq 商户中心) or (session('adminQX2') eq 商户中心) or (session('adminQX3') eq 商户中心) or (session('adminQX4') eq 商户中心) or (session('adminQX5') eq 商户中心)">
+                <li class="left-menu-list-submenu">
+                    <a class="left-menu-link" href="javascript: void(0);">
+                        <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
+                        商户中心
+                    </a>
+                    <ul class="left-menu-list list-unstyled">
+                        <li>
+                            <a class="left-menu-link" href="__MODULE__/admin/shoplist">
+                                商户列表
+                            </a>
+                        </li>
+                        <li>
+                            <a class="left-menu-link" href="__MODULE__/admin/addshop">
+                                添加商户
+                            </a>
+                        </li>
+                        <li>
+                            <a class="left-menu-link" href="__MODULE__/admin/validate">
+                                商户验证
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="left-menu-list-separator"><!-- --></li>
+            </if>
+            <if condition="(session('adminQX0') eq 会员中心) or (session('adminQX1') eq 会员中心) or (session('adminQX2') eq 会员中心) or (session('adminQX3') eq 会员中心) or (session('adminQX4') eq 会员中心) or (session('adminQX5') eq 会员中心)">
+                <li class="left-menu-list-submenu">
+                    <a class="left-menu-link" href="javascript: void(0);">
+                        <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
+                        会员中心
+                    </a>
+                    <ul class="left-menu-list list-unstyled">
+                        <li>
+                            <a class="left-menu-link" href="__MODULE__/admin/memberClass">
+                                会员分类
+                            </a>
+                        </li>
+                        <li>
+                            <a class="left-menu-link" href="__MODULE__/admin/index">
+                                会员列表
+                            </a>
+                        </li>
+                        <li>
+                            <a class="left-menu-link" href="__MODULE__/admin/addmember">
+                                新增会员
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="left-menu-list-separator"><!-- --></li>
+            </if>
+            <if condition="(session('adminQX0') eq 资金中心) or (session('adminQX1') eq 资金中心) or (session('adminQX2') eq 资金中心) or (session('adminQX3') eq 资金中心) or (session('adminQX4') eq 资金中心) or (session('adminQX5') eq 资金中心)">
+                <li class="left-menu-list-submenu">
+                    <a class="left-menu-link" href="javascript: void(0);">
+                        <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
+                        资金中心
+                    </a>
+                    <ul class="left-menu-list list-unstyled">
+                        <li>
+                            <a class="left-menu-link" href="__MODULE__/admin/queryRecord">
+                                充值记录
+                            </a>
+                        </li>
+                        <li>
+                            <a class="left-menu-link" href="__MODULE__/admin/queryRecordN">
+                                消费记录
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="left-menu-list-separator"><!-- --></li>
+            </if>
+            <if condition="session('admin.id') eq 1">
+                <li class="left-menu-list-submenu">
+                        <a class="left-menu-link" href="javascript:void(0);">
+                            <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
+                            添加管理员
                         </a>
+                        <ul class="left-menu-list list-unstyled">
+                            <li>
+                                <a class="left-menu-link" href="__MODULE__/admin/adminlist">
+                                    管理员列表
+                                </a>
+                            </li>
+                            <li>
+                                <a class="left-menu-link" href="__MODULE__/admin/position">
+                                    职位列表
+                                </a>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
-                        <a class="left-menu-link" href="__MODULE__/admin/addshop">
-                            添加商户
-                        </a>
-                    </li>
-                </ul>
-            </li>
-			<li class="left-menu-list-separator"><!-- --></li>
-            <li class="left-menu-list-submenu">
-                <a class="left-menu-link" href="javascript: void(0);">
-                    <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
-                    会员中心
-                </a>
-                <ul class="left-menu-list list-unstyled">
-                    <li>
-                        <a class="left-menu-link" href="__MODULE__/admin/memberClass">
-                            会员分类
-                        </a>
-                    </li>
-                    <li>
-                        <a class="left-menu-link" href="__MODULE__/admin/index">
-                            会员列表
-                        </a>
-                    </li>
-                    <li>
-                        <a class="left-menu-link" href="__MODULE__/admin/addmember">
-                            新增会员
-                        </a>
-                    </li>
-                </ul>
-            </li>
-			<li class="left-menu-list-separator"><!-- --></li>
-            <li class="left-menu-list-submenu">
-                <a class="left-menu-link" href="javascript: void(0);">
-                    <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
-                    资金中心
-                </a>
-                <ul class="left-menu-list list-unstyled">
-                    <li>
-                        <a class="left-menu-link" href="__MODULE__/admin/queryRecord">
-                            充值记录
-                        </a>
-                    </li>
-                    <li>
-                        <a class="left-menu-link" href="__MODULE__/admin/queryRecordN">
-                            消费记录
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="left-menu-list-separator"><!-- --></li>
-			
-            <li class="left-menu-list-separator"></li>
-            <li class="menu-top-hidden no-colorful-menu">
-                <div class="left-menu-item">
-                    预留菜单位置
-                </div>
-            </li>
+            </if>
             <li class="menu-top-hidden no-colorful-menu">
                 <div class="example-left-menu-chart chartist-animated chartist-theme-dark"></div>
                 <script>
@@ -299,7 +323,7 @@
                     });
                 </script>
             </li>
-            <li class="menu-top-hidden no-colorful-menu">
+            <!-- <li class="menu-top-hidden no-colorful-menu">
                 <div class="left-menu-item">
                     预留菜单位置
                 </div>
@@ -318,7 +342,7 @@
                 <div class="left-menu-item">
                     <span class="donut donut-danger"></span> 预留菜单位置
                 </div>
-            </li>
+            </li> -->
         </ul>
     </div>
 </nav>

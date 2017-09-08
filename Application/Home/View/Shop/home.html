@@ -102,7 +102,7 @@
                             <div class="carousel-item active">
                                 <a href="javascript: void(0);" class="widget-body">
                                     <h2>
-                                        <i class="icmn-database"></i> 最大充值会员
+                                        <i class="icmn-database"></i>最大充值会员
                                     </h2>
                                     <p>
                                         名称: {{$recordMax.m_nickname}}
@@ -114,7 +114,7 @@
                             <div class="carousel-item">
                                 <a href="javascript: void(0);" class="widget-body">
                                     <h2>
-                                        <i class="icmn-users"></i> 最小充值会员
+                                        <i class="icmn-users"></i>最小充值会员
                                     </h2>
                                     <p>
                                         名称: {{$recordMin.m_nickname}}
@@ -134,7 +134,7 @@
                             <div class="carousel-item active">
                                 <a href="javascript: void(0);" class="widget-body">
                                     <h2>
-                                        <i class="icmn-books"></i> 最大消费会员
+                                        <i class="icmn-books"></i>最大消费会员
                                     </h2>
                                     <p>
                                         名称: {{$consumeMax.m_nickname}}
@@ -146,12 +146,12 @@
                             <div class="carousel-item">
                                 <a href="javascript: void(0);" class="widget-body">
                                     <h2>
-                                        <i class="icmn-download"></i> 最小消费会员
+                                        <i class="icmn-download"></i>最小消费会员
                                     </h2>
                                     <p>
                                         名称: {{$consumeMin.m_nickname}}
                                         <br />
-                                        金额: {{$nsumeMin.grade}} 元
+                                        金额: {{$consumeMin.grade}} 元
                                     </p>
                                 </a>
                             </div>
@@ -191,8 +191,128 @@
             </div>
         </div>
     </div>
-
+    <notempty name="messages">
     <!-- End Dashboard -->
+    <!-- Large modal -->
+        <div class="modal fade bs-example-modal-lg" id="message" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-hidden="true">×
+                        </button>
+                        <h2 class="modal-title" id="messageLabel">
+                            消息推送
+                        </h2>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th style="text-align: center">序号</th>
+                                <th style="text-align: center">题目</th>
+                                <th style="text-align: center">状态</th>
+                                <th style="text-align: center">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <foreach name="messages" item="message" key="key">
+                                <!--<?php var_dump($val) ?>-->
+                                <tr>
+                                    <td style="text-align: center">{{$key+1}}</td>
+                                    <td style="text-align: center"><a class="list" id="{{$message.me_id}}" href="javascript: void(0);">{{$message.title}}</a></td>
+                                    <td style="text-align: center">
+                                        <if condition="$message.status eq 0 ">
+                                            未读
+                                            <else />
+                                            已读
+                                        </if>
+                                    </td>
+                                    <td style="text-align: center"><a href="__MODULE__/shop/messagedel?id={{$message.me_id}}"><span class="label label-primary">不显示</span></a></td>
+                                </tr>
+                            </foreach>
+                            <tr><td colspan="4" style="text-align: right;font-size: 15px;">{{$page}}</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default"
+                                data-dismiss="modal">关闭
+                        </button>
+                        <a href="__MODULE__/shop/today?id={{$message.s_id}}" type="button" class="btn btn-primary">
+                            不再显示
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--消息详情-->
+        <div class="modal fade bs-example-modal-lg" id="messageinfo" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-hidden="true">×
+                        </button>
+                        <h2 class="modal-title" id="messageinfoLabel">
+                            消息详情
+                        </h2>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-hover" id="listinfo">
+
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default"
+                                data-dismiss="modal">关闭
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 按钮触发模态框 -->
+
+        <script src="__PUBLIC__/assets/vendors/ckeditor/ckeditor.js"></script>
+        <script>
+            $(function () {
+                $('#message').modal({
+                    keyboard: true
+                })
+            });
+            $('.list').on('click',function () {
+                var id = this.id;
+                $.ajax({
+                    url:'__MODULE__/shop/messageinfo',
+                    type:'post',
+                    data: {
+                        'id': id
+                    },
+                    success:function(msg){
+                        $('#listinfo').html(msg.data);
+                        $('#messageinfo').modal({keyboard: true});
+                        CKEDITOR.replace('content1',{
+                            uiColor : '#F8F8FF',
+                            height:'200',
+                            toolbarCanCollapse: true,
+                            toolbarStartupExpanded: false,
+                            toolbar: [[]],
+                            resize_enabled:false,
+                            customConfig: ''
+                        });
+                        $('#cke_1_top').remove();
+                    },
+                    error:function(){
+
+                    }
+
+                })
+            })
+        </script>
+    </notempty>
+
+
+
 
 </div>
 
@@ -201,7 +321,7 @@
 <script>
     $(function() {
 
-        ///////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////
         // COUNTERS
         $('.counter-init').countTo({
             speed: 1500
@@ -311,50 +431,50 @@
 
         ///////////////////////////////////////////////////////////
         // CHART 1
-        new Chartist.Line(".chart-line", {
-            labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            series: [
-                [12, 9, 7, 8, 5],
-                [2, 1, 3.5, 7, 3],
-                [1, 3, 4, 5, 6]
-            ]
-        }, {
-            fullWidth: !0,
-            chartPadding: {
-                right: 40
-            },
-            plugins: [
-                Chartist.plugins.tooltip()
-            ]
-        });
+//        new Chartist.Line(".chart-line", {
+//            labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+//            series: [
+//                [12, 9, 7, 8, 5],
+//                [2, 1, 3.5, 7, 3],
+//                [1, 3, 4, 5, 6]
+//            ]
+//        }, {
+//            fullWidth: !0,
+//            chartPadding: {
+//                right: 40
+//            },
+//            plugins: [
+//                Chartist.plugins.tooltip()
+//            ]
+//        });
 
         ///////////////////////////////////////////////////////////
         // CHART 2
-        var overlappingData = {
-                    labels: ["Jan", "Feb", "Mar", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-                    series: [
-                        [5, 4, 3, 7, 5, 10, 3, 4, 8, 10, 6, 8],
-                        [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4]
-                    ]
-                },
-                overlappingOptions = {
-                    seriesBarDistance: 10,
-                    plugins: [
-                        Chartist.plugins.tooltip()
-                    ]
-                },
-                overlappingResponsiveOptions = [
-                    ["", {
-                        seriesBarDistance: 5,
-                        axisX: {
-                            labelInterpolationFnc: function(value) {
-                                return value[0]
-                            }
-                        }
-                    }]
-                ];
-
-        new Chartist.Bar(".chart-overlapping-bar", overlappingData, overlappingOptions, overlappingResponsiveOptions);
+//        var overlappingData = {
+//                    labels: ["Jan", "Feb", "Mar", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+//                    series: [
+//                        [5, 4, 3, 7, 5, 10, 3, 4, 8, 10, 6, 8],
+//                        [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4]
+//                    ]
+//                },
+//                overlappingOptions = {
+//                    seriesBarDistance: 10,
+//                    plugins: [
+//                        Chartist.plugins.tooltip()
+//                    ]
+//                },
+//                overlappingResponsiveOptions = [
+//                    ["", {
+//                        seriesBarDistance: 5,
+//                        axisX: {
+//                            labelInterpolationFnc: function(value) {
+//                                return value[0]
+//                            }
+//                        }
+//                    }]
+//                ];
+//
+//        new Chartist.Bar(".chart-overlapping-bar", overlappingData, overlappingOptions, overlappingResponsiveOptions);
 
 
     });

@@ -7,11 +7,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>会员系统-控制平台</title>
 
-    <link href="/hy2/Public/assets/common/img/favicon.144x144.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
-    <link href="/hy2/Public/assets/common/img/favicon.114x114.png" rel="apple-touch-icon" type="image/png" sizes="114x114">
-    <link href="/hy2/Public/assets/common/img/favicon.72x72.png" rel="apple-touch-icon" type="image/png" sizes="72x72">
-    <link href="/hy2/Public/assets/common/img/favicon.57x57.png" rel="apple-touch-icon" type="image/png">
-    <link href="/hy2/Public/assets/common/img/favicon.png" rel="icon" type="image/png">
+    <link href="/Public/assets/common/img/favicon.144x144.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
+    <link href="/Public/assets/common/img/favicon.114x114.png" rel="apple-touch-icon" type="image/png" sizes="114x114">
+    <link href="/Public/assets/common/img/favicon.72x72.png" rel="apple-touch-icon" type="image/png" sizes="72x72">
+    <link href="/Public/assets/common/img/favicon.57x57.png" rel="apple-touch-icon" type="image/png">
+    <link href="/Public/assets/common/img/favicon.png" rel="icon" type="image/png">
     <link href="favicon.ico" rel="shortcut icon">
 
     <!-- HTML5 shim and Respond.js for < IE9 support of HTML5 elements and media queries -->
@@ -21,18 +21,18 @@
     <![endif]-->
 
     <!-- v1.0.0 -->
-    <link rel="stylesheet" type="text/css" href="/hy2/Public/assets/vendors/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/chartist/dist/chartist.min.css">
     <!-- Clean UI Styles -->
-    <link rel="stylesheet" type="text/css" href="/hy2/Public/assets/common/css/source/main.css">
-    <script src="/hy2/Public/assets/vendors/jquery.min.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/main.min.css">
+    <script src="/Public/assets/vendors/jquery/jquery.min.js"></script>
 </head>
 <body class="theme-default">
 <nav class="left-menu" left-menu>
     <div class="logo-container">
-        <a href="/hy2/index.php/Home/admin/show" class="logo">
-            <img src="/hy2/Public/assets/common/img/logo.png" alt="Clean UI Admin Template" />
-            <img class="logo-inverse" src="/hy2/Public/assets/common/img/logo-inverse.png" alt="Clean UI Admin Template" />
+        <a href="/index.php/Home/admin/show" class="logo">
+            <img src="/Public/assets/common/img/logo.png" alt="Clean UI Admin Template" />
+            <img class="logo-inverse" src="/Public/assets/common/img/logo-inverse.png" alt="Clean UI Admin Template" />
         </a>
     </div>
     <div class="left-menu-inner scroll-pane">
@@ -201,13 +201,18 @@
                 </a>
                 <ul class="left-menu-list list-unstyled">
                     <li>
-                        <a class="left-menu-link" href="/hy2/index.php/Home/admin/shoplist">
+                        <a class="left-menu-link" href="/index.php/Home/admin/shoplist">
                             商户列表
                         </a>
                     </li>
                     <li>
-                        <a class="left-menu-link" href="/hy2/index.php/Home/admin/addshop">
+                        <a class="left-menu-link" href="/index.php/Home/admin/addshop">
                             添加商户
+                        </a>
+                    </li>
+                    <li>
+                        <a class="left-menu-link" href="/index.php/Home/admin/validate">
+                            商户验证
                         </a>
                     </li>
                 </ul>
@@ -220,17 +225,17 @@
                 </a>
                 <ul class="left-menu-list list-unstyled">
                     <li>
-                        <a class="left-menu-link" href="/hy2/index.php/Home/admin/memberClass">
+                        <a class="left-menu-link" href="/index.php/Home/admin/memberClass">
                             会员分类
                         </a>
                     </li>
                     <li>
-                        <a class="left-menu-link" href="/hy2/index.php/Home/admin/index">
+                        <a class="left-menu-link" href="/index.php/Home/admin/index">
                             会员列表
                         </a>
                     </li>
                     <li>
-                        <a class="left-menu-link" href="/hy2/index.php/Home/admin/addmember">
+                        <a class="left-menu-link" href="/index.php/Home/admin/addmember">
                             新增会员
                         </a>
                     </li>
@@ -244,20 +249,41 @@
                 </a>
                 <ul class="left-menu-list list-unstyled">
                     <li>
-                        <a class="left-menu-link" href="/hy2/index.php/Home/admin/queryRecord">
+                        <a class="left-menu-link" href="/index.php/Home/admin/queryRecord">
                             充值记录
                         </a>
                     </li>
                     <li>
-                        <a class="left-menu-link" href="/hy2/index.php/Home/admin/queryRecordN">
+                        <a class="left-menu-link" href="/index.php/Home/admin/queryRecordN">
                             消费记录
                         </a>
                     </li>
                 </ul>
             </li>
             <li class="left-menu-list-separator"><!-- --></li>
-			
-            <li class="left-menu-list-separator"></li>
+            <li class="left-menu-list-submenu">
+                <a class="left-menu-link" href="javascript: void(0);">
+                    <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
+                    消息推送
+                </a>
+                <ul class="left-menu-list list-unstyled">
+                    <li>
+                        <a class="left-menu-link" href="/index.php/Home/admin/messagelist">
+                            消息列表
+                        </a>
+                    </li>
+                    <li>
+                        <a class="left-menu-link" href="/index.php/Home/admin/message">
+                            新消息推送
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+
+
+            <li class="left-menu-list-separator"><!-- --></li>
             <li class="menu-top-hidden no-colorful-menu">
                 <div class="left-menu-item">
                     预留菜单位置
@@ -342,7 +368,7 @@
                     <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 电话:<?php echo session('admin.a_email');?></a>
                     <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 邮箱:<?php echo session('admin.a_email');?></a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/hy2/index.php/Home/admin/logout"><i class="dropdown-icon icmn-exit"></i> 退出</a>
+                    <a class="dropdown-item" href="/index.php/Home/admin/logout"><i class="dropdown-icon icmn-exit"></i> 退出</a>
                 </ul>
             </div>
         </div>
@@ -509,33 +535,13 @@
                 <div class="cwt__footer__title cwt__footer__title--light">
                     底部菜单说明
                 </div>
-                <!-- <div class="row">
-                    <div class="col-lg-6">
-                        <ul class="list-unstyled">
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6">
-                        <ul class="list-unstyled">
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                        </ul>
-                    </div>
-                </div> -->
             </div>
             <div class="col-lg-6">
                 <div class="cwt__footer__title">
                     TK会员系统说明
                 </div>
                 <div class="cwt__footer__description">
-                   
+
                 </div>
             </div>
         </div>
@@ -549,7 +555,7 @@
             </div>
             <div class="col-md-8">
                 <div class="cwt__footer__company">
-                    <img class="cwt__footer__company-logo" src="/hy2/Public/assets/common/img/temp/mediatec.png" target="_blank" title="Mediatec Software">
+                    <img class="cwt__footer__company-logo" src="/Public/assets/common/img/temp/mediatec.png" target="_blank" title="Mediatec Software">
                     <span>
                         © 2017 <a href="javascript:void(0)" class="cwt__footer__link" target="_blank">TK会员系统</a>
                         <br>
@@ -561,22 +567,25 @@
     </div>
 </div>
 
-<script src="/hy2/Public/assets/vendors/tether.min.js"></script>
-<script src="/hy2/Public/assets/vendors/bootstrap.min.js"></script>
-<script src="/hy2/Public/assets/vendors/jquery.jscrollpane.min.js"></script>
-<script src="/hy2/Public/assets/vendors/autosize.min.js"></script>
-<script src="/hy2/Public/assets/vendors/moment.min.js"></script>
-<script src="/hy2/Public/assets/vendors/fullcalendar.min.js"></script>
-<script src="/hy2/Public/assets/vendors/jquery.cleanaudioplayer.js"></script>
-<script src="/hy2/Public/assets/vendors/jquery.dataTables.min.js"></script>
-<script src="/hy2/Public/assets/vendors/chartist.min.js"></script>
-<script src="/hy2/Public/assets/vendors/jquery.peity.min.js"></script>
-<!-- v1.0.1 -->
-<script src="/hy2/Public/assets/vendors/chartist-plugin-tooltip.min.js"></script>
-<!-- v1.1.1 -->
-<script src="/hy2/Public/assets/vendors/jquery.countTo.js"></script>
+<!-- Vendors Scripts -->
+<script src="/Public/assets/vendors/tether/dist/js/tether.min.js"></script>
+<script src="/Public/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/Public/assets/vendors/jscrollpane/script/jquery.jscrollpane.min.js"></script>
+<script src="/Public/assets/vendors/autosize/dist/autosize.min.js"></script>
+<script src="/Public/assets/vendors/moment/min/moment.min.js"></script>
+<script src="/Public/assets/vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+<script src="/Public/assets/vendors/cleanhtmlaudioplayer/src/jquery.cleanaudioplayer.js"></script>
+<script src="/Public/assets/vendors/datatables/media/js/jquery.dataTables.min.js"></script>
+<script src="/Public/assets/vendors/datatables/media/js/dataTables.bootstrap4.min.js"></script>
+<script src="/Public/assets/vendors/datatables-fixedcolumns/js/dataTables.fixedColumns.js"></script>
+<script src="/Public/assets/vendors/datatables-responsive/js/dataTables.responsive.js"></script>
+<script src="/Public/assets/vendors/chartist/dist/chartist.min.js"></script>
+<script src="/Public/assets/vendors/peity/jquery.peity.min.js"></script>
+<script src="/Public/assets/vendors/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<script src="/Public/assets/vendors/jquery-countTo/jquery.countTo.js"></script>
 <!-- Clean UI Scripts -->
-<script src="/hy2/Public/assets/common/js/common.js"></script>
-<script src="/hy2/Public/assets/common/js/demo.temp.js"></script>
+<script src="/Public/assets/common/js/common.js"></script>
+<script src="/Public/assets/common/js/demo.temp.js"></script>
+
 </body>
 </html>

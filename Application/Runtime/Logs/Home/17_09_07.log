@@ -1,0 +1,222 @@
+[ 2017-09-07T12:27:57+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018571s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.014438s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.014563s ]
+NOTIC: [8] Undefined variable: error D:\PHP\hy\Application\Runtime\Cache\Home\3efa69c14f95fe73f9f4474b7507b1ea.php 第 66 行.
+NOTIC: [8] Undefined variable: success D:\PHP\hy\Application\Runtime\Cache\Home\3efa69c14f95fe73f9f4474b7507b1ea.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.167051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.167194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.260217s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.016569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.277033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008678s ]
+
+[ 2017-09-07T12:27:57+08:00 ] ::1 /index.php/Home/Index/verify_c.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2017-09-07T12:28:02+08:00 ] ::1 /index.php/Home/Index/verify_c.html?0.8135543321496974
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2017-09-07T12:28:07+08:00 ] ::1 /index.php/Home/shop/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 1006 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `t_session` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `t_session` WHERE `ip` <> '0.0.0.0' AND `s_username` = 'TK10001' AND ( stop_time > now() ) ORDER BY create_at desc LIMIT 1   [ RunTime:0.0061s ]
+SQL: SELECT * FROM `t_shop` WHERE `s_username` = 'TK10001'  [ RunTime:0.0009s ]
+SQL: INSERT INTO `t_session` (`session_id`,`ip`,`s_username`,`create_at`,`stop_time`) VALUES ('uqak5r3c93fs1ufm8kvcdes697','0.0.0.0','TK10001','2017-09-07 12:28:07','2017-09-07 12:58:07') [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000834s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000954s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027444s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2017-09-07T12:28:07+08:00 ] ::1 /index.php/Home/shop/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-09-07T12:28:09+08:00 ] ::1 /index.php/Home/shop/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 1006 行.
+SQL: SHOW COLUMNS FROM `t_session` [ RunTime:0.0076s ]
+SQL: UPDATE `t_session` SET `stop_time`='2017-09-07 12:58:09' WHERE `s_username` = 'TK10001' AND `ip` = '0.0.0.0' ORDER BY create_at desc LIMIT 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `t_record` [ RunTime:0.0171s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' LIMIT 1   [ RunTime:0.0049s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' AND `gradetime` LIKE '2017-09-07%' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT SUM(grade) AS tp_sum FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' AND `gradetime` LIKE '2017-09-07%' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' LIMIT 1   [ RunTime:0.0397s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` INNER JOIN t_shop_member ON t_shop.id = t_shop_member.s_id INNER JOIN t_member ON t_shop_member.m_id = t_member.id  WHERE t_shop.id = '1' AND t_member.create_at LIKE '2017-09-07%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'Y' GROUP BY m_id  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0007s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `m_id`,sum(grade) as grade FROM `t_record` WHERE `s_id` = 1 AND `gradetype` = 'N' GROUP BY m_id  [ RunTime:0.0007s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_nickname` FROM `t_member` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0166s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_message` INNER JOIN t_shop_message on t_shop_message.me_id = t_message.id  WHERE t_shop_message.s_id = '1' AND `today` = 0 LIMIT 1   [ RunTime:0.0132s ]
+SQL: SELECT t_message.title,t_shop_message.s_id,t_shop_message.status,t_shop_message.id,t_shop_message.me_id FROM `t_message` INNER JOIN t_shop_message on t_shop_message.me_id = t_message.id  WHERE t_shop_message.s_id = '1' AND `today` = 0 ORDER BY t_shop_message.create_at desc LIMIT 0,3   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `t_shop_message` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop_message` WHERE `status` = 0 AND `s_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000495s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000632s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.149258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.149420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001787s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2017-09-07T12:28:13+08:00 ] ::1 /index.php/Home/shop/messagesnum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 1006 行.
+SQL: SHOW COLUMNS FROM `t_session` [ RunTime:0.0068s ]
+SQL: UPDATE `t_session` SET `stop_time`='2017-09-07 12:58:12' WHERE `s_username` = 'TK10001' AND `ip` = '0.0.0.0' ORDER BY create_at desc LIMIT 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_message` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_message` INNER JOIN t_shop_message on t_shop_message.me_id = t_message.id  WHERE t_shop_message.s_id = '1' LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT t_message.title,t_shop_message.s_id,t_shop_message.status,t_shop_message.id,t_shop_message.me_id FROM `t_message` INNER JOIN t_shop_message on t_shop_message.me_id = t_message.id  WHERE t_shop_message.s_id = '1' ORDER BY t_shop_message.create_at desc LIMIT 0,25   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000249s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000406s ]
+NOTIC: [8] Undefined variable: val D:\PHP\hy\Application\Runtime\Cache\Home\d549ecf2cf4015a81f894af21c42ef5d.php 第 479 行.
+NOTIC: [8] Undefined variable: val D:\PHP\hy\Application\Runtime\Cache\Home\d549ecf2cf4015a81f894af21c42ef5d.php 第 479 行.
+NOTIC: [8] Undefined variable: val D:\PHP\hy\Application\Runtime\Cache\Home\d549ecf2cf4015a81f894af21c42ef5d.php 第 479 行.
+NOTIC: [8] Undefined variable: val D:\PHP\hy\Application\Runtime\Cache\Home\d549ecf2cf4015a81f894af21c42ef5d.php 第 479 行.
+NOTIC: [8] Undefined variable: val D:\PHP\hy\Application\Runtime\Cache\Home\d549ecf2cf4015a81f894af21c42ef5d.php 第 479 行.
+NOTIC: [8] Undefined variable: val D:\PHP\hy\Application\Runtime\Cache\Home\d549ecf2cf4015a81f894af21c42ef5d.php 第 479 行.
+NOTIC: [8] Undefined variable: val D:\PHP\hy\Application\Runtime\Cache\Home\d549ecf2cf4015a81f894af21c42ef5d.php 第 479 行.
+NOTIC: [8] Undefined variable: val D:\PHP\hy\Application\Runtime\Cache\Home\d549ecf2cf4015a81f894af21c42ef5d.php 第 479 行.
+NOTIC: [8] Undefined variable: val D:\PHP\hy\Application\Runtime\Cache\Home\d549ecf2cf4015a81f894af21c42ef5d.php 第 479 行.
+NOTIC: [8] Undefined variable: val D:\PHP\hy\Application\Runtime\Cache\Home\d549ecf2cf4015a81f894af21c42ef5d.php 第 479 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000554s ]
+
+[ 2017-09-07T12:31:20+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002297s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Undefined variable: error D:\PHP\hy\Application\Runtime\Cache\Home\3efa69c14f95fe73f9f4474b7507b1ea.php 第 66 行.
+NOTIC: [8] Undefined variable: success D:\PHP\hy\Application\Runtime\Cache\Home\3efa69c14f95fe73f9f4474b7507b1ea.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000951s ]
+
+[ 2017-09-07T12:31:20+08:00 ] ::1 /index.php/Home/Index/verify_c.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000979s ]
+
+[ 2017-09-07T12:31:24+08:00 ] ::1 /index.php/Home/shop/gongdan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 1006 行.
+SQL: SHOW COLUMNS FROM `t_session` [ RunTime:0.0092s ]
+SQL: UPDATE `t_session` SET `stop_time`='2017-09-07 13:01:24' WHERE `s_username` = 'TK10001' AND `ip` = '0.0.0.0' ORDER BY create_at desc LIMIT 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0013s ]
+SQL: SELECT `s_password` FROM `t_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0182s ]
+SQL: SELECT * FROM `t_user` WHERE ( (userid='tk10001' or email='tk10001' or phone='tk10001') AND pwd='96e79218965eb72c92a549dd5a330112' ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-09-07T12:33:26+08:00 ] ::1 /index.php/Home/shop/gongdan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003589s ]
+NOTIC: [2048] Declaration of Home\Controller\ShopController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\PHP\hy\Application\Home\Controller\ShopController.class.php 第 1006 行.
+SQL: SHOW COLUMNS FROM `t_session` [ RunTime:0.0146s ]
+SQL: UPDATE `t_session` SET `stop_time`='2017-09-07 13:03:25' WHERE `s_username` = 'TK10001' AND `ip` = '0.0.0.0' ORDER BY create_at desc LIMIT 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0009s ]
+SQL: SELECT `s_password` FROM `t_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `t_user` WHERE ( (userid='tk10001' or email='tk10001' or phone='tk10001') AND pwd='96e79218965eb72c92a549dd5a330112' ) LIMIT 1   [ RunTime:0.0006s ]
+

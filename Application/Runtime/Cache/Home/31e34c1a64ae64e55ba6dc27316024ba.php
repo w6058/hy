@@ -25,9 +25,8 @@
     <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/bootstrap/dist/css/bootstrap.min.css">
     <!-- Clean UI Styles -->
     <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/main.min.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/source/helpers/fonts">
     <!-- v1.0.0 -->
-
+    <script src="/Public/assets/vendors/jquery/jquery.min.js"></script>
 </head>
 <body class="theme-default">
 <nav class="left-menu" left-menu>
@@ -228,6 +227,28 @@
                     </li>
                 </ul>
             </li>
+
+            <!-- 新增店铺管理员说明 -->
+            <?php if(session('shop.s_sid') == 0 ): ?><li class="left-menu-list-separator"><!-- --></li>
+                <li class="left-menu-list-submenu">
+                    <a class="left-menu-link" href="javascript: void(0);">
+                        <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
+                        添加管理员
+                    </a>
+                    <ul class="left-menu-list list-unstyled">
+                        <li>
+                            <a class="left-menu-link" href="/index.php/Home/shop/adminlist">
+                                管理员列表
+                            </a>
+                        </li>
+                        <li>
+                            <a class="left-menu-link" href="/index.php/Home/shop/addshopadmin">
+                                新增管理员
+                            </a>
+                        </li>
+                    </ul>
+                </li><?php endif; ?>
+
 			
 
             <li class="left-menu-list-separator"></li>
@@ -308,12 +329,18 @@
                     <?php echo session('shop.s_name');?>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
-                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i> 商户信息</a>
+                    <!-- 按钮触发模态框 -->
+                    <a  class="dropdown-item" href="javascript:void(0)" data-toggle="modal" data-target="#myModal">
+                        <i class="dropdown-icon icmn-user"></i>
+                        <?php if(session('shop.s_sid') == 0 ): ?>修改商户信息
+                            <?php else: ?>
+                            修改管理员信息<?php endif; ?>
+                    </a>
                     <div class="dropdown-divider"></div>
                     <div class="dropdown-header">资料</div>
-                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 姓名<?php echo session('shop.s_username');?></a>
-                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 电话<?php echo session('shop.s_phone');?></a>
-                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 邮箱<?php echo session('shop.s_email');?></a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 姓名: <?php echo session('shop.s_username');?></a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 电话: <?php echo session('shop.s_phone');?></a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 邮箱: <?php echo session('shop.s_email');?></a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="/index.php/Home/shop/logout"><i class="dropdown-icon icmn-exit"></i> 退出</a>
                 </ul>
@@ -357,7 +384,6 @@
                     <!-- Top Menu Chart Script -->
                     <script>
                         $(function () {
-
                             var topMenuChart = $("#topMenuChart").peity("bar", {
                                 fill: ['#01a8fe'],
                                 height: 22,
@@ -377,16 +403,15 @@
                     <!-- Top Menu Chart Script -->
                 </div>
             </div>
-            <div class="right hidden-md-down margin-left-20">
 
-                <!-- 搜索框 -->
+            <div class="right hidden-md-down margin-left-20">
+            <!-- 搜索框 -->
                 <div class="search-block">
                     <div class="form-input-icon form-input-icon-right">
                         <i class="icmn-search"></i>
                         <input type="text" id="input_ss" class="form-control form-control-sm form-control-rounded" placeholder="搜索...">
                         <button id="ss" type="button" class="search-block-submit "></button>
                     </div>
-                </div>
                 <script>
                     $('#ss').on('click',function () {
                         var input_ss = $('#input_ss').val();
@@ -397,7 +422,8 @@
                                 url:'/index.php/Home/shop/findall',
                                 type:'post',
                                 data:{
-                                    'input_ss':input_ss
+                                    'input_ss':input_ss,
+                                    'rel':$("#sel").val()
                                 },
                                 success:function(msg){
                                     if(msg.status=='no') {
@@ -412,6 +438,16 @@
                         }
                     });
                 </script>
+                </div>
+            </div>
+            <div class="right example-buy-btn hidden-xs-down">
+                <!-- <a href="javascript:void(0)" target="_blank" class="btn btn-success-outline btn-rounded">
+                    预留菜单
+                </a> -->
+                <select  id="sel" class="btn btn-success-outline btn-rounded">
+                    <option value="1" selcted ="selected" style="border-radius: 1000px;">刷卡</option>
+                    <option value="2">输入</option>
+                </select>
             </div>
 
         </div>
@@ -445,7 +481,10 @@
                                 <th>会员账户</th>
                                 <th>联系方式</th>
                                 <th>消费金额</th>
+                                <th>消费项目</th>
                                 <th>消费日期</th>
+                                <th>经手人</th>
+
                             </tr>
                             </thead>
                             <tbody>
@@ -456,9 +495,11 @@
                                     <td><?php echo ($list["m_username"]); ?></td>
                                     <td><?php echo ($list["m_phone"]); ?></td>
                                     <td><?php echo ($list["grade"]); ?></td>
+                                    <td><?php echo ($list["goods"]); ?></td>
                                     <td><?php echo ($list["gradetime"]); ?></td>
+                                    <td><?php echo ($list["0"]["s_name"]); ?></td>
                                 </tr><?php endforeach; endif; ?>
-                            <tr><td colspan="7" style="text-align: right;font-size: 15px"><?php echo ($page); ?></td></tr>
+                            <tr><td colspan="9" style="text-align: right;font-size: 15px"><?php echo ($page); ?></td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -524,10 +565,104 @@
     </div>
 </div>
 </div>
-
-
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">修改商户信息</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <input type="text" class="form-control" style="display: none" disabled name="s_id" value="<?php echo session('shop.id');?>">
+                    <div class="form-group">
+                        <label class="form-control-label">商户名称</label>
+                        <input type="text" class="form-control" disabled name="s_name" value="<?php echo session('shop.s_name');?>">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">原密码</label>
+                        <input type="password" class="form-control" name="old_password" placeholder="输入原密码进行验证!">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">新密码</label>
+                        <input type="password" class="form-control" name="n_password" placeholder="新密码,不修改不用填!">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">确认密码</label>
+                        <input type="password" class="form-control" name="c_password" placeholder="确认密码,不修改不用填!">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">电话号码</label>
+                        <input type="text" class="form-control" name="n_phone" placeholder="电话号码" value="<?php echo session('shop.s_phone');?>">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">邮箱</label>
+                        <input type="text" class="form-control" name="n_email" placeholder="邮箱" value="<?php echo session('shop.s_email');?>">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" id="button_xg" class="btn btn-primary">修改</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function() {
+        $('#button_xg').on('click',function () {
+            var old_password = $("input[name='old_password']").val();
+            var n_password = $("input[name='n_password']").val();
+            var c_password = $("input[name='c_password']").val();
+            var n_phone = $("input[name='n_phone']").val();
+            var n_email = $("input[name='n_email']").val();
+            var id = $("input[name='s_id']").val();
+            var data = {};
+            if (old_password.length){
+                if(n_password.length || c_password.length){
+                    //新密码不为空
+                    console.log('here');
+                    if(n_password==c_password && n_password.length>=6 && n_password.length<=10){
+                        data={
+                            'id':id,
+                            's_password' : n_password,
+                            'n_phone' : n_phone,
+                            'n_email' : n_email,
+                            'old_password':old_password
+                        }
+                    }else{
+                        return window.alert('两次密码不同,或密码长度不在6-10之间,请重新输入!');
+                    }
+                }else{
+                    //新密码为空
+                    data={
+                        'id':id,
+                        'old_password':old_password,
+                        'n_phone' : n_phone,
+                        'n_email' : n_email
+                    }
+                }
+                $.ajax({
+                    url:'/index.php/Home/shop/updata',
+                    type:'post',
+                    data:data,
+                    success:function(msg){
+                       console.log(msg);
+                        if (msg.status=='no'){
+                            window.alert(msg.data);
+                        }else{
+                            window.alert(msg.data);
+                            window.location.href='/index.php/Home/admin/shop';
+                        }
+                    }
+                })
+            }else{
+                window.alert('请输入原密码');
+            }
+        });
+    });
+</script>
 <!-- Vendors Scripts -->
-<script src="/Public/assets/vendors/jquery/jquery.min.js"></script>
 <script src="/Public/assets/vendors/tether/dist/js/tether.min.js"></script>
 <script src="/Public/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/Public/assets/vendors/jscrollpane/script/jquery.jscrollpane.min.js"></script>
@@ -546,8 +681,6 @@
 <!-- Clean UI Scripts -->
 <script src="/Public/assets/common/js/common.js"></script>
 <script src="/Public/assets/common/js/demo.temp.js"></script>
-
-
 
 </body>
 </html>

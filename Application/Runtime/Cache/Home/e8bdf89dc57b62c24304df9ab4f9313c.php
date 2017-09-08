@@ -20,87 +20,12 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Vendors Styles -->
     <!-- v1.0.0 -->
     <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/jscrollpane/style/jquery.jscrollpane.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/ladda/dist/ladda-themeless.min.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/select2/dist/css/select2.min.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/fullcalendar/dist/fullcalendar.min.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/cleanhtmlaudioplayer/src/player.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/cleanhtmlvideoplayer/src/player.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/bootstrap-sweetalert/dist/sweetalert.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/summernote/dist/summernote.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/owl.carousel/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/ionrangeslider/css/ion.rangeSlider.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/datatables/media/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/c3/c3.min.css">
     <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/chartist/dist/chartist.min.css">
-    <!-- v1.4.0 -->
-    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/nprogress/nprogress.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/jquery-steps/demo/css/jquery.steps.css">
-    <!-- v1.4.2 -->
-    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/bootstrap-select/dist/css/bootstrap-select.min.css">
-    <!-- v1.7.0 -->
-    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/dropify/dist/css/dropify.min.css">
-
     <!-- Clean UI Styles -->
-    <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/source/main.css">
-
-    <!-- Vendors Scripts -->
-    <!-- v1.0.0 -->
+    <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/main.min.css">
     <script src="/Public/assets/vendors/jquery/jquery.min.js"></script>
-    <script src="/Public/assets/vendors/tether/dist/js/tether.min.js"></script>
-    <script src="/Public/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="/Public/assets/vendors/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-    <script src="/Public/assets/vendors/jscrollpane/script/jquery.jscrollpane.min.js"></script>
-    <script src="/Public/assets/vendors/spin.js/spin.js"></script>
-    <script src="/Public/assets/vendors/ladda/dist/ladda.min.js"></script>
-    <script src="/Public/assets/vendors/select2/dist/js/select2.full.min.js"></script>
-    <script src="/Public/assets/vendors/html5-form-validation/dist/jquery.validation.min.js"></script>
-    <script src="/Public/assets/vendors/jquery-typeahead/dist/jquery.typeahead.min.js"></script>
-    <script src="/Public/assets/vendors/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
-    <script src="/Public/assets/vendors/autosize/dist/autosize.min.js"></script>
-    <script src="/Public/assets/vendors/bootstrap-show-password/bootstrap-show-password.min.js"></script>
-    <script src="/Public/assets/vendors/moment/min/moment.min.js"></script>
-    <script src="/Public/assets/vendors/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-    <script src="/Public/assets/vendors/fullcalendar/dist/fullcalendar.min.js"></script>
-    <script src="/Public/assets/vendors/cleanhtmlaudioplayer/src/jquery.cleanaudioplayer.js"></script>
-    <script src="/Public/assets/vendors/cleanhtmlvideoplayer/src/jquery.cleanvideoplayer.js"></script>
-    <script src="/Public/assets/vendors/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
-    <script src="/Public/assets/vendors/remarkable-bootstrap-notify/dist/bootstrap-notify.min.js"></script>
-    <script src="/Public/assets/vendors/summernote/dist/summernote.min.js"></script>
-    <script src="/Public/assets/vendors/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="/Public/assets/vendors/ionrangeslider/js/ion.rangeSlider.min.js"></script>
-    <script src="/Public/assets/vendors/nestable/jquery.nestable.js"></script>
-    <script src="/Public/assets/vendors/datatables/media/js/jquery.dataTables.min.js"></script>
-    <script src="/Public/assets/vendors/datatables/media/js/dataTables.bootstrap4.min.js"></script>
-    <script src="/Public/assets/vendors/datatables-fixedcolumns/js/dataTables.fixedColumns.js"></script>
-    <script src="/Public/assets/vendors/datatables-responsive/js/dataTables.responsive.js"></script>
-    <script src="/Public/assets/vendors/editable-table/mindmup-editabletable.js"></script>
-    <script src="/Public/assets/vendors/d3/d3.min.js"></script>
-    <script src="/Public/assets/vendors/c3/c3.min.js"></script>
-    <script src="/Public/assets/vendors/chartist/dist/chartist.min.js"></script>
-    <script src="/Public/assets/vendors/peity/jquery.peity.min.js"></script>
-    <!-- v1.0.1 -->
-    <script src="/Public/assets/vendors/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
-    <!-- v1.1.1 -->
-    <script src="/Public/assets/vendors/gsap/src/minified/TweenMax.min.js"></script>
-    <script src="/Public/assets/vendors/hackertyper/hackertyper.js"></script>
-    <script src="/Public/assets/vendors/jquery-countTo/jquery.countTo.js"></script>
-    <!-- v1.4.0 -->
-    <script src="/Public/assets/vendors/nprogress/nprogress.js"></script>
-    <script src="/Public/assets/vendors/jquery-steps/build/jquery.steps.min.js"></script>
-    <!-- v1.4.2 -->
-    <script src="/Public/assets/vendors/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-    <script src="/Public/assets/vendors/chart.js/src/Chart.bundle.min.js"></script>
-    <!-- v1.7.0 -->
-    <script src="/Public/assets/vendors/dropify/dist/js/dropify.min.js"></script>
-
-    <!-- Clean UI Scripts -->
-    <script src="/Public/assets/common/js/common.js"></script>
-    <script src="/Public/assets/common/js/demo.temp.js"></script>
 </head>
 <body class="theme-default">
 <nav class="left-menu" left-menu>
@@ -285,6 +210,11 @@
                             添加商户
                         </a>
                     </li>
+                    <li>
+                        <a class="left-menu-link" href="/index.php/Home/admin/validate">
+                            商户验证
+                        </a>
+                    </li>
                 </ul>
             </li>
 			<li class="left-menu-list-separator"><!-- --></li>
@@ -295,7 +225,7 @@
                 </a>
                 <ul class="left-menu-list list-unstyled">
                     <li>
-                        <a class="left-menu-link" href="javascript: void(0);">
+                        <a class="left-menu-link" href="/index.php/Home/admin/memberClass">
                             会员分类
                         </a>
                     </li>
@@ -305,7 +235,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="left-menu-link" href="javascript: void(0);">
+                        <a class="left-menu-link" href="/index.php/Home/admin/addmember">
                             新增会员
                         </a>
                     </li>
@@ -331,8 +261,29 @@
                 </ul>
             </li>
             <li class="left-menu-list-separator"><!-- --></li>
-			
-            <li class="left-menu-list-separator"></li>
+            <li class="left-menu-list-submenu">
+                <a class="left-menu-link" href="javascript: void(0);">
+                    <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
+                    消息推送
+                </a>
+                <ul class="left-menu-list list-unstyled">
+                    <li>
+                        <a class="left-menu-link" href="/index.php/Home/admin/messagelist">
+                            消息列表
+                        </a>
+                    </li>
+                    <li>
+                        <a class="left-menu-link" href="/index.php/Home/admin/message">
+                            新消息推送
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+
+
+            <li class="left-menu-list-separator"><!-- --></li>
             <li class="menu-top-hidden no-colorful-menu">
                 <div class="left-menu-item">
                     预留菜单位置
@@ -532,7 +483,7 @@
                         <h4><?php echo ($shop["0"]["s_name"]); ?> 积分管理</h4>
                         <br />
                         <!-- Horizontal Form -->
-                        <form method="post" action="/home/admin/updatecash">
+                        <form method="post" action="/index.php/Home/admin/updatecash">
                             <input type="text" style="display: none" name="id" value="<?php echo ($shop[0]['id']); ?>">
                             <div class="form-group row">
                                 <h3 style="color: red; text-align: center;margin-left: -25px;"><?php echo ($error); ?></h3>
@@ -597,39 +548,13 @@
                 <div class="cwt__footer__title cwt__footer__title--light">
                     底部菜单说明
                 </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <ul class="list-unstyled">
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6">
-                        <ul class="list-unstyled">
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
             <div class="col-lg-6">
                 <div class="cwt__footer__title">
-                    会员系统说明
+                    TK会员系统说明
                 </div>
                 <div class="cwt__footer__description">
-                    <p>预留文字信息预留文字信息预留文字信息预留文字信息预留文字信息预留文字信息
-                        预留文字信息预留文字信息预留文字信息预留文字信息预留文字信息预留文字信息预留文字信息
-                        预留文字信息预留文字信息预留文字信息预留文字信息预留文字信息预留文字信息预留文字信息预留文字信息
-                        预留文字信息预留文字信息预留文字信息预留文字信息预留文字信息预留文字信息预留文字信息预留文字信息</p>
 
-                    <p>预留文字信息预留文字信息预留文字信息预留文字信息预留文字信息预留文字信息预留文字信息
-                        预留文字信息预留文字信息预留文字信息预留文字信息预留文字信息预留文字信息预留文字信息预留文字信息</p>
                 </div>
             </div>
         </div>
@@ -645,7 +570,7 @@
                 <div class="cwt__footer__company">
                     <img class="cwt__footer__company-logo" src="/Public/assets/common/img/temp/mediatec.png" target="_blank" title="Mediatec Software">
                     <span>
-                        © 2017 <a href="javascript:void(0)" class="cwt__footer__link" target="_blank">会员系统</a>
+                        © 2017 <a href="javascript:void(0)" class="cwt__footer__link" target="_blank">TK会员系统</a>
                         <br>
                         All rights reserved
                     </span>
@@ -654,8 +579,26 @@
         </div>
     </div>
 </div>
-</div>
-<div class="main-backdrop"><!-- --></div>
+
+<!-- Vendors Scripts -->
+<script src="/Public/assets/vendors/tether/dist/js/tether.min.js"></script>
+<script src="/Public/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/Public/assets/vendors/jscrollpane/script/jquery.jscrollpane.min.js"></script>
+<script src="/Public/assets/vendors/autosize/dist/autosize.min.js"></script>
+<script src="/Public/assets/vendors/moment/min/moment.min.js"></script>
+<script src="/Public/assets/vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+<script src="/Public/assets/vendors/cleanhtmlaudioplayer/src/jquery.cleanaudioplayer.js"></script>
+<script src="/Public/assets/vendors/datatables/media/js/jquery.dataTables.min.js"></script>
+<script src="/Public/assets/vendors/datatables/media/js/dataTables.bootstrap4.min.js"></script>
+<script src="/Public/assets/vendors/datatables-fixedcolumns/js/dataTables.fixedColumns.js"></script>
+<script src="/Public/assets/vendors/datatables-responsive/js/dataTables.responsive.js"></script>
+<script src="/Public/assets/vendors/chartist/dist/chartist.min.js"></script>
+<script src="/Public/assets/vendors/peity/jquery.peity.min.js"></script>
+<script src="/Public/assets/vendors/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<script src="/Public/assets/vendors/jquery-countTo/jquery.countTo.js"></script>
+<!-- Clean UI Scripts -->
+<script src="/Public/assets/common/js/common.js"></script>
+<script src="/Public/assets/common/js/demo.temp.js"></script>
 
 </body>
 </html>

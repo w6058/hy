@@ -20,9 +20,13 @@
          */
         function login(){
             $d = D('Member');
+            $verify = new \Think\Verify();
             $arr = $d->where(array('m_username'=>I("post.username"),'m_password'=>I("post.password")))->select();
             session('member',$arr[0]);
-            if (count($arr)){
+            if(!$verify->check(I('post.verify'), '')){
+                $this->assign('error','验证码错误请重新输入!');
+                $this->display('memberLogin');
+            }elseif (count($arr)){
                 $this->assign('vo',session('member'));
                 $this->memberCenter();
             }else{

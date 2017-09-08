@@ -27,16 +27,17 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <foreach name='list' item='vo'>
-                                <tr>
-                                    <th scope="row">{{$vo.id}}</th>
-                                    <td>{{$vo.m_nickname}}</td>
-                                    <td>{{$vo.m_card}}</td>
-                                    <td>{{$vo.s_name}}</td>
-                                    <td>{{$vo.grade}}</td>
-                                    <td>{{$vo.gradetime}}</td>
-                                </tr>
-                            </foreach>
+                                <foreach name='list' item='vo' key='k'>
+                                    <tr>
+                                        <th scope="row">{{$k + 1}}</th>
+                                        <td>{{$vo.m_nickname}}</td>
+                                        <td>{{$vo.m_card}}</td>
+                                        <td>{{$vo.s_name}}</td>
+                                        <td>{{$vo.grade}}</td>
+                                        <td>{{$vo.gradetime}}</td>
+                                    </tr>
+                                </foreach>
+                                <tr><td colspan="6" style="text-align: right;font-size: 15px">{{$page}}</td></tr>
                             </tbody>
                         </table>
                     </div>

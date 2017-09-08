@@ -1,0 +1,1440 @@
+[ 2017-09-03T11:10:51+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-03T11:28:48+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-03T11:33:08+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T11:33:08+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T11:33:08+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T11:33:14+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T11:33:14+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T11:33:14+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T11:39:44+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-03T11:39:47+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T11:39:47+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T11:39:48+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T12:11:12+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T12:11:16+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T12:11:17+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T12:56:17+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-03T13:24:51+08:00 ] ::1 /index.php/Client/messages/case/yi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+ERR: 无法加载模块:Client
+
+[ 2017-09-03T13:24:55+08:00 ] ::1 /index.php/Client/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+ERR: 无法加载模块:Client
+
+[ 2017-09-03T13:25:11+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:25:11+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:25:11+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:25:23+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:25:23+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:25:23+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:29:33+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:29:33+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:29:33+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:34:47+08:00 ] ::1 /Application/Admin/Public/baidubianjiqi/php/upload/20170903/15044121676198.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:34:47+08:00 ] ::1 /Application/Admin/Public/baidubianjiqi/php/upload/20170903/15044121676198.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:34:50+08:00 ] ::1 /Application/Admin/Public/baidubianjiqi/php/upload/20170903/15044121676198.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:34:50+08:00 ] ::1 /Application/Admin/Public/baidubianjiqi/php/upload/20170903/15044121676198.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:49:42+08:00 ] ::1 /Application/Admin/Public/baidubianjiqi/php/upload/20170903/15044121676198.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:49:42+08:00 ] ::1 /Application/Admin/Public/baidubianjiqi/php/upload/20170903/15044121676198.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:49:44+08:00 ] ::1 /Application/Admin/Public/baidubianjiqi/php/upload/20170903/15044121676198.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:49:44+08:00 ] ::1 /Application/Admin/Public/baidubianjiqi/php/upload/20170903/15044121676198.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:49:46+08:00 ] ::1 /Application/Admin/Public/baidubianjiqi/php/upload/20170903/15044121676198.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:49:46+08:00 ] ::1 /Application/Admin/Public/baidubianjiqi/php/upload/20170903/15044121676198.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:50:08+08:00 ] ::1 /index.php/Client/messages/case/dai/messages/34.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+ERR: 无法加载模块:Client
+
+[ 2017-09-03T13:50:14+08:00 ] ::1 /index.php/Client/messages/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+ERR: 无法加载模块:Client
+
+[ 2017-09-03T13:50:22+08:00 ] ::1 /index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+ERR: 无法加载模块:Index
+
+[ 2017-09-03T13:50:29+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:50:29+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:50:30+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:50:57+08:00 ] ::1 /Application/Admin/Public/baidubianjiqi/php/upload/20170903/15044121676198.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:50:57+08:00 ] ::1 /Application/Admin/Public/baidubianjiqi/php/upload/20170903/15044121676198.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:51:00+08:00 ] ::1 /Application/Admin/Public/baidubianjiqi/php/upload/20170903/15044121676198.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:51:00+08:00 ] ::1 /Application/Admin/Public/baidubianjiqi/php/upload/20170903/15044121676198.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:51:02+08:00 ] ::1 /Application/Admin/Public/baidubianjiqi/php/upload/20170903/15044121676198.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:51:02+08:00 ] ::1 /Application/Admin/Public/baidubianjiqi/php/upload/20170903/15044121676198.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:51:14+08:00 ] ::1 /Application/Admin/Public/baidubianjiqi/php/upload/20170903/15044121676198.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:58:27+08:00 ] ::1 /Application/Admin/Public/baidubianjiqi/php/upload/20170903/15044121676198.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T13:58:27+08:00 ] ::1 /Application/Admin/Public/baidubianjiqi/php/upload/20170903/15044121676198.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T14:29:05+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T14:29:05+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T14:29:05+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T14:42:03+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T14:42:03+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T14:42:03+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T14:44:57+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T14:47:05+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T14:50:15+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T14:52:32+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T14:53:25+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T15:09:28+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T15:09:28+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T15:09:28+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T15:27:39+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001850s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T15:27:39+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T15:27:40+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T15:27:40+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-03T15:31:35+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T15:31:35+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T15:31:35+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T15:33:49+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T15:35:04+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T15:35:11+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T15:42:36+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T15:42:36+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T15:42:36+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T15:42:37+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T15:42:43+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T15:42:47+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T15:43:44+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:07:02+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-03T16:07:18+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:07:18+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:07:18+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:16:25+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000859s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:16:25+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:16:25+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:16:44+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:16:44+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:16:44+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:16:59+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:16:59+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:16:59+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:28:02+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:28:02+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:28:02+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:28:27+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:28:27+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:28:27+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:32:48+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-03T16:33:05+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:33:05+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:33:05+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T16:53:10+08:00 ] ::1 /index.php/Client/messages/case/dai/messages/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+ERR: 无法加载模块:Client
+
+[ 2017-09-03T17:07:33+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:07:51+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:07:58+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:08:12+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:08:56+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:08:58+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:09:00+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:11:18+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:11:20+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:11:26+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:11:27+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:11:29+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:11:30+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:11:32+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:11:32+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:55:14+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:55:14+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:55:14+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:57:22+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:59:26+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:59:28+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T17:59:28+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:01:31+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:01:33+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:03:54+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:03:57+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:05:16+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:09:38+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:09:50+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:10:36+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:17:45+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:18:10+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:18:13+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:18:16+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:18:17+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:18:18+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:18:22+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:19:46+08:00 ] ::1 /index.php/Client/forms
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+ERR: 无法加载模块:Client
+
+[ 2017-09-03T18:22:10+08:00 ] ::1 //index.php/Client/messages/case/zhong/messages/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+ERR: 无法加载模块:Client
+
+[ 2017-09-03T18:27:50+08:00 ] ::1 /index.php/Client/messages/case/dai/messages/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+ERR: 无法加载模块:Client
+
+[ 2017-09-03T18:28:24+08:00 ] ::1 /index.php/Client/forms
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+ERR: 无法加载模块:Client
+
+[ 2017-09-03T18:28:34+08:00 ] ::1 /index.php/Client/forms
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+ERR: 无法加载模块:Client
+
+[ 2017-09-03T18:29:10+08:00 ] ::1 /index.php/Client/forms
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+ERR: 无法加载模块:Client
+
+[ 2017-09-03T18:30:42+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:30:42+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:30:42+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:34:26+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:34:26+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:34:26+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:47:09+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:47:09+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:47:09+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:50:45+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:50:45+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:50:45+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:52:39+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:52:39+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:52:39+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:53:24+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:53:24+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:53:24+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:57:10+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-03T18:57:16+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:57:16+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:57:16+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:59:11+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:59:11+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T18:59:11+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:00:50+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:00:50+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:00:50+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:32:15+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:32:15+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:32:15+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:33:14+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:33:14+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:33:14+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:38:17+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-03T19:38:27+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:38:27+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:38:27+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:39:26+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:39:26+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:39:26+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:39:33+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:39:33+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:39:33+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:48:22+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:48:22+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:48:22+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:56:08+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:56:08+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:56:08+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:59:02+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-03T19:59:13+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:59:13+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T19:59:13+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T21:56:49+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T21:56:49+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T21:56:49+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:03:39+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:06:14+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:06:21+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:06:30+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:07:14+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:07:16+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:07:44+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:07:50+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:07:56+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000407s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001076s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:07:56+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:07:56+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:07:56+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:08:05+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:09:54+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:09:54+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:09:54+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:11:47+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:11:56+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:12:06+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:12:19+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:12:25+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:13:29+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:14:17+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:14:20+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:19:42+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:19:44+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:32:04+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:44:12+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:44:15+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:44:16+08:00 ] ::1 /Application/Admin/Public/js/dist/jquery-migrate.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:45:38+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:45:38+08:00 ] ::1 /Application/Admin/Public/css/style.shinyblue.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+ERR: 无法加载模块:Application
+
+[ 2017-09-03T22:45:38+08:00 ] ::1 /Application/Admin/Public/js/new/user.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+ERR: 无法加载模块:Application
+

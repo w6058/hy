@@ -9,13 +9,18 @@
         <div class="single-page-block-inner effect-3d-element">
             <div class="blur-placeholder"><!-- --></div>
             <div class="single-page-block-form">
+            <div style="width:100%; text-align: right;">
+                <a href="__MODULE__/shop/updatememberadd">
+                    <i class="fa fa-pencil margin-r-5 " style="color: blue;"></i>
+                </a>
+            </div>
                 <form id="form-validation" action="" name="form-validation" method="POST">
                     <div class="text-center">
                         <h2 class="text-center">
                             会员充值
                         </h2>
                     </div>
-					<div class="form-group">
+                    <div class="form-group">
                         <input
                                class="form-control"
                                id="m_card"
@@ -23,13 +28,22 @@
                                name="m_card"
                                type="text">
                         <br>
+                        <span style="color: black;margin-left: 19px;">刷卡号充值:</span>
+                        <input type='radio' class="rel" value="1" name="check" checked>
+                        <span style="color: black;margin-left: 19px;">输入卡号充值:</span>
+                        <input type='radio' class="rel" value="2" name="check">
                         <span style="color: black;margin-left: 19px;">使用手机号码充值:</span>
-                        <input type='checkbox' id="checkbox">
+                        <input type='radio' class="rel" value="3" name="check">
                     </div>
                     <h2 class="text-center" id="member_info">
                     </h2>
                     <br />
-					<div class="form-group">
+                    <div class="form-group">
+                        <span style="color: black;margin-left: 19px;">充值描述:</span>
+                        <textarea id="goods" name="goods" placeholder="充值描述" class="form-control" rows="3" cols="45"></textarea>
+                    </div>
+                    <br />
+                    <div class="form-group">
                         <input id="num"
                                class="form-control"
                                placeholder="请输入充值金额"
@@ -45,6 +59,9 @@
                     <div id="result" style="display: none">
                     </div>
 
+                    <!-- 打印 -->
+
+                    </div>
                 </form>
             </div>
         </div>
@@ -63,22 +80,29 @@
 
         // Add class to body for change layout settings
         $('body').addClass('single-page');
-
-        $('#checkbox').on('change',function () {
-            var checked = $('#checkbox').is(':checked');
-            if(checked){
-                $('#m_card').attr('placeholder','请输入手机号码');
+        $(".rel").on("click",function(){
+            if($(this).val() == 1){
                 $('#m_card').val('');
+                $('#m_card').attr('placeholder','请刷卡');
                 $('#num').val('');
                 $('#member_info').html('');
                 $('#member_infos').html('');
-            }else {
-                $('#m_card').attr('placeholder','请输入卡号');
+            }else if($(this).val() == 2){
                 $('#m_card').val('');
+                $('#m_card').attr('placeholder','请输入卡号');
+                $('#num').val('');
+                $('#member_info').html('');
+                $('#member_infos').html('');
+            }else{
+                $('#m_card').val('');
+                $('#m_card').attr('placeholder','请输入手机号码');
                 $('#num').val('');
                 $('#member_info').html('');
                 $('#member_infos').html('');
             }
+        });
+        $('#num').on('focus',function () {
+            $('#button_cz').removeAttr('disabled');
         });
         $('#m_card').on('change',function () {
             var m_card = $('#m_card').val();
@@ -88,11 +112,12 @@
                 type:'post',
                 data:{
                     'm_card':m_card,
-                    'checked':checked
+                    'checked':$(".rel:checked").val()
                 },
                 success:function(msg){
                     if(msg.status=='no'){
                         $('#button_cz').attr('disabled','disabled');
+                        $('#m_card').val('');
                         $('#member_info').html('');
                         window.alert(msg.data);
                     }else {
@@ -102,7 +127,18 @@
                 }
             })
         });
-
+        var a=1;
+        $('#button_cz').keypress(function(e) {
+            if (e.keyCode == 13) {
+                if (a==2) {
+                    e.preventDefault();
+                }
+            }
+            a=2;
+            setTimeout(function () {
+                a=1;
+            },1000);
+        });
         $("#button_cz").on('click',function () {
             var m_card = $('#m_card').val();
             var num = $('#num').val();
@@ -114,39 +150,53 @@
                 window.alert('请输入充值金额!');
                 $('#button_cz').attr('disabled','disabled');
             }else {
-                $.ajax({
-                    url:'__MODULE__/shop/memberadd2',
-                    type:'post',
-                    data:{
-                        'm_card':m_card,
-                        'checked':checked,
-                        'num':num
-                    },
-                    success:function(msg){
-                        if(msg.status=='no'){
-                            window.alert(msg.data);
-                            $('#button_cz').attr('disabled','disabled');
-                            $('#num').on('change',function () {
-                                $('#button_cz').removeAttr('disabled');
-                            })
-                        }else {
-                            $('#result').html(msg.data1);
-                            $('#result').speech({
-                                "speech": false,
-                                "speed": 5
+                if(a==1){
+                    $.ajax({
+                        url:'__MODULE__/shop/memberadd2',
+                        type:'post',
+                        data:{
+                            'm_card':m_card,
+                            'checked':$(".rel:checked").val(),
+                            'num':num,
+                            'goods':$("#goods").val()
+                        },
+                        beforeSend:function(){
+                            a=2;
+                        },
+                        success:function(msg){
+                            if(msg.status=='no'){
+                                window.alert(msg.data);
+                                $('#button_cz').attr('disabled','disabled');
+                                $('#num').on('change',function () {
+                                    $('#button_cz').removeAttr('disabled');
+                                })
+                            }else {
+                                a = 1;
+                                $('#result').html(msg.data1);
+                                $('#result').speech({
+                                    "speech": false,
+                                    "speed": 5
 //                                "bg": "./images/speech.png"
-                            });
-                            $('#member_infos').html(msg.data);
-                            $('#button_cz').attr('disabled','disabled');
-                            setTimeout(function () {
-                                $('#m_card').val('');
-                                $('#num').val('');
-                                $('#member_info').html('');
-                                $('#member_infos').html('');
-                            },3000);
+                                });
+                                $('#member_infos').html(msg.data);
+                                $('#button_cz').attr('disabled','disabled');
+                                setTimeout(function () {
+                                    $('#m_card').val('');
+                                    $('#num').val('');
+                                    $('#member_info').html('');
+                                    $('#member_infos').html('');
+                                    $("#ddd").html('');
+                                },3000);
+                            }
+                        },
+                        error:function(){
+                            a=1;
+                            window.alert('网络中断,请稍后重试!')
                         }
-                    }
-                })
+                    })
+                }else{
+                    window.alert('网络慢,等一下,别按太急!')
+                }
             }
         });
 

@@ -25,7 +25,6 @@
     <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/chartist/dist/chartist.min.css">
     <!-- Clean UI Styles -->
     <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/main.min.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/source/helpers/fonts">
     <script src="/Public/assets/vendors/jquery/jquery.min.js"></script>
 </head>
 <body class="theme-default">
@@ -41,7 +40,7 @@
             <li class="left-menu-list-submenu">
                 <a class="left-menu-link" href="javascript: void(0);">
                     <i class="left-menu-link-icon icmn-cog util-spin-delayed-pseudo"><!-- --></i>
-                    <span class="menu-top-hidden">主题</span> 设置
+                    <span class="menu-top-hidden">主题</span>
                 </a>
                 <ul class="left-menu-list list-unstyled">
                     <li>
@@ -181,89 +180,106 @@
                     </li>
                 </ul>
             </li>
-            <li>
-                <a class="left-menu-link" href="javascript: void(0);">
-                    <i class="left-menu-link-icon icmn-books"><!-- --></i>
-                    预留菜单位置
-                </a>
-            </li>
+
             <li class="left-menu-list-separator "><!-- --></li>
             <li class="left-menu-list-active">
-                <a class="left-menu-link" href="javascript: void(0);">
+                <a class="left-menu-link" href="/index.php/Home/admin/show">
                     <i class="left-menu-link-icon icmn-home2"><!-- --></i>
                     <span class="menu-top-hidden">控制面板</span>
                 </a>
             </li>
 			<li class="left-menu-list-separator"><!-- --></li>
-            <li class="left-menu-list-submenu">
-                <a class="left-menu-link" href="javascript: void(0);">
-                    <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
-                    商户中心
-                </a>
-                <ul class="left-menu-list list-unstyled">
-                    <li>
-                        <a class="left-menu-link" href="/index.php/Home/admin/shoplist">
-                            商户列表
+            <!-- <script>
+                var a = "<?php echo session('adminQX');?>";
+                var x = a.indexOf("最高权限");
+                console.log(x);
+            </script> -->
+
+            <?php if((session('adminQX0') == 商户中心) or (session('adminQX1') == 商户中心) or (session('adminQX2') == 商户中心) or (session('adminQX3') == 商户中心) or (session('adminQX4') == 商户中心) or (session('adminQX5') == 商户中心)): ?><li class="left-menu-list-submenu">
+                    <a class="left-menu-link" href="javascript: void(0);">
+                        <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
+                        商户中心
+                    </a>
+                    <ul class="left-menu-list list-unstyled">
+                        <li>
+                            <a class="left-menu-link" href="/index.php/Home/admin/shoplist">
+                                商户列表
+                            </a>
+                        </li>
+                        <li>
+                            <a class="left-menu-link" href="/index.php/Home/admin/addshop">
+                                添加商户
+                            </a>
+                        </li>
+                        <li>
+                            <a class="left-menu-link" href="/index.php/Home/admin/validate">
+                                商户验证
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="left-menu-list-separator"><!-- --></li><?php endif; ?>
+            <?php if((session('adminQX0') == 会员中心) or (session('adminQX1') == 会员中心) or (session('adminQX2') == 会员中心) or (session('adminQX3') == 会员中心) or (session('adminQX4') == 会员中心) or (session('adminQX5') == 会员中心)): ?><li class="left-menu-list-submenu">
+                    <a class="left-menu-link" href="javascript: void(0);">
+                        <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
+                        会员中心
+                    </a>
+                    <ul class="left-menu-list list-unstyled">
+                        <li>
+                            <a class="left-menu-link" href="/index.php/Home/admin/memberClass">
+                                会员分类
+                            </a>
+                        </li>
+                        <li>
+                            <a class="left-menu-link" href="/index.php/Home/admin/index">
+                                会员列表
+                            </a>
+                        </li>
+                        <li>
+                            <a class="left-menu-link" href="/index.php/Home/admin/addmember">
+                                新增会员
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="left-menu-list-separator"><!-- --></li><?php endif; ?>
+            <?php if((session('adminQX0') == 资金中心) or (session('adminQX1') == 资金中心) or (session('adminQX2') == 资金中心) or (session('adminQX3') == 资金中心) or (session('adminQX4') == 资金中心) or (session('adminQX5') == 资金中心)): ?><li class="left-menu-list-submenu">
+                    <a class="left-menu-link" href="javascript: void(0);">
+                        <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
+                        资金中心
+                    </a>
+                    <ul class="left-menu-list list-unstyled">
+                        <li>
+                            <a class="left-menu-link" href="/index.php/Home/admin/queryRecord">
+                                充值记录
+                            </a>
+                        </li>
+                        <li>
+                            <a class="left-menu-link" href="/index.php/Home/admin/queryRecordN">
+                                消费记录
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="left-menu-list-separator"><!-- --></li><?php endif; ?>
+            <?php if(session('admin.id') == 1): ?><li class="left-menu-list-submenu">
+                        <a class="left-menu-link" href="javascript:void(0);">
+                            <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
+                            添加管理员
                         </a>
-                    </li>
-                    <li>
-                        <a class="left-menu-link" href="/index.php/Home/admin/addshop">
-                            添加商户
-                        </a>
-                    </li>
-                </ul>
-            </li>
-			<li class="left-menu-list-separator"><!-- --></li>
-            <li class="left-menu-list-submenu">
-                <a class="left-menu-link" href="javascript: void(0);">
-                    <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
-                    会员中心
-                </a>
-                <ul class="left-menu-list list-unstyled">
-                    <li>
-                        <a class="left-menu-link" href="/index.php/Home/admin/memberClass">
-                            会员分类
-                        </a>
-                    </li>
-                    <li>
-                        <a class="left-menu-link" href="/index.php/Home/admin/index">
-                            会员列表
-                        </a>
-                    </li>
-                    <li>
-                        <a class="left-menu-link" href="/index.php/Home/admin/addmember">
-                            新增会员
-                        </a>
-                    </li>
-                </ul>
-            </li>
-			<li class="left-menu-list-separator"><!-- --></li>
-            <li class="left-menu-list-submenu">
-                <a class="left-menu-link" href="javascript: void(0);">
-                    <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
-                    资金中心
-                </a>
-                <ul class="left-menu-list list-unstyled">
-                    <li>
-                        <a class="left-menu-link" href="/index.php/Home/admin/queryRecord">
-                            充值记录
-                        </a>
-                    </li>
-                    <li>
-                        <a class="left-menu-link" href="/index.php/Home/admin/queryRecordN">
-                            消费记录
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="left-menu-list-separator"><!-- --></li>
-			
-            <li class="left-menu-list-separator"></li>
-            <li class="menu-top-hidden no-colorful-menu">
-                <div class="left-menu-item">
-                    预留菜单位置
-                </div>
-            </li>
+                        <ul class="left-menu-list list-unstyled">
+                            <li>
+                                <a class="left-menu-link" href="/index.php/Home/admin/adminlist">
+                                    管理员列表
+                                </a>
+                            </li>
+                            <li>
+                                <a class="left-menu-link" href="/index.php/Home/admin/position">
+                                    职位列表
+                                </a>
+                            </li>
+                        </ul>
+                    </li><?php endif; ?>
             <li class="menu-top-hidden no-colorful-menu">
                 <div class="example-left-menu-chart chartist-animated chartist-theme-dark"></div>
                 <script>
@@ -300,7 +316,7 @@
                     });
                 </script>
             </li>
-            <li class="menu-top-hidden no-colorful-menu">
+            <!-- <li class="menu-top-hidden no-colorful-menu">
                 <div class="left-menu-item">
                     预留菜单位置
                 </div>
@@ -319,7 +335,7 @@
                 <div class="left-menu-item">
                     <span class="donut donut-danger"></span> 预留菜单位置
                 </div>
-            </li>
+            </li> -->
         </ul>
     </div>
 </nav>
@@ -333,14 +349,14 @@
         <div class="menu-user-block">
             <div class="dropdown dropdown-avatar">
                 <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <?php echo session('admin.a_username');?>
+                    <?php echo session('admin.a_name');?>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
-                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i> 管理员信息</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i> 用户信息</a>
                     <div class="dropdown-divider"></div>
                     <div class="dropdown-header">资料</div>
-                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 姓名:<?php echo session('admin.a_username');?></a>
-                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 电话:<?php echo session('admin.a_email');?></a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 职位:<?php echo session('admin.a_position');?></a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 电话:<?php echo session('admin.a_phone');?></a>
                     <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 邮箱:<?php echo session('admin.a_email');?></a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="/index.php/Home/admin/logout"><i class="dropdown-icon icmn-exit"></i> 退出</a>
@@ -354,43 +370,43 @@
                     <div class="dropdown">
                         <a href="javascript: void(0);" class="dropdown-toggle dropdown-inline-button" data-toggle="dropdown" aria-expanded="false">
                             <i class="dropdown-inline-button-icon icmn-folder-open"></i>
-                            <span class="hidden-lg-down">预留菜单</span>
+                            <span class="hidden-lg-down">快速导航</span>
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="" role="menu">
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <div class="dropdown-divider"></div>
-                            <div class="dropdown-header">预留菜单</div>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-checkmark"></i> 预留菜单...</a>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-checkmark"></i> 预留菜单...</a>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-clock"></i> 预留菜单...</a>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单...</a>
-                            <div class="dropdown-divider"></div>
-                            <div class="dropdown-header">预留菜单</div>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-cog"></i> 预留菜单</a>
+                            <?php if((session('adminQX0') == 商户中心) or (session('adminQX1') == 商户中心) or (session('adminQX2') == 商户中心) or (session('adminQX3') == 商户中心) or (session('adminQX4') == 商户中心) or (session('adminQX5') == 商户中心)): ?><div class="dropdown-divider"></div>
+                                <div class="dropdown-header">商户中心</div>
+                                <a class="dropdown-item" href="/index.php/Home/admin/shoplist"><i class="dropdown-icon icmn-checkmark"></i> 商户列表</a>
+                                <a class="dropdown-item" href="/index.php/Home/admin/addshop"><i class="dropdown-icon icmn-checkmark"></i> 添加商户</a>
+                                <a class="dropdown-item" href="/index.php/Home/admin/validate"><i class="dropdown-icon icmn-checkmark"></i> 商户验证</a><?php endif; ?>
+                            <?php if((session('adminQX0') == 会员中心) or (session('adminQX1') == 会员中心) or (session('adminQX2') == 会员中心) or (session('adminQX3') == 会员中心) or (session('adminQX4') == 会员中心) or (session('adminQX5') == 会员中心)): ?><div class="dropdown-divider"></div>
+                                <div class="dropdown-header">会员中心</div>
+                                <a class="dropdown-item" href="/index.php/Home/admin/shoplist"><i class="dropdown-icon icmn-checkmark"></i> 会员分类</a>
+                                <a class="dropdown-item" href="/index.php/Home/admin/index"><i class="dropdown-icon icmn-checkmark"></i> 会员列表</a>
+                                <a class="dropdown-item" href="/index.php/Home/admin/addmember"><i class="dropdown-icon icmn-checkmark"></i> 新增会员</a><?php endif; ?>
+                            <?php if((session('adminQX0') == 资金中心) or (session('adminQX1') == 资金中心) or (session('adminQX2') == 资金中心) or (session('adminQX3') == 资金中心) or (session('adminQX4') == 资金中心) or (session('adminQX5') == 资金中心)): ?><div class="dropdown-divider"></div>
+                                <div class="dropdown-header">资金中心</div>
+                                <a class="dropdown-item" href="/index.php/Home/admin/queryRecord"><i class="dropdown-icon icmn-checkmark"></i> 充值记录</a>
+                                <a class="dropdown-item" href="/index.php/Home/admin/queryRecordN"><i class="dropdown-icon icmn-checkmark"></i> 消费记录</a><?php endif; ?>
+                            <?php if((session('adminQX0') != 资金中心) and (session('adminQX1') != 资金中心) and (session('adminQX2') != 资金中心) and (session('adminQX3') != 资金中心) and (session('adminQX4') != 资金中心) and (session('adminQX5') != 资金中心) and (session('adminQX0') != 会员中心) and (session('adminQX1') != 会员中心) and (session('adminQX2') != 会员中心) and (session('adminQX3') != 会员中心) and (session('adminQX4') != 会员中心) and (session('adminQX5') != 会员中心) and (session('adminQX0') != 商户中心) and (session('adminQX1') != 商户中心) and (session('adminQX2') != 商户中心) and (session('adminQX3') != 商户中心) and (session('adminQX4') != 商户中心) and (session('adminQX5') != 商户中心)): ?><div class="dropdown-divider"></div>
+                                <div class="dropdown-header">暂无权限</div><?php endif; ?>
                         </ul>
                     </div>
                     <div class="dropdown">
                         <a href="javascript: void(0);" class="dropdown-toggle dropdown-inline-button" data-toggle="dropdown" aria-expanded="false">
                             <i class="dropdown-inline-button-icon icmn-database"></i>
-                            <span class="hidden-lg-down">预留菜单</span>
+                            <span class="hidden-lg-down">消息中心</span>
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="" role="menu">
-                            <div class="dropdown-header">预留菜单</div>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <div class="dropdown-header">预留菜单</div>
-                            <a class="dropdown-item" href="javascript:void(0)">预留菜单</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-cog"></i> 预留菜单</a>
+                            <?php if((session('adminQX0') == 消息推送) or (session('adminQX1') == 消息推送) or (session('adminQX2') == 消息推送) or (session('adminQX3') == 消息推送) or (session('adminQX4') == 消息推送) or (session('adminQX5') == 消息推送)): ?><div class="dropdown-header">消息推送</div>
+                                <a class="dropdown-item" href="/index.php/Home/admin/messagelist"><i class="dropdown-icon icmn-checkmark"></i> 消息列表</a>
+                                <a class="dropdown-item" href="/index.php/Home/admin/message"><i class="dropdown-icon icmn-checkmark"></i> 新消息推送</a><?php endif; ?>
+                            <?php if((session('adminQX0') == 工单系统) or (session('adminQX1') == 工单系统) or (session('adminQX2') == 工单系统) or (session('adminQX3') == 工单系统) or (session('adminQX4') == 工单系统) or (session('adminQX5') == 工单系统)): ?><div class="dropdown-divider"></div>
+                                <div class="dropdown-header">工单系统</div>
+                                <a class="dropdown-item" href="">工单</a><?php endif; ?>
+                            <?php if((session('adminQX0') != 工单系统) and (session('adminQX1') != 工单系统) and (session('adminQX2') != 工单系统) and (session('adminQX3') != 工单系统) and (session('adminQX4') != 工单系统) and (session('adminQX5') != 工单系统) and (session('adminQX0') != 消息推送) and (session('adminQX1') != 消息推送) and (session('adminQX2') != 消息推送) and (session('adminQX3') != 消息推送) and (session('adminQX4') != 消息推送) and (session('adminQX5') != 消息推送)): ?><div class="dropdown-divider"></div>
+                                <div class="dropdown-header">暂无权限</div><?php endif; ?>
                         </ul>
                     </div>
                 </div>
@@ -433,11 +449,11 @@
                     </div>
                 </div>
             </div>
-            <div class="right example-buy-btn hidden-xs-down">
+            <!-- <div class="right example-buy-btn hidden-xs-down">
                 <a href="javascript:void(0)" target="_blank" class="btn btn-success-outline btn-rounded">
                     预留菜单
                 </a>
-            </div>
+            </div> -->
         </div>
     </div>
 </nav>
@@ -457,40 +473,57 @@
                     <div class="margin-bottom-50">
                         <h4>新增商户文字说明</h4>
                         <br />
-                        <!-- Horizontal Form -->
-                        <form method="post" action="/index.php/Home/admin/addshoppost">
+                        <form method="post" action="/index.php/Home/admin/addshoppost" enctype="multipart/form-data">
+                            <h5 style="color:red;"><?php echo ($error); ?></h5>
+                            <h5 style="color:red;"><?php echo ($success); ?></h5>
                             <div class="form-group row">
-                                <div class="col-md-3">
+                                <div class="col-md-2 col-lg-offset-1">
                                     <label class="form-control-label">商户名称</label>
                                 </div>
-                                <div class="col-md-9">
+                                <div class="col-md-6">
                                     <input type="text" class="form-control" name="s_name" placeholder="商户名称">
                                 </div>
                             </div>
 							<div class="form-group row">
-                                <div class="col-md-3">
+                                <div class="col-md-2 col-lg-offset-1">
                                     <label class="form-control-label">管理员账号</label>
                                 </div>
-                                <div class="col-md-9">
+                                <div class="col-md-6">
                                     <input type="text" class="form-control" name="s_username" placeholder="管理员账号">
                                 </div>
                             </div>
 							<div class="form-group row">
-                                <div class="col-md-3">
+                                <div class="col-md-2 col-lg-offset-1">
                                     <label class="form-control-label" for="l9">管理员密码</label>
                                 </div>
-                                <div class="col-md-9">
+                                <div class="col-md-6">
                                     <div class="form-input-icon form-input-icon-right">
                                         <i class="icmn-spinner11 util-spin"></i>
                                         <input type="text" class="form-control" name="s_password" placeholder="Password" id="l9">
                                     </div>
                                 </div>
                             </div>
+                            <div class="form-group row">
+                                <div class="col-md-2 col-lg-offset-1">
+                                    <label class="form-control-label">管理员身份证号</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" name="s_card" placeholder="管理员身份证号">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-2 col-lg-offset-1">
+                                    <label class="form-control-label">管理员手机号</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" name="s_phone" placeholder="管理员手机号">
+                                </div>
+                            </div>
 							<div class="form-group row">
-                                <div class="col-md-3">
+                                <div class="col-md-2 col-lg-offset-1">
                                     <label class="form-control-label">管理员邮箱</label>
                                 </div>
-                                <div class="col-md-9">
+                                <div class="col-md-6">
                                     <div class="input-group">
                                         <span class="input-group-addon">
                                             <i class="icmn-mail2"></i>
@@ -500,64 +533,80 @@
                                 </div>
                             </div>
 							<div class="form-group row">
-                                <div class="col-md-3">
+                                <div class="col-md-2 col-lg-offset-1">
                                     <label class="form-control-label">商户地址</label>
                                 </div>
-                                <div class="col-md-9">
+                                <div class="col-md-6">
                                     <input type="text" class="form-control" name="s_address" placeholder="请输入商户地址" >
                                 </div>
                             </div>
 							<div class="form-group row">
-                                <div class="col-md-3">
+                                <div class="col-md-2 col-lg-offset-1">
                                     <label class="form-control-label" >商户许可证号码</label>
                                 </div>
-                                <div class="col-md-9">
+                                <div class="col-md-6">
                                     <input type="text" class="form-control" name="s_license" placeholder="请输入许可证号码" >
                                 </div>
                             </div>
 							<div class="form-group row">
-                                <div class="col-md-3">
+                                <hr />
+                                <div class="col-md-2 col-lg-offset-1">
                                     <label class="form-control-label">证件资料上传</label>
                                 </div>
-                                <div class="col-md-9">
-                                    <input type="file">
+                                <div class="col-md-6">
+                                    <input type="file" name='s_document'>
                                     <br />
                                     <small>工商运营有效证件</small>
                                 </div>
                             </div>
 							<div class="form-group row">
-                                <div class="col-md-3">
+                                <hr />
+                                <div class="col-md-2 col-lg-offset-1">
                                     <label class="form-control-label" >法人身份证</label>
                                 </div>
-                                <div class="col-md-9">
-                                    <input type="file">
+                                <div class="col-md-4">
+                                    <input type="file" name='s_fidcard_f'>
                                     <br />
-                                    <small>法人身份证正反面扫描件</small>
+                                    <small>法人身份证正面扫描件</small>
+                                    <hr />
+                                </div>
+                                <div class="col-md-4 col-md-offset-3">
+                                    <input type="file" name='s_fidcard_b'>
+                                    <br />
+                                    <small>法人身份证反面扫描件</small>
                                 </div>
                             </div>
 							<div class="form-group row">
-                                <div class="col-md-3">
+                                <hr />
+                                <div class="col-md-2 col-lg-offset-1">
                                     <label class="form-control-label">管理员身份证</label>
                                 </div>
-                                <div class="col-md-9">
-                                    <input type="file">
+                                <div class="col-md-4">
+                                    <input type="file" name='s_aidcard_f'>
                                     <br />
-                                    <small>管理员身份证正反面扫描件</small>
+                                    <small>管理员身份证正面扫描件</small>
+                                    <hr />
+                                </div>
+                                <div class="col-md-4 col-md-offset-3">
+                                    <input type="file" name='s_aidcard_b'>
+                                    <br />
+                                    <small>管理员身份证反面扫描件</small>
                                 </div>
                             </div>
 							<div class="form-group row">
-                                <div class="col-md-3">
+                                <hr />
+                                <div class="col-md-2 col-lg-offset-1">
                                     <label class="form-control-label">合作协议上传</label>
                                 </div>
-                                <div class="col-md-9">
-                                    <input type="file">
+                                <div class="col-md-6">
+                                    <input type="file" name='s_agreement'>
                                     <br />
                                     <small>合作协议上传</small>
                                 </div>
                             </div>
                             <div class="form-actions">
                                 <div class="form-group row">
-                                    <div class="col-md-9 col-md-offset-3">
+                                    <div class="col-md-6 col-md-offset-3">
                                         <button type="submit" class="btn width-150 btn-primary">添加</button>
                                         <a href="/index.php/Home/admin/show" class="btn btn-default">返回首页</a>
                                     </div>
@@ -583,24 +632,12 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="cwt__footer__title cwt__footer__title--light">
-                    底部菜单说明
+                    会员系统 控制中心 祝您开开心心每一天
                 </div>
-                <!-- <div class="row">
-                    <div class="col-lg-6">
-                        <ul class="list-unstyled">
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                            </ul>
-                    </div>
-                    <div class="col-lg-6">
-                        <ul class="list-unstyled">
-                            <li><a target="_blank" href="javascript:void(0)" class="cwt__footer__link">预留文字信息预留文字</a></li>
-                           </ul>
-                    </div>
-                </div> -->
             </div>
             <div class="col-lg-6">
                 <div class="cwt__footer__title">
-                    TK会员系统说明
+                    电脑使用 按F11可以全屏哦
                 </div>
                 <div class="cwt__footer__description">
 
@@ -612,7 +649,7 @@
         <div class="row">
             <div class="col-md-4">
                 <a href="javascript:void(0)" target="_blank" class="btn btn-primary">
-                    预留文字标题
+                    记得每天笑一笑
                 </a>
             </div>
             <div class="col-md-8">
@@ -628,59 +665,26 @@
         </div>
     </div>
 </div>
+
 <!-- Vendors Scripts -->
-<!-- v1.0.0 -->
 <script src="/Public/assets/vendors/tether/dist/js/tether.min.js"></script>
 <script src="/Public/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-<!--<script src="/Public/assets/vendors/jquery-mousewheel/jquery.mousewheel.min.js"></script>-->
-<!--<script src="/Public/assets/vendors/jscrollpane/script/jquery.jscrollpane.min.js"></script>-->
-<script src="/Public/assets/vendors/spin.js/spin.js"></script>
-<script src="/Public/assets/vendors/ladda/dist/ladda.min.js"></script>
-<script src="/Public/assets/vendors/select2/dist/js/select2.full.min.js"></script>
-<script src="/Public/assets/vendors/html5-form-validation/dist/jquery.validation.min.js"></script>
-<script src="/Public/assets/vendors/jquery-typeahead/dist/jquery.typeahead.min.js"></script>
-<script src="/Public/assets/vendors/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+<script src="/Public/assets/vendors/jscrollpane/script/jquery.jscrollpane.min.js"></script>
 <script src="/Public/assets/vendors/autosize/dist/autosize.min.js"></script>
-<script src="/Public/assets/vendors/bootstrap-show-password/bootstrap-show-password.min.js"></script>
 <script src="/Public/assets/vendors/moment/min/moment.min.js"></script>
-<script src="/Public/assets/vendors/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/Public/assets/vendors/fullcalendar/dist/fullcalendar.min.js"></script>
 <script src="/Public/assets/vendors/cleanhtmlaudioplayer/src/jquery.cleanaudioplayer.js"></script>
-<script src="/Public/assets/vendors/cleanhtmlvideoplayer/src/jquery.cleanvideoplayer.js"></script>
-<script src="/Public/assets/vendors/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
-<script src="/Public/assets/vendors/remarkable-bootstrap-notify/dist/bootstrap-notify.min.js"></script>
-<script src="/Public/assets/vendors/summernote/dist/summernote.min.js"></script>
-<script src="/Public/assets/vendors/owl.carousel/dist/owl.carousel.min.js"></script>
-<script src="/Public/assets/vendors/ionrangeslider/js/ion.rangeSlider.min.js"></script>
-<script src="/Public/assets/vendors/nestable/jquery.nestable.js"></script>
 <script src="/Public/assets/vendors/datatables/media/js/jquery.dataTables.min.js"></script>
 <script src="/Public/assets/vendors/datatables/media/js/dataTables.bootstrap4.min.js"></script>
 <script src="/Public/assets/vendors/datatables-fixedcolumns/js/dataTables.fixedColumns.js"></script>
 <script src="/Public/assets/vendors/datatables-responsive/js/dataTables.responsive.js"></script>
-<script src="/Public/assets/vendors/editable-table/mindmup-editabletable.js"></script>
-<script src="/Public/assets/vendors/d3/d3.min.js"></script>
-<script src="/Public/assets/vendors/c3/c3.min.js"></script>
 <script src="/Public/assets/vendors/chartist/dist/chartist.min.js"></script>
 <script src="/Public/assets/vendors/peity/jquery.peity.min.js"></script>
-<!-- v1.0.1 -->
 <script src="/Public/assets/vendors/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
-<!-- v1.1.1 -->
-<script src="/Public/assets/vendors/gsap/src/minified/TweenMax.min.js"></script>
-<script src="/Public/assets/vendors/hackertyper/hackertyper.js"></script>
 <script src="/Public/assets/vendors/jquery-countTo/jquery.countTo.js"></script>
-<!-- v1.4.0 -->
-<script src="/Public/assets/vendors/nprogress/nprogress.js"></script>
-<script src="/Public/assets/vendors/jquery-steps/build/jquery.steps.min.js"></script>
-<!-- v1.4.2 -->
-<script src="/Public/assets/vendors/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-<script src="/Public/assets/vendors/chart.js/src/Chart.bundle.min.js"></script>
-<!-- v1.7.0 -->
-<script src="/Public/assets/vendors/dropify/dist/js/dropify.min.js"></script>
-
 <!-- Clean UI Scripts -->
 <script src="/Public/assets/common/js/common.js"></script>
 <script src="/Public/assets/common/js/demo.temp.js"></script>
-<script src="/Public/assets/common/js/common.js"></script>
-<script src="/Public/assets/common/js/demo.temp.js"></script>
+
 </body>
 </html>

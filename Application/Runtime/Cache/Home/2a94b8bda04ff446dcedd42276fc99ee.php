@@ -22,7 +22,6 @@
     <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/bootstrap/dist/css/bootstrap.min.css">
     <!-- Clean UI Styles -->
     <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/main.min.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/source/helpers/fonts">
     <!-- Vendors Scripts -->
     <!-- v1.0.0 -->
     <script src="/Public/assets/vendors/jquery/jquery.min.js"></script>

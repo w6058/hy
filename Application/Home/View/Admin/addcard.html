@@ -36,8 +36,13 @@
                                     <td>{{$member.m_username}}</td>
                                     <td>{{$member.m_phone}}</td>
                                     <td>{{$member.m_num}}</td>
-                                    <!--<td>{{$member.m_status?'未领卡':'已领卡'}}</td>-->
-                                    <td>{{$member.m_status?'未领卡':'已领卡'}}</td>
+                                    <td>
+                                        <if condition="$member.m_status eq 0 ">
+                                            未领卡
+                                            <else />
+                                            已领卡
+                                        </if>
+                                    </td>
                                     <td>{{$member.create_at}}</td>
                                 </tr>
                             </foreach>

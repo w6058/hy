@@ -1,0 +1,95 @@
+
+<layout name="Layout/layout_admin" />
+<section class="page-content">
+<div class="page-content-inner">
+
+    <!-- Basic Tables -->
+    <section class="panel">
+        <div class="panel-heading">
+            <h3>控制台理员</h3>
+        </div>
+        <p style="color: red; text-align: center;">{{$info}}</p>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--<p>Element: <code>div.table-responsive</code></p>-->
+                    <br />
+                    <div class="table-responsive margin-bottom-50">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>姓名</th>
+                                    <th>职位</th>
+                                    <th>账号</th>
+                                    <th>电话</th>
+                                    <th>邮箱</th>
+                                    <th>操作</th>
+                                    <!--<th>操作</th>-->
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <foreach name="admins" item="admin" key="key">
+                                <!--<?php var_dump($val) ?>-->
+                                <form action="__MODULE__/Admin/updateAdminPosition" method="post">
+                                    <tr>
+                                        <td>
+                                            {{$key+1}}
+                                            <input type="text" name="id" value="{{$admin.a_id}}" style="display: none;">
+                                        </td>
+                                        <td>{{$admin.a_name}}</td>
+                                        <td>
+                                            
+                                            <select name="selvalue" class="form-control" style="width: 50%;">
+                                                <foreach name='positions' item='v'>
+                                                <if condition="$admin.p_name eq $v.p_name ">
+                                                    <option value="{{$v.id}}" selected = "selected">{{$v.p_name}}</option>
+                                                    <else /> 
+                                                    <option value="{{$v.id}}">{{$v.p_name}}</option>
+                                                </if>
+                                                </foreach>
+                                            </select>
+                                        </td>
+                                        <td>{{$admin.a_username}}</td>
+                                        <td>{{$admin.a_phone}}</td>
+                                        <td>{{$admin.a_email}}</td>
+                                        <td>
+                                            <button type="submit" class="btn btn-sm btn-primary">确认</button>
+                                        </td>
+                                    </tr>
+                                </form>
+                            </foreach>
+                            <tr id="footerTr">
+                                    <td colspan="7" style="text-align: center;">
+                                        <a href="__MODULE__/admin/addadmin">
+                                            <button type="button" class="btn width-150 btn-primary">新增管理员</button>
+                                        </a>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <td colspan="7" style="text-align: right;font-size: 15px;">{{$page}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- End Basic Tables  -->
+
+</div>
+
+<!-- Page Scripts -->
+<script>
+
+    $(function () {
+
+        $("[data-toggle=tooltip]").tooltip();
+
+    });
+
+</script>
+<!-- End Page Scripts -->
+</section>

@@ -25,7 +25,6 @@
     <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/bootstrap/dist/css/bootstrap.min.css">
     <!-- Clean UI Styles -->
     <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/main.min.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/source/helpers/fonts">
     <!-- v1.0.0 -->
     <script src="/Public/assets/vendors/jquery/jquery.min.js"></script>
 </head>
@@ -194,7 +193,7 @@
             <li class="left-menu-list-submenu">
                 <a class="left-menu-link" href="javascript: void(0);">
                     <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
-                    商户中心
+                    商户日志
                 </a>
                 <ul class="left-menu-list list-unstyled">
                     <li>
@@ -212,8 +211,14 @@
                             消费日志
                         </a>
                     </li>
+                    <li>
+                        <a class="left-menu-link" href="/index.php/Home/shop/getUpdateAll">
+                            会员信息变更日志
+                        </a>
+                    </li>
                 </ul>
             </li>
+
             <li class="left-menu-list-separator"><!-- --></li>
             <li class="left-menu-list-submenu">
                 <a class="left-menu-link" href="javascript: void(0);">
@@ -228,6 +233,35 @@
                     </li>
                 </ul>
             </li>
+
+            <!-- 新增店铺管理员说明 -->
+            <?php if(session('shop.s_sid') == 0 ): ?><li class="left-menu-list-separator"><!-- --></li>
+                <li class="left-menu-list-submenu">
+                    <a class="left-menu-link" href="javascript: void(0);">
+                        <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
+                        添加管理员
+                    </a>
+                    <ul class="left-menu-list list-unstyled">
+                        <li>
+                            <a class="left-menu-link" href="/index.php/Home/shop/adminlist">
+                                管理员列表
+                            </a>
+                        </li>
+                        <li>
+                            <a class="left-menu-link" href="/index.php/Home/shop/addshopadmin">
+                                新增管理员
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="left-menu-list-separator"><!-- --></li>
+                <li class="left-menu-list-submenu">
+                    <a class="left-menu-link" target="_blank" href="/index.php/Home/shop/gongdan">
+                        <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
+                        工单系统
+                    </a>
+                </li><?php endif; ?>
+
 			
 
             <li class="left-menu-list-separator"></li>
@@ -308,12 +342,18 @@
                     <?php echo session('shop.s_name');?>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
-                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i> 商户信息</a>
+                    <!-- 按钮触发模态框 -->
+                    <a  class="dropdown-item" href="javascript:void(0)" data-toggle="modal" data-target="#myModal">
+                        <i class="dropdown-icon icmn-user"></i>
+                        <?php if(session('shop.s_sid') == 0 ): ?>修改商户信息
+                            <?php else: ?>
+                            管理员信息<?php endif; ?>
+                    </a>
                     <div class="dropdown-divider"></div>
                     <div class="dropdown-header">资料</div>
-                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 姓名<?php echo session('shop.s_username');?></a>
-                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 电话<?php echo session('shop.s_phone');?></a>
-                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 邮箱<?php echo session('shop.s_email');?></a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 姓名: <?php echo session('shop.s_username');?></a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 电话: <?php echo session('shop.s_phone');?></a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> 邮箱: <?php echo session('shop.s_email');?></a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="/index.php/Home/shop/logout"><i class="dropdown-icon icmn-exit"></i> 退出</a>
                 </ul>
@@ -353,11 +393,13 @@
                     <span class="title">商户消费总计:</span>
                     <span class="chart" id="topMenuChart">1,3,2,0,3,1,2,3,5,2</span>
                     <span class="count" id="count_"><?php echo session('max_xf');?> 人民币</span>
-
-                    <!-- Top Menu Chart Script -->
+                    <a href="/index.php/Home/shop/messagesnum" id="messagesnums">
+                        <i class="fa fa-envelope-o" style="font-size: 20px;">
+                            <?php if(session('messagesnum') != 0): ?><span style="color: white;position: relative;right: 9px;background-color: red;top: -12px;text-align: center;font-size: 10px;padding: 2px 3px 1.5px 3px;line-height: 10px;border-radius: 50%;"><?php echo session('messagesnum');?></span><?php endif; ?>
+                        </i>
+                    </a>
                     <script>
                         $(function () {
-
                             var topMenuChart = $("#topMenuChart").peity("bar", {
                                 fill: ['#01a8fe'],
                                 height: 22,
@@ -377,16 +419,15 @@
                     <!-- Top Menu Chart Script -->
                 </div>
             </div>
-            <div class="right hidden-md-down margin-left-20">
 
-                <!-- 搜索框 -->
+            <div class="right hidden-md-down margin-left-20">
+            <!-- 搜索框 -->
                 <div class="search-block">
                     <div class="form-input-icon form-input-icon-right">
                         <i class="icmn-search"></i>
                         <input type="text" id="input_ss" class="form-control form-control-sm form-control-rounded" placeholder="搜索...">
                         <button id="ss" type="button" class="search-block-submit "></button>
                     </div>
-                </div>
                 <script>
                     $('#ss').on('click',function () {
                         var input_ss = $('#input_ss').val();
@@ -404,16 +445,15 @@
                                         window.alert(msg.data);
                                     }else{
                                         $('.page-content-inner').remove();
-                                        $('.page-content').append(msg.data1);
-                                        $('#memberinfo').append(msg.data);
+                                        $('.page-content').append(msg.data);
                                     }
                                 },
                             })
                         }
                     });
                 </script>
+                </div>
             </div>
-
         </div>
     </div>
 </nav>
@@ -521,7 +561,7 @@
                             <div class="carousel-item active">
                                 <a href="javascript: void(0);" class="widget-body">
                                     <h2>
-                                        <i class="icmn-database"></i> 最大充值会员
+                                        <i class="icmn-database"></i>最大充值会员
                                     </h2>
                                     <p>
                                         名称: <?php echo ($recordMax["m_nickname"]); ?>
@@ -533,7 +573,7 @@
                             <div class="carousel-item">
                                 <a href="javascript: void(0);" class="widget-body">
                                     <h2>
-                                        <i class="icmn-users"></i> 最小充值会员
+                                        <i class="icmn-users"></i>最小充值会员
                                     </h2>
                                     <p>
                                         名称: <?php echo ($recordMin["m_nickname"]); ?>
@@ -553,7 +593,7 @@
                             <div class="carousel-item active">
                                 <a href="javascript: void(0);" class="widget-body">
                                     <h2>
-                                        <i class="icmn-books"></i> 最大消费会员
+                                        <i class="icmn-books"></i>最大消费会员
                                     </h2>
                                     <p>
                                         名称: <?php echo ($consumeMax["m_nickname"]); ?>
@@ -565,12 +605,12 @@
                             <div class="carousel-item">
                                 <a href="javascript: void(0);" class="widget-body">
                                     <h2>
-                                        <i class="icmn-download"></i> 最小消费会员
+                                        <i class="icmn-download"></i>最小消费会员
                                     </h2>
                                     <p>
                                         名称: <?php echo ($consumeMin["m_nickname"]); ?>
                                         <br />
-                                        金额: <?php echo ($nsumeMin["grade"]); ?> 元
+                                        金额: <?php echo ($consumeMin["grade"]); ?> 元
                                     </p>
                                 </a>
                             </div>
@@ -610,8 +650,122 @@
             </div>
         </div>
     </div>
+    <?php if(!empty($messages)): ?><!-- End Dashboard -->
+    <!-- Large modal -->
+        <div class="modal fade bs-example-modal-lg" id="message" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-hidden="true">×
+                        </button>
+                        <h2 class="modal-title" id="messageLabel">
+                            消息推送
+                        </h2>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th style="text-align: center">序号</th>
+                                <th style="text-align: center">题目</th>
+                                <th style="text-align: center">状态</th>
+                                <th style="text-align: center">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php if(is_array($messages)): foreach($messages as $key=>$message): ?><!--<?php var_dump($val) ?>-->
+                                <tr>
+                                    <td style="text-align: center"><?php echo ($key+1); ?></td>
+                                    <td style="text-align: center"><a class="list" id="<?php echo ($message["me_id"]); ?>" href="javascript: void(0);"><?php echo ($message["title"]); ?></a></td>
+                                    <td style="text-align: center">
+                                        <?php if($message["status"] == 0 ): ?>未读
+                                            <?php else: ?>
+                                            已读<?php endif; ?>
+                                    </td>
+                                    <td style="text-align: center"><a href="/index.php/Home/shop/messagedel?id=<?php echo ($message["me_id"]); ?>"><span class="label label-primary">不显示</span></a></td>
+                                </tr><?php endforeach; endif; ?>
+                            <tr><td colspan="4" style="text-align: right;font-size: 15px;"><?php echo ($page); ?></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default"
+                                data-dismiss="modal">关闭
+                        </button>
+                        <a href="/index.php/Home/shop/today?id=<?php echo ($message["s_id"]); ?>" type="button" class="btn btn-primary">
+                            不再显示
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--消息详情-->
+        <div class="modal fade bs-example-modal-lg" id="messageinfo" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-hidden="true">×
+                        </button>
+                        <h2 class="modal-title" id="messageinfoLabel">
+                            消息详情
+                        </h2>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-hover" id="listinfo">
 
-    <!-- End Dashboard -->
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default"
+                                data-dismiss="modal">关闭
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 按钮触发模态框 -->
+
+        <script src="/Public/assets/vendors/ckeditor/ckeditor.js"></script>
+        <script>
+            $(function () {
+                $('#message').modal({
+                    keyboard: true
+                })
+            });
+            $('.list').on('click',function () {
+                var id = this.id;
+                $.ajax({
+                    url:'/index.php/Home/shop/messageinfo',
+                    type:'post',
+                    data: {
+                        'id': id
+                    },
+                    success:function(msg){
+                        $('#listinfo').html(msg.data);
+                        $('#messageinfo').modal({keyboard: true});
+                        CKEDITOR.replace('content1',{
+                            uiColor : '#F8F8FF',
+                            height:'200',
+                            toolbarCanCollapse: true,
+                            toolbarStartupExpanded: false,
+                            toolbar: [[]],
+                            resize_enabled:false,
+                            customConfig: ''
+                        });
+                        $('#cke_1_top').remove();
+                    },
+                    error:function(){
+
+                    }
+
+                })
+            })
+        </script><?php endif; ?>
+
+
+
 
 </div>
 
@@ -620,7 +774,7 @@
 <script>
     $(function() {
 
-        ///////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////
         // COUNTERS
         $('.counter-init').countTo({
             speed: 1500
@@ -730,50 +884,50 @@
 
         ///////////////////////////////////////////////////////////
         // CHART 1
-        new Chartist.Line(".chart-line", {
-            labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            series: [
-                [12, 9, 7, 8, 5],
-                [2, 1, 3.5, 7, 3],
-                [1, 3, 4, 5, 6]
-            ]
-        }, {
-            fullWidth: !0,
-            chartPadding: {
-                right: 40
-            },
-            plugins: [
-                Chartist.plugins.tooltip()
-            ]
-        });
+//        new Chartist.Line(".chart-line", {
+//            labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+//            series: [
+//                [12, 9, 7, 8, 5],
+//                [2, 1, 3.5, 7, 3],
+//                [1, 3, 4, 5, 6]
+//            ]
+//        }, {
+//            fullWidth: !0,
+//            chartPadding: {
+//                right: 40
+//            },
+//            plugins: [
+//                Chartist.plugins.tooltip()
+//            ]
+//        });
 
         ///////////////////////////////////////////////////////////
         // CHART 2
-        var overlappingData = {
-                    labels: ["Jan", "Feb", "Mar", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-                    series: [
-                        [5, 4, 3, 7, 5, 10, 3, 4, 8, 10, 6, 8],
-                        [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4]
-                    ]
-                },
-                overlappingOptions = {
-                    seriesBarDistance: 10,
-                    plugins: [
-                        Chartist.plugins.tooltip()
-                    ]
-                },
-                overlappingResponsiveOptions = [
-                    ["", {
-                        seriesBarDistance: 5,
-                        axisX: {
-                            labelInterpolationFnc: function(value) {
-                                return value[0]
-                            }
-                        }
-                    }]
-                ];
-
-        new Chartist.Bar(".chart-overlapping-bar", overlappingData, overlappingOptions, overlappingResponsiveOptions);
+//        var overlappingData = {
+//                    labels: ["Jan", "Feb", "Mar", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+//                    series: [
+//                        [5, 4, 3, 7, 5, 10, 3, 4, 8, 10, 6, 8],
+//                        [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4]
+//                    ]
+//                },
+//                overlappingOptions = {
+//                    seriesBarDistance: 10,
+//                    plugins: [
+//                        Chartist.plugins.tooltip()
+//                    ]
+//                },
+//                overlappingResponsiveOptions = [
+//                    ["", {
+//                        seriesBarDistance: 5,
+//                        axisX: {
+//                            labelInterpolationFnc: function(value) {
+//                                return value[0]
+//                            }
+//                        }
+//                    }]
+//                ];
+//
+//        new Chartist.Bar(".chart-overlapping-bar", overlappingData, overlappingOptions, overlappingResponsiveOptions);
 
 
     });
@@ -823,6 +977,103 @@
 </div>
 
 
+<?php if(session('shop.s_sid') == 0 ): ?><!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">修改商户信息</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <input type="text" class="form-control" style="display: none" disabled name="s_id" value="<?php echo session('shop.id');?>">
+                    <div class="form-group">
+                        <label class="form-control-label">商户名称</label>
+                        <input type="text" class="form-control" disabled name="s_name" value="<?php echo session('shop.s_name');?>">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">原密码</label>
+                        <input type="password" class="form-control" name="old_password" placeholder="输入原密码进行验证!">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">新密码</label>
+                        <input type="password" class="form-control" name="n_password" placeholder="新密码,不修改不用填!">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">确认密码</label>
+                        <input type="password" class="form-control" name="c_password" placeholder="确认密码,不修改不用填!">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">电话号码</label>
+                        <input type="text" class="form-control" name="n_phone" placeholder="电话号码" value="<?php echo session('shop.s_phone');?>">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">邮箱</label>
+                        <input type="text" class="form-control" name="n_email" placeholder="邮箱" value="<?php echo session('shop.s_email');?>">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" id="button_xg" class="btn btn-primary">修改</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+    $(function() {
+        $('#button_xg').on('click',function () {
+            var old_password = $("input[name='old_password']").val();
+            var n_password = $("input[name='n_password']").val();
+            var c_password = $("input[name='c_password']").val();
+            var n_phone = $("input[name='n_phone']").val();
+            var n_email = $("input[name='n_email']").val();
+            var id = $("input[name='s_id']").val();
+            var data = {};
+            if (old_password.length){
+                if(n_password.length || c_password.length){
+                    //新密码不为空
+                    console.log('here');
+                    if(n_password==c_password && n_password.length>=6 && n_password.length<=10){
+                        data={
+                            'id':id,
+                            's_password' : n_password,
+                            'n_phone' : n_phone,
+                            'n_email' : n_email,
+                            'old_password':old_password
+                        }
+                    }else{
+                        return window.alert('两次密码不同,或密码长度不在6-10之间,请重新输入!');
+                    }
+                }else{
+                    //新密码为空
+                    data={
+                        'id':id,
+                        'old_password':old_password,
+                        'n_phone' : n_phone,
+                        'n_email' : n_email
+                    }
+                }
+                $.ajax({
+                    url:'/index.php/Home/shop/updata',
+                    type:'post',
+                    data:data,
+                    success:function(msg){
+                       console.log(msg);
+                        if (msg.status=='no'){
+                            window.alert(msg.data);
+                        }else{
+                            window.alert(msg.data);
+                            window.location.href='/index.php/Home/admin/shop';
+                        }
+                    }
+                })
+            }else{
+                window.alert('请输入原密码');
+            }
+        });
+    });
+</script><?php endif; ?>
 <!-- Vendors Scripts -->
 <script src="/Public/assets/vendors/tether/dist/js/tether.min.js"></script>
 <script src="/Public/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -842,8 +1093,6 @@
 <!-- Clean UI Scripts -->
 <script src="/Public/assets/common/js/common.js"></script>
 <script src="/Public/assets/common/js/demo.temp.js"></script>
-
-
 
 </body>
 </html>

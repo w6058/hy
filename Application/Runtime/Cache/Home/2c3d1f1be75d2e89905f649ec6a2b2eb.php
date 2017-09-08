@@ -19,13 +19,12 @@
     <![endif]-->
     <!-- Vendors Styles -->
     <!-- v1.0.0 -->
-    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/bootstrap/dist/css/bootstrap.min.css">
     <!-- Clean UI Styles -->
     <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/main.min.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/source/helpers/fonts">
     <!-- Vendors Scripts -->
     <!-- v1.0.0 -->
-    <script src="/Public/assets/vendors/jquery.min.js"></script>
+    <script src="/Public/assets/vendors/jquery/jquery.min.js"></script>
 
 </head>
 <body class="theme-default">
@@ -81,13 +80,22 @@
                                placeholder="输入您的密码">
                     </div>
                     <div class="form-group">
+                        <p>
+                            <img width="30%" class="" height="50" alt="验证码" src="<?php echo U('Home/Index/verify_c',array());?>" title="点击刷新">
+                        </p>
+                        <input id=""
+                               class="form-control password"
+                               name="verify"
+                               placeholder="输入您的验证码">
+                    </div>
+                    <div class="form-group">
                         <a href="javascript: void(0);" class="pull-right">忘记密码?</a>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" name="example6" checked>
-                                记住我
-                            </label>
-                        </div>
+                        <!--<div class="checkbox">-->
+                            <!--<label>-->
+                                <!--<input type="checkbox" name="example6" checked>-->
+                                <!--记住我-->
+                            <!--</label>-->
+                        <!--</div>-->
                     </div>
                     <div class="form-actions">
                         <button type="submit" class="btn btn-primary width-150">登录</button>
@@ -114,6 +122,16 @@
         $(function() {
             // Add class to body for change layout settings
             $('body').addClass('single-page single-page-inverse');
+            var captcha_img = $('.form-group').find('img');
+            var verifyimg = captcha_img.attr("src");
+            captcha_img.attr('title', '点击刷新');
+            captcha_img.click(function(){
+                if( verifyimg.indexOf('?')>0){
+                    $(this).attr("src", verifyimg+'&random='+Math.random());
+                }else{
+                    $(this).attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
+                }
+            });
             // Form Validation
             $('#form-validation').validate({
                 submit: {
@@ -169,10 +187,15 @@
 
 <div class="main-backdrop"><!-- --></div>
 
-
-<script src="/Public/assets/vendors/jquery.validation.min.js"></script>
-<script src="/Public/assets/vendors/bootstrap-show-password.min.js"></script>
-<script src="/Public/assets/vendors/TweenMax.min.js"></script>
+<script src="/Public/assets/vendors/tether/dist/js/tether.min.js"></script>
+<script src="/Public/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/Public/assets/vendors/html5-form-validation/dist/jquery.validation.min.js"></script>
+<script src="/Public/assets/vendors/bootstrap-show-password/bootstrap-show-password.min.js"></script>
+<script src="/Public/assets/vendors/gsap/src/minified/TweenMax.min.js"></script>
 <script src="/Public/assets/common/js/common.js"></script>
+<script src="/Public/assets/common/js/demo.temp.js"></script>
+
+
+
 </body>
 </html>

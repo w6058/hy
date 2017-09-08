@@ -20,7 +20,6 @@
     <![endif]-->
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/vendors/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/common/css/main.min.css">
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/common/css/source/helpers/fonts">
     <script src="__PUBLIC__/assets/vendors/jquery/jquery.min.js"></script>
 
 </head>
@@ -207,11 +206,11 @@
                             消费日志
                         </a>
                     </li>
-                    <!--<li>-->
-                    <!--<a class="left-menu-link" href="javascript: void(0);">-->
-                    <!--商户充值日志-->
-                    <!--</a>-->
-                    <!--</li>-->
+                    <li>
+                        <a class="left-menu-link" href="__MODULE__/shop/getUpdateAll">
+                            会员信息变更日志
+                        </a>
+                    </li>
                 </ul>
             </li>
             <li class="left-menu-list-separator"><!-- --></li>
@@ -228,7 +227,38 @@
                     </li>
                 </ul>
             </li>
-			
+
+            <!-- 新增店铺管理员说明 -->
+            <if condition="session('shop.s_sid') eq 0 ">
+                <li class="left-menu-list-separator"><!-- --></li>
+                <li class="left-menu-list-submenu">
+                    <a class="left-menu-link" href="javascript: void(0);">
+                        <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
+                        添加管理员
+                    </a>
+                    <ul class="left-menu-list list-unstyled">
+                        <li>
+                            <a class="left-menu-link" href="__MODULE__/shop/adminlist">
+                                管理员列表
+                            </a>
+                        </li>
+                        <li>
+                            <a class="left-menu-link" href="__MODULE__/shop/addshopadmin">
+                                新增管理员
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="left-menu-list-separator"><!-- --></li>
+                <li class="left-menu-list-submenu">
+                    <a class="left-menu-link" target="_blank" href="__MODULE__/shop/gongdan">
+                        <i class="left-menu-link-icon icmn-files-empty2"><!-- --></i>
+                        工单系统
+                    </a>
+                </li>
+            </if>
+
+
 
             <li class="left-menu-list-separator"></li>
             <li class="menu-top-hidden no-colorful-menu">

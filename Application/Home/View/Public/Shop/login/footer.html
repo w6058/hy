@@ -1,5 +1,105 @@
 
 
+<if condition="session('shop.s_sid') eq 0 ">
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">修改商户信息</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <input type="text" class="form-control" style="display: none" disabled name="s_id" value="{{:session('shop.id')}}">
+                    <div class="form-group">
+                        <label class="form-control-label">商户名称</label>
+                        <input type="text" class="form-control" disabled name="s_name" value="{{:session('shop.s_name')}}">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">原密码</label>
+                        <input type="password" class="form-control" name="old_password" placeholder="输入原密码进行验证!">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">新密码</label>
+                        <input type="password" class="form-control" name="n_password" placeholder="新密码,不修改不用填!">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">确认密码</label>
+                        <input type="password" class="form-control" name="c_password" placeholder="确认密码,不修改不用填!">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">电话号码</label>
+                        <input type="text" class="form-control" name="n_phone" placeholder="电话号码" value="{{:session('shop.s_phone')}}">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">邮箱</label>
+                        <input type="text" class="form-control" name="n_email" placeholder="邮箱" value="{{:session('shop.s_email')}}">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" id="button_xg" class="btn btn-primary">修改</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function() {
+
+        $('#button_xg').on('click',function () {
+            var old_password = $("input[name='old_password']").val();
+            var n_password = $("input[name='n_password']").val();
+            var c_password = $("input[name='c_password']").val();
+            var n_phone = $("input[name='n_phone']").val();
+            var n_email = $("input[name='n_email']").val();
+            var id = $("input[name='s_id']").val();
+            var data = {};
+            if (old_password.length){
+                if(n_password.length || c_password.length){
+                    //新密码不为空
+                    console.log('here');
+                    if(n_password==c_password && n_password.length>=6 && n_password.length<=10){
+                        data={
+                            'id':id,
+                            's_password' : n_password,
+                            'n_phone' : n_phone,
+                            'n_email' : n_email,
+                            'old_password':old_password
+                        }
+                    }else{
+                        return window.alert('两次密码不同,或密码长度不在6-10之间,请重新输入!');
+                    }
+                }else{
+                    //新密码为空
+                    data={
+                        'id':id,
+                        'old_password':old_password,
+                        'n_phone' : n_phone,
+                        'n_email' : n_email
+                    }
+                }
+                $.ajax({
+                    url:'__MODULE__/shop/updata',
+                    type:'post',
+                    data:data,
+                    success:function(msg){
+                        console.log(msg);
+                        if (msg.status=='no'){
+                            window.alert(msg.data);
+                        }else{
+                            window.alert(msg.data);
+                            window.location.href='__MODULE__/admin/shop';
+                        }
+                    }
+                })
+            }else{
+                window.alert('请输入原密码');
+            }
+        });
+    });
+</script>
+</if>
 <!-- Vendors Scripts -->
 <!-- v1.0.0 -->
 
@@ -15,6 +115,9 @@
 
 <script src="__PUBLIC__/assets/common/js/common.js"></script>
 <script src="__PUBLIC__/assets/common/js/demo.temp.js"></script>
+<!--<script src="__PUBLIC__/assets/common/js/jquery.jqprint-0.3.js"></script>-->
+<script src="__PUBLIC__/assets/common/js/jquery.jqprint-0.3.js"></script>
+<script src="http://www.jq22.com/jquery/jquery-migrate-1.2.1.min.js"></script>
 <!-- 语音播报 -->
 <script src="__PUBLIC__/assets/common/js/jQuery.speech.min.js"></script>
 </body>

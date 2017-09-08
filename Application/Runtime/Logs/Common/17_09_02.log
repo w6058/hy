@@ -1,0 +1,6 @@
+[ 2017-09-02T23:30:43+08:00 ] 127.0.0.1 /ad/thunder8/show/newadtask.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011120s ]
+ERR: 无法加载模块:Ad
+

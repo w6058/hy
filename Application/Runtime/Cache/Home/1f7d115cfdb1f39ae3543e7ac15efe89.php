@@ -21,14 +21,14 @@
 
     <!-- Vendors Styles -->
     <!-- v1.0.0 -->
-    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/bootstrap/dist/css/bootstrap.min.css">
     <!-- Clean UI Styles -->
     <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/main.min.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/source/helpers/fonts">
 
     <!-- Vendors Scripts -->
     <!-- v1.0.0 -->
-    <script src="/Public/assets/vendors/jquery.min.js"></script>
+    <script src="/Public/assets/vendors/jquery/jquery.min.js"></script>
+
 
 </head>
 <body class="theme-default">
@@ -90,14 +90,23 @@
                                        placeholder="密码">
                             </div>
                             <div class="form-group">
-                                
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="example6" checked>
-                                        记住我
-                                    </label>
-                                </div>
+                                <label class="form-label">验证码</label>
+                                <p>
+                                    <img width="30%" class="" height="50" alt="验证码" src="<?php echo U('Home/Index/verify_c',array());?>" title="点击刷新">
+                                </p>
+                                <input id=""
+                                       class="form-control password"
+                                       name="verify"
+                                       placeholder="输入您的验证码">
                             </div>
+                            <!--<div class="form-group">-->
+                                <!--<div class="checkbox">-->
+                                    <!--<label>-->
+                                        <!--<input type="checkbox" name="example6" checked>-->
+                                        <!--记住我-->
+                                    <!--</label>-->
+                                <!--</div>-->
+                            <!--</div>-->
                             <div class="form-actions">
                                 <button type="submit" class="btn btn-primary width-150">登录</button>
                             </div>
@@ -122,7 +131,16 @@
 
         // Add class to body for change layout settings
         $('body').addClass('single-page');
-
+        var captcha_img = $('.form-group').find('img');
+        var verifyimg = captcha_img.attr("src");
+        captcha_img.attr('title', '点击刷新');
+        captcha_img.click(function(){
+            if( verifyimg.indexOf('?')>0){
+                $(this).attr("src", verifyimg+'&random='+Math.random());
+            }else{
+                $(this).attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
+            }
+        });
        
 //        // Show/Hide Password
 //        $('.password').password({

@@ -19,9 +19,8 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/Public/assets/vendors/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/main.min.css">
-    <link rel="stylesheet" type="text/css" href="/Public/assets/common/css/source/helpers/fonts">
     <script src="/Public/assets/vendors/jquery/jquery.min.js"></script>
 </head>
 <body class="theme-default">
@@ -579,26 +578,25 @@
 </div>
 </div>
 
-<script src="/Public/assets/vendors/tether.min.js"></script>
-<script src="/Public/assets/vendors/bootstrap.min.js"></script>
-<script src="/Public/assets/vendors/jquery.jscrollpane.min.js"></script>
-<script src="/Public/assets/vendors/autosize.min.js"></script>
-<script src="/Public/assets/vendors/moment.min.js"></script>
-<script src="/Public/assets/vendors/fullcalendar.min.js"></script>
-<script src="/Public/assets/vendors/jquery.cleanaudioplayer.js"></script>
-<script src="/Public/assets/vendors/jquery.dataTables.min.js"></script>
-<script src="/Public/assets/vendors/chartist.min.js"></script>
-<script src="/Public/assets/vendors/jquery.peity.min.js"></script>
-<!-- v1.0.1 -->
-<script src="/Public/assets/vendors/chartist-plugin-tooltip.min.js"></script>
-<!-- v1.1.1 -->
-<script src="/Public/assets/vendors/jquery.countTo.js"></script>
+<!-- Vendors Scripts -->
+<script src="/Public/assets/vendors/tether/dist/js/tether.min.js"></script>
+<script src="/Public/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/Public/assets/vendors/jscrollpane/script/jquery.jscrollpane.min.js"></script>
+<script src="/Public/assets/vendors/autosize/dist/autosize.min.js"></script>
+<script src="/Public/assets/vendors/moment/min/moment.min.js"></script>
+<script src="/Public/assets/vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+<script src="/Public/assets/vendors/cleanhtmlaudioplayer/src/jquery.cleanaudioplayer.js"></script>
+<script src="/Public/assets/vendors/datatables/media/js/jquery.dataTables.min.js"></script>
+<script src="/Public/assets/vendors/datatables/media/js/dataTables.bootstrap4.min.js"></script>
+<script src="/Public/assets/vendors/datatables-fixedcolumns/js/dataTables.fixedColumns.js"></script>
+<script src="/Public/assets/vendors/datatables-responsive/js/dataTables.responsive.js"></script>
+<script src="/Public/assets/vendors/chartist/dist/chartist.min.js"></script>
+<script src="/Public/assets/vendors/peity/jquery.peity.min.js"></script>
+<script src="/Public/assets/vendors/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<script src="/Public/assets/vendors/jquery-countTo/jquery.countTo.js"></script>
 <!-- Clean UI Scripts -->
 <script src="/Public/assets/common/js/common.js"></script>
 <script src="/Public/assets/common/js/demo.temp.js"></script>
-
-
-
 
 </body>
 </html>
