@@ -1,0 +1,10 @@
+git clone https://github.com/w6058/hy.git    
+
+cd hy            
+git init         
+git status    
+git add .     
+git commit -m'ÐÞ¸ÄºóÌ¨'  
+git push origin master 
+
+

@@ -1,0 +1,81 @@
+<layout name="Layout/layout_admin" />
+
+<section class="page-content">
+<div class="page-content-inner">
+
+    <!-- Basic Tables -->
+    <section class="panel">
+        <div class="panel-heading">
+            <h3>商户列表</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>商户列表页面</h4>
+                    <!--<p>Modifier: <code>.thead-inverse</code></p>-->
+                    <br />
+                    <div class="margin-bottom-50">
+                        <table class="table">
+                            <thead class="thead-inverse">
+                            <tr>
+                                <th>序号</th>
+                                <th>商户名称</th>
+                                <th>管理员</th>
+                                <th>资金余额</th>
+                                <th>所属会员列表</th>
+                                <th>会员消费日志</th>
+                                <th>商户充值日志</th>
+                                <th>商户办卡日志</th>
+                                <th>商户详情</th>
+                                <th>资金操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <empty name="shops">
+                                <tr>
+                                    <td style="border: 1px solid black;" colspan="10">该商城还未入住任何商家</td>
+                                </tr>
+                            </empty>
+                            <notempty name="shops">
+                                <foreach name="shops" item="shop" key="key">
+                                    <!--<?php var_dump($val) ?>-->
+                                    <tr>
+                                        <td>{{$key+1}}</td>
+                                        <td>{{$shop.s_name}}</td>
+                                        <td>{{$shop.s_username}}</td>
+                                        <td>{{$shop.s_num}}</td>
+                                        <td><a href="__MODULE__/admin/shopmember?id={{$shop.id}}"><span class="label label-primary">会员列表</span></a></td>
+                                        <td><a href="__MODULE__/admin/smcash?id={{$shop.id}}"><span class="label label-primary">消费日志</span></a></td>
+                                        <td><a href="__MODULE__/admin/sadd?id={{$shop.id}}"><span class="label label-primary">充值日志</span></a></td>
+                                        <td><a href="__MODULE__/admin/addcard?id={{$shop.id}}"><span class="label label-primary">办卡日志</span></a></td>
+                                        <td><a href="__MODULE__/admin/shopinfo?id={{$shop.id}}"><span class="label label-primary">商户详情</span></a></td>
+                                        <td><a href="__MODULE__/admin/cash?id={{$shop.id}}"><span class="label label-primary">资金操作</span></a></td>
+                                    </tr>
+                                </foreach>
+                                <tr><td colspan="10" style="text-align: right;font-size: 15px;">{{$page}}</td></tr>
+                            </notempty>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- End Basic Tables  -->
+
+</div>
+
+<!-- Page Scripts -->
+<script>
+
+    $(function () {
+
+        $("[data-toggle=tooltip]").tooltip();
+
+    });
+
+</script>
+<!-- End Page Scripts -->
+</section>
+

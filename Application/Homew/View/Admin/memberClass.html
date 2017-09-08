@@ -1,0 +1,84 @@
+<layout name="Layout/layout_admin" />
+
+<section class="page-content">
+<div class="page-content-inner">
+
+    <!-- Basic Tables -->
+    <section class="panel">
+        <div class="panel-heading">
+            <h3>会员中心 会员分类</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>会员分类说明</h4>
+                    <!--<p>Element: <code>div.table-responsive</code></p>-->
+                    <br />
+                    <div class="table-responsive margin-bottom-50">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>会员称号</th>
+                                    <th>会员条件</th>
+                                    <th>操作</th>
+                                    <th>是否删除</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <foreach name='list' item='vo'>
+                                    <tr>
+                                    	<form action="__MODULE__/Admin/vipClassSetUp" method="post">
+	                                        <td>
+		                                        {{$vo.id}}
+		                                        <input type="text" class="form-control" id="m_card" name="id" value='{{$vo.id}}' style="display: none;" >
+	                                		</td>
+	                                        <td>
+		                                    	<input type="text" class="form-control" id="m_card" name="m_level" value='{{$vo.m_level}}' style="width: 100px;" >
+	                                        </td>
+	                                        <td>
+	                                        	<input type="text" class="form-control" id="m_card" name="term" value='{{$vo.term}}' style="width: 80px;" >
+	                                        	
+	                                        </td>
+	                                        <td>
+	                                            <button type="submit" class="btn width-100 btn-primary">重置</button>
+	                                        </td>
+	                                        <td>
+	                                        	<a href="__MODULE__/admin/deleMemberClass?id={{$vo.id}}">
+	                                        		<button type="button" class="btn width-100 btn-primary">是</button>
+	                                        	</a>
+	                                        </td>
+                                    	</form>
+                                    </tr>
+                                </foreach>
+                                <tr>
+                                	<td colspan="4" style="text-align: center;">
+                                		<a href="__MODULE__/Admin/addMemberClass">
+                                			<button type="button" class="btn width-150 btn-primary">添加会员等级</button>
+                                		</a>
+                                	</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- End Basic Tables  -->
+
+</div>
+
+<!-- Page Scripts -->
+<script>
+
+    $(function () {
+
+        $("[data-toggle=tooltip]").tooltip();
+
+    });
+
+</script>
+<!-- End Page Scripts -->
+</section>

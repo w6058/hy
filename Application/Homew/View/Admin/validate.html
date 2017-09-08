@@ -1,0 +1,116 @@
+<layout name="Layout/layout_admin" />
+
+<section class="page-content">
+<div class="page-content-inner">
+
+    <!-- Basic Tables -->
+    <section class="panel">
+        <div class="panel-heading">
+            <h3>商户列表</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>商户列表页面</h4>
+                    <!--<p>Modifier: <code>.thead-inverse</code></p>-->
+                    <br />
+                    <div class="margin-bottom-50">
+                        <table class="table">
+                            <thead class="thead-inverse">
+                            <tr>
+                                <th>序号</th>
+                                <th>店铺名称</th>
+                                <th>管理员</th>
+                                <th>工商运营资料</th>
+                                <th colspan="2" class="text-center">法人身份证</th>
+                                <th colspan="2" class="text-center">管理员身份证</th>
+                                <th>同意</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <empty name="shops">
+                                <tr>
+                                    <td style="border: 1px solid black;" colspan="10">无未验证商家</td>
+                                </tr>
+                            </empty>
+                            <notempty name="shops">
+                                <foreach name="shops" item="shop" key="key">
+                                    <!--<?php var_dump($val) ?>-->
+                                    <tr>
+                                        <td style="height: auto;margin: auto">{{$key+1}}</td>
+                                        <td style="height: auto;margin: auto">{{$shop.s_name}}</td>
+                                        <td style="height: auto;margin: auto">{{$shop.s_username}}</td>
+                                        <td><a target="_blank" class="smallimage" rel="__ROOT__/Uploads/{{$shop.s_document}}" href="__ROOT__/Uploads/{{$shop.s_document}}"><img style="width: 150px;height: 100px;" src="__ROOT__/Uploads/{{$shop.s_document}}" alt="工商运营资料"></td>
+                                        <td><a target="_blank" class="smallimage" rel="__ROOT__/Uploads/{{$shop.s_fidcard_f}}" href="__ROOT__/Uploads/{{$shop.s_fidcard_f}}"><img style="width: 150px;height: 100px;" src="__ROOT__/Uploads/{{$shop.s_fidcard_f}}" alt="法人身份证正面"></td>
+                                        <td><a target="_blank" class="smallimage" rel="__ROOT__/Uploads/{{$shop.s_fidcard_b}}" href="__ROOT__/Uploads/{{$shop.s_fidcard_b}}"><img style="width: 150px;height: 100px;" src="__ROOT__/Uploads/{{$shop.s_fidcard_b}}" alt="法人身份证反面"></td>
+                                        <td><a target="_blank" class="smallimage" rel="__ROOT__/Uploads/{{$shop.s_aidcard_f}}" href="__ROOT__/Uploads/{{$shop.s_aidcard_f}}"><img style="width: 150px;height: 100px;" src="__ROOT__/Uploads/{{$shop.s_aidcard_f}}" alt="管理员身份证正面"></td>
+                                        <td><a target="_blank" class="smallimage" rel="__ROOT__/Uploads/{{$shop.s_aidcard_b}}" href="__ROOT__/Uploads/{{$shop.s_aidcard_b}}"><img style="width: 150px;height: 100px;" src="__ROOT__/Uploads/{{$shop.s_aidcard_b}}" alt="管理员身份证反面"></td>
+                                        <td><a href="__MODULE__/admin/cash?id={{$shop.id}}"><span class="label label-primary">充值</span></a></td>
+                                    </tr>
+                                </foreach>
+                            </notempty>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- End Basic Tables  -->
+
+</div>
+
+<!-- Page Scripts -->
+<script>
+    $(function(){
+        var x = 0;
+        var y = 0;
+        $(".smallimage").hover(function(e){
+            $("body").append('<p id="bigimage"><img src="'+ this.rel + '" alt="" /></p>');
+            $('#bigimage').css({
+                'position':'absolute',
+                'display':'none'
+            });
+            $('#bigimage').find('img').css({
+                'width':'600px',
+                'height':'400px',
+                'padding':'5px',
+                'background':'#fff',
+                'border':'1px solid #e3e3e3'
+            });
+
+            $(this).find('img').stop().fadeTo('slow',0.5);
+            widthJudge(e);
+            $("#bigimage").fadeIn('fast');
+            console.log('asdf');
+        },function(){
+            $(this).find('img').stop().fadeTo('slow',1);
+            $("#bigimage").remove();
+        });
+
+        $(".smallimage").mousemove(function(e){
+            widthJudge(e);
+        });
+
+        function widthJudge(e){
+            var marginRight = document.documentElement.clientWidth - e.pageX;
+            var imageWidth = $("#bigimage").width();
+            if(marginRight < imageWidth)
+            {
+                x = imageWidth + 22;
+                $("#bigimage").css({top:(e.pageY - y ) + 'px',left:(e.pageX - x ) + 'px'});
+            }else{
+                x = 22;
+                $("#bigimage").css({top:(e.pageY - y ) + 'px',left:(e.pageX + x ) + 'px'});
+            };
+        }
+    });
+    $(function () {
+        $("[data-toggle=tooltip]").tooltip();
+    });
+
+</script>
+<!-- End Page Scripts -->
+</section>
+

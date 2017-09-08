@@ -1,0 +1,60 @@
+<layout name="Layout/layout_admin" />
+
+<section class="page-content">
+<div class="page-content-inner">
+
+    <!-- Basic Tables -->
+    <section class="panel">
+        <div class="panel-heading">
+            <h3>会员中心 添加会员等级</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>添加会员等级说明</h4>
+                    <!--<p>Element: <code>div.table-responsive</code></p>-->
+                    <br />
+                     <form method="post" action="__MODULE__/admin/sureAddMemberClass">
+
+                            <div class="form-group row">
+                                <div class="col-md-3">
+                                    <label class="form-control-label" for="l0">会员称号</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="m_level" placeholder="会员称号">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-md-3">
+                                    <label class="form-control-label" for="l0">会员条件</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="term" placeholder="会员条件">
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <div class="form-group row">
+                                    <div class="col-md-9 col-md-offset-3">
+                                        <button type="submit" class="btn width-150 btn-primary">添加</button>
+                                        <a href="__MODULE__/admin/show">
+                                            <button type="button" class="btn btn-default">返回首页</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- End Horizontal Form -->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- End -->
+
+</div>
+</section>
+

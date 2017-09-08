@@ -1,0 +1,63 @@
+﻿$ git clone ssh://git@git.59zhen.com:22022/super7/yyss_Server.git
+
+composer install
+
+php artisan make:migration create_plates_table
+php artisan make:migration create_users_table
+php artisan make:migration create_articles_table
+php artisan make:migration create_admins_table
+php artisan make:migration create_links_table
+
+//创建模型工厂
+php artisan make:seeder UserTableSeeder
+php artisan make:seeder ArticleTableSeeder
+php artisan make:seeder PlateTableSeeder
+php artisan make:seeder AdminTableSeeder
+php artisan make:seeder LinkTableSeeder
+
+php artisan make:model User
+php artisan make:model Admin
+php artisan make:model Plate
+php artisan make:model Article
+php artisan make:model Link
+php artisan make:model Code
+
+
+php artisan db:seed --class=UserTableSeeder
+php artisan db:seed --class=PlateTableSeeder
+php artisan db:seed --class=LinkTableSeeder
+php artisan db:seed --class=ArticleTableSeeder
+
+
+
+
+php artisan migrate:refresh --seed
+php artisan migrate:refresh --seed
+
+
+
+
+
+select * from articles;
+
+select * from actions;
+
+select * from collects;
+
+select * from follows;
+
+select * from levels;
+
+select * from migrations;
+
+select * from replays;
+
+select * from role_action;
+
+select * from roles;
+
+select * from user_role;
+
+select * from users;
+
+eyJpdiI6IjNYSkRcLzZzT0lWQkw4K2d3bDdRY1p3PT0iLCJ2YWx1ZSI6IlRj

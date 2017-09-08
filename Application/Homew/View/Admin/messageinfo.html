@@ -1,0 +1,54 @@
+<layout name="Layout/layout_admin" />
+
+<section class="page-content">
+<div class="page-content-inner">
+
+    <!-- Basic Form Elements -->
+    <section class="panel">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="margin-bottom-50">
+                        <div class="panel-heading">
+                            <h3>修改消息</h3>
+                        </div>
+                        <!-- Horizontal Form -->
+                        <form method="post" class="row" action="__MODULE__/admin/message2" enctype="multipart/form-data">
+                            <div class="form-group col-md-5 col-md-offset-3">
+                                <br />
+                                <input type="text" class="form-control" id="title" name="title" value="{{$message.title}}">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <textarea name="content" id="content" value="{{$message.content}}"></textarea>
+                            </div>
+                            <div class="form-actions">
+                                <div class="form-group">
+                                    <div class="col-md-12" style="text-align: center">
+                                        <button type="submit" class="btn width-150 btn-primary">发送</button>
+                                         <a href="__MODULE__/admin/show">
+                                            <button type="button" class="btn btn-default">返回首页</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- End Horizontal Form -->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+</div>
+</section>
+
+<script src="__PUBLIC__/assets/vendors/ckeditor/ckeditor.js"></script>
+<script type="text/javascript">
+    CKEDITOR.replace('content',{
+        toolbar : 'Full',
+        uiColor : '#9AB8F3',
+        height:'200'
+    });
+</script>

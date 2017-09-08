@@ -1,0 +1,61 @@
+<layout name="Layout/layout_admin" />
+
+<section class="page-content">
+<div class="page-content-inner">
+
+    <!-- Basic Tables -->
+    <section class="panel">
+        <div class="panel-heading">
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>消息列表</h3>
+                    <!--<p>Modifier: <code>.thead-inverse</code></p>-->
+                    <br />
+                    <div class="margin-bottom-50">
+                        <table class="table">
+                            <thead class="thead-inverse">
+                            <tr>
+                                <th>序号</th>
+                                <th>题目</th>
+                                <th>阅读量</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <foreach name="lists" item="list" key="key">
+                                    <!--<?php var_dump($val) ?>-->
+                                    <tr>
+                                        <td>{{$key+1}}</td>
+                                        <td><a href="__MODULE__/admin/messageinfo?id={{$list.id}}">{{$list.title}}</a></td>
+                                        <td>{{$list['0']}}</td>
+                                        <td><a href="__MODULE__/admin/messagedel?id={{$list.id}}"><span class="label label-primary">删除</span></a></td>
+                                    </tr>
+                                </foreach>
+                                <tr><td colspan="4" style="text-align: right;font-size: 15px;">{{$page}}</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Basic Tables  -->
+
+</div>
+
+<!-- Page Scripts -->
+<script>
+
+    $(function () {
+
+        $("[data-toggle=tooltip]").tooltip();
+
+    });
+
+</script>
+<!-- End Page Scripts -->
+</section>
+

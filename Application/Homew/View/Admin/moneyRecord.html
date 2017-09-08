@@ -1,0 +1,87 @@
+<layout name="Layout/layout_admin" />
+
+<section class="page-content">
+<div class="page-content-inner">
+
+    <!-- Basic Tables -->
+    <section class="panel">
+        <div class="panel-heading">
+            <h3>会员中心 资金日志</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4>充值记录</h4>
+                    <!--<p>Modifier: <code>.table-striped</code></p>-->
+                    <br />
+                    <div class="margin-bottom-50">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>充值商户</th>
+                                <th>充值金额</th>
+                                <th width="200">充值时间</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <foreach name='list1' item='vo' key='k'>
+                                    <tr>
+                                        <th scope="row">{{$k+1}}</th>
+                                        <td>{{$vo.s_name}}</td>
+                                        <td>{{$vo.grade}}</td>
+                                        <td>{{$vo.gradetime}}</td>
+                                    </tr>
+                                </foreach>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4>消费记录</h4>
+                    <!--<p>Modifier: <code>.table-hovered</code></p>-->
+                    <br />
+                    <div class="margin-bottom-50">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>消费商户</th>
+                                <th>消费金额</th>
+                                <th>消费时间</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <foreach name='list' item='vo' key='k'>
+                                <tr>
+                                    <th scope="row">{{$k+1}}</th>
+                                    <td>{{$vo.s_name}}</td>
+                                    <td>{{$vo.grade}}</td>
+                                    <td>{{$vo.gradetime}}</td>
+                                </tr>
+                            </foreach>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- End Basic Tables  -->
+
+</div>
+
+<!-- Page Scripts -->
+<script>
+
+    $(function () {
+
+        $("[data-toggle=tooltip]").tooltip();
+
+    });
+
+</script>
+<!-- End Page Scripts -->
+</section>
+

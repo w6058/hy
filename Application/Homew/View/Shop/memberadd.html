@@ -1,0 +1,265 @@
+<layout name="Layout/layout_shop_xf" />
+<section class="page-content">
+<div class="page-content-inner" style="background-image: url(__PUBLIC__/assets/common/img/temp/login/3.jpg)">
+
+    <!-- Lockscreen Page -->
+
+    <div class="empty-holder"><!-- --></div>
+    <div class="single-page-block">
+        <div class="single-page-block-inner effect-3d-element">
+            <div class="blur-placeholder"><!-- --></div>
+            <div class="single-page-block-form">
+                <form id="form-validation" action="" name="form-validation" method="POST">
+                    <div class="text-center">
+                        <h2 class="text-center">
+                            会员充值
+                        </h2>
+                    </div>
+                    <div class="form-group">
+                        <input
+                               class="form-control"
+                               id="m_card"
+                               placeholder="请刷卡"
+                               name="m_card"
+                               type="text">
+                        <br>
+                        <span style="color: black;margin-left: 19px;">刷卡号充值:</span>
+                        <input type='radio' class="rel" value="1" name="check" checked>
+                        <span style="color: black;margin-left: 19px;">输入卡号充值:</span>
+                        <input type='radio' class="rel" value="2" name="check">
+                        <span style="color: black;margin-left: 19px;">使用手机号码充值:</span>
+                        <input type='radio' class="rel" value="3" name="check">
+                    </div>
+                    <h2 class="text-center" id="member_info">
+                    </h2>
+                    <br />
+                    <div class="form-group">
+                        <input id="num"
+                               class="form-control"
+                               placeholder="请输入充值金额"
+                               name="num"
+                               type="text">
+                    </div>
+                    <div class="form-actions text-center">
+                        <button id="button_cz" type="button" class="btn btn-success width-150">充值</button>
+                    </div>
+
+                    <h2 class="text-center" id="member_infos">
+                    </h2>
+                    <div id="result" style="display: none">
+                    </div>
+
+                    <!-- 打印 -->
+                    <div id="ddd" style="display: none">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="lockscreen-typer">
+        <div class="locksreen-typer-inner" id="console"><!-- --></div>
+    </div>
+    <div class="empty-holder"><!-- --></div>
+    <!-- End Lockscreen Page -->
+
+</div>
+
+<!-- Page Scripts -->
+<script>
+    $(function() {
+
+        // Add class to body for change layout settings
+        $('body').addClass('single-page');
+        $(".rel").on("click",function(){
+            console.log($(this).val())
+            if($(this).val() == 1){
+                $('#m_card').val('');
+                $('#m_card').attr('placeholder','请刷卡');
+                $('#num').val('');
+                $('#member_info').html('');
+                $('#member_infos').html('');
+            }else if($(this).val() == 2){
+                $('#m_card').val('');
+                $('#m_card').attr('placeholder','请输入卡号');
+                $('#num').val('');
+                $('#member_info').html('');
+                $('#member_infos').html('');
+            }else{
+                $('#m_card').val('');
+                $('#m_card').attr('placeholder','请输入手机号码');
+                $('#num').val('');
+                $('#member_info').html('');
+                $('#member_infos').html('');
+            }
+        });
+        $('#num').on('focus',function () {
+            $('#button_cz').removeAttr('disabled');
+        });
+        $('#m_card').on('change',function () {
+            var m_card = $('#m_card').val();
+            var checked = $('#checkbox').is(':checked');
+            $.ajax({
+                url:'__MODULE__/shop/findmember',
+                type:'post',
+                data:{
+                    'm_card':m_card,
+                    'checked':$(".rel:checked").val()
+                },
+                success:function(msg){
+                    if(msg.status=='no'){
+                        $('#button_cz').attr('disabled','disabled');
+                        $('#m_card').val('');
+                        $('#member_info').html('');
+                        window.alert(msg.data);
+                    }else {
+                        $('#member_info').html(msg.data);
+                        $('#button_cz').removeAttr('disabled');
+                    }
+                }
+            })
+        });
+        var a=1;
+        $('#button_cz').keypress(function(e) {
+            if (e.keyCode == 13) {
+                if (a==2) {
+                    e.preventDefault();
+                }
+            }
+            a=2;
+            setTimeout(function () {
+                a=1;
+            },1000);
+        });
+        $("#button_cz").on('click',function () {
+            var m_card = $('#m_card').val();
+            var num = $('#num').val();
+            var goods = $('goods').val();
+            var checked = $('#checkbox').is(':checked');
+            if(m_card==''){
+                window.alert('请输刷卡或输入会员号!');
+                $('#button_cz').attr('disabled','disabled');
+            }else if (num==''){
+                window.alert('请输入充值金额!');
+                $('#button_cz').attr('disabled','disabled');
+            }else {
+                $.ajax({
+                    url:'__MODULE__/shop/memberadd2',
+                    type:'post',
+                    data:{
+                        'm_card':m_card,
+                        'checked':checked,
+                        'goods':goods,
+                        'num':num
+                    },
+                    success:function(msg){
+
+                        if(msg.status=='no'){
+                            window.alert(msg.data);
+                            $('#button_cz').attr('disabled','disabled');
+                            $('#num').on('change',function () {
+                                $('#button_cz').removeAttr('disabled');
+                            })
+                        }else {
+                            $('#result').html(msg.data1);
+                            $('#result').speech({
+                                "speech": false,
+                                "speed": 5
+//                                "bg": "./images/speech.png"
+                            });
+                            $('#member_infos').html(msg.data);
+                            $('#button_cz').attr('disabled','disabled');
+
+//                            $("#ddd").html(msg.data3);
+//                            $("#ddd").jqprint({
+//                                printContainer: false
+//                            });
+
+                            setTimeout(function () {
+                                $('#m_card').val('');
+                                $('#num').val('');
+                                $('#member_info').html('');
+                                $('#member_infos').html('');
+                                $("#ddd").html('');
+                            },3000);
+                        }
+                    }
+                })
+            }
+        });
+
+        // Form Validation
+        $('#form-validation').validate({
+            submit: {
+                settings: {
+                    inputContainer: '.form-group',
+                    errorListClass: 'form-control-error',
+                    errorClass: 'has-danger'
+                }
+            }
+        });
+
+        // Show/Hide Password
+        $('.password').password({
+            eyeClass: '',
+            eyeOpenClass: 'icmn-eye',
+            eyeCloseClass: 'icmn-eye-blocked'
+        });
+
+        // Show/Hide Password
+        Typer.speed = 3;
+        Typer.file = "/assets/vendors/hackertyper/kernel.txt";
+        Typer.init();
+
+        // Set Background Image for Form Block
+        function setImage() {
+            var imgUrl = $('.page-content-inner').css('background-image');
+
+            $('.blur-placeholder').css('background-image', imgUrl);
+        };
+
+        function changeImgPositon() {
+            var width = $(window).width(),
+                    height = $(window).height(),
+                    left = - (width - $('.single-page-block-inner').outerWidth()) / 2,
+                    top = - (height - $('.single-page-block-inner').outerHeight()) / 2;
+
+
+            $('.blur-placeholder').css({
+                width: width,
+                height: height,
+                left: left,
+                top: top
+            });
+        };
+
+        setImage();
+        changeImgPositon();
+
+        $(window).on('resize', function(){
+            changeImgPositon();
+        });
+
+        // Hacker Typer
+        (function loop() {
+            var rand = Math.round(Math.random() * (600 - 500)) + 100;
+            setTimeout(function() {
+                Typer.addText();
+                loop();
+            }, rand);
+        }());
+
+        // Mouse Move 3d Effect
+        var rotation = function(e){
+            var perX = (e.clientX/$(window).width())-0.5;
+            var perY = (e.clientY/$(window).height())-0.5;
+            TweenMax.to(".effect-3d-element", 0.4, { rotationY:15*perX, rotationX:15*perY,  ease:Linear.easeNone, transformPerspective:1000, transformOrigin:"center" })
+        };
+
+        if (!cleanUI.hasTouch) {
+            $('body').mousemove(rotation);
+        }
+
+    });
+</script>
+</section>
